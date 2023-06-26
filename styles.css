@@ -14,10 +14,7 @@ position: fixed;
 width: 100%;
 
 }
-nav ul {
 
- 
-}
 nav ul li{
 
     display: inline; 
@@ -33,11 +30,16 @@ color: black;
 
 
 #Home{
-    padding: 70px;
+    height: 100vh;
+    width: 100%;
+    padding-top: 8%;
    background-color: white;
 
 }
 #Service{
+    padding-top: 8%;
+    height: 100vh;
+    width: 100%;
     background: #141E30;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -45,7 +47,9 @@ color: black;
 }
 
 #About{
-  
+    padding-top: 10%;
+    height: 100vh;
+    width: 100%;
 
 }
 html{
