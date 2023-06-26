@@ -32,8 +32,10 @@ color: black;
 #Home{
     height: 100vh;
     width: 100%;
-    padding-top: 8%;
-    background-color: rgb(227, 219, 219);
+    padding-top: 5%;
+    background-color: #243B55;
+   
+    
 
 }
 #Service{
@@ -56,13 +58,13 @@ html{
     scroll-behavior: smooth;
 }
 .moto{
-
+    
 font-size: 45px;
 padding-top: 20%;
 font-weight: 700;
-opacity: .3;
-color: red;
-z-index: 1;
+opacity: .8;
+color: white;
+
 }
 .Contact_container{
 
@@ -111,14 +113,67 @@ footer{
 }
 .Home_image{
 
-height: 100vh;
-width: 40%;
-align-items: end;
-z-index: 1;
+height: 100%;
+width: 70%;
+animation: glowing-border 2s infinite;
+margin-top: 9%;
+
 }
-.Home_image_container{
+.Home_container{
     display: flex;
-    justify-content: end;
-    align-items: end;
-    background-color: black;
+    
 }
+.Home_contain{
+
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 10px;
+
+
+}
+.Home_card{
+   
+height: 100vh;
+width:100%;
+
+}
+.Home_image_flex{
+display: flex;
+justify-content:center;
+
+}
+.Home_moto_flex{
+    display: flex;
+    justify-content:center;
+    
+    }
+.Home_get{
+border: 2px solid red;
+background-color: #011122;
+height: 50px;
+width: 200px;
+font-size: 25px;
+color: white;
+border-radius: 7px;
+animation: glowing-border 2s infinite;
+}
+.Home_get:hover{
+  background-color: beige;
+    transition: .45s;
+cursor: pointer;
+color: black;
+    }
+    @keyframes glowing-border {
+        0% {
+          border-color: rgba(255, 255, 255, 0.2);
+          box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+        }
+        50% {
+          border-color: rgba(255, 255, 255, 0.7);
+          box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+        }
+        100% {
+          border-color: rgba(255, 255, 255, 0.2);
+          box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+        }
+      }
