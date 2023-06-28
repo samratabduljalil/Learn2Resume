@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color:#243b55;
 }
 nav {
   margin-left: 0px;
@@ -155,8 +156,49 @@ footer {
   opacity: 0.8;
   color: white;
 }
+.sign_text{
+height: 30px;
+width: 250px;
+border-radius: 8px;
+margin: 10px;
+}
+.sign_container{
+display: flex;
 
-@keyframes glowing-border {
+justify-content: center;
+align-items: center;
+}
+.sign_contain{
+  display: grid;
+ 
+  grid-template-columns: 1fr ;
+  justify-content: center;
+  gap: 25px;
+  
+  }
+  .sign_card{
+margin-top: 80px;
+height:450px;
+width: 390px;
+background-color: beige;
+justify-content: center;
+align-items: center;
+text-align: center;
+border-radius: 8px;
+  }
+
+
+  .btn_signup{
+
+height: 35px;
+width: 95px;
+background-color: #011122;
+border-radius: 8px;
+align-items: center;
+text-align: center;
+
+  }
+@keyframes glowin0g-border {
   0% {
     border-color: rgba(255, 255, 255, 0.2);
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
