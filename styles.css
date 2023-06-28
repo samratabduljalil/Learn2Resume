@@ -1,198 +1,172 @@
-body{
-
-
-    margin: 0;
-   
+body {
+  margin: 0;
 }
-nav{
-margin-left: 0px;
-display: flex;
-background-color: rgb(227, 219, 219);
-justify-content: end;
-padding-right: 40px;
-position: fixed;
-width: 100%;
-
+nav {
+  margin-left: 0px;
+  display: flex;
+  background-color: rgb(227, 219, 219);
+  justify-content: end;
+  padding-right: 40px;
+  position: fixed;
+  width: 100%;
 }
 
-nav ul li{
-
-    display: inline; 
-   
-
+nav ul li {
+  display: inline;
 }
-nav ul li a{
-    font-size: 25px;
-   padding: 10px;
-text-decoration: none;
-color: black;
+nav ul li a {
+  font-size: 25px;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
 }
-nav ul li a:hover{
-
-    text-decoration: none;
-    color: #243B55;
-    font-size: 26px;
-    }
-
-
-#Home{
-    height: 100vh;
-    width: 100%;
-    padding-top: 5%;
-    background-color: #243B55;
-   
-    
-
-}
-#Service{
-    padding-top: 8%;
-    height: 100vh;
-    width: 100%;
-    background-color: #243B55;
+nav ul li a:hover {
+  text-decoration: none;
+  color: #243b55;
+  font-size: 26px;
 }
 
-#About{
-    padding-top: 10%;
-    height: 100vh;
-    width: 100%;
-    background-color: #243B55;
+#Home {
+  height: 100vh;
+  width: 100%;
+  padding-top: 5%;
+  background-color: #243b55;
+}
+#Service {
+  padding-top: 5%;
+  height: 100vh;
+  width: 100%;
+  background-color: #243b55;
+}
 
+#About {
+  padding-top: 10%;
+  height: 100vh;
+  width: 100%;
+  background-color: #243b55;
 }
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
-.moto{
-    
-font-size: 45px;
-padding-top: 20%;
-font-weight: 700;
-opacity: .8;
-color: white;
-
+.moto {
+  font-size: 45px;
+  padding-top: 20%;
+  font-weight: 700;
+  opacity: 0.8;
+  color: white;
 }
-.Contact_container{
-
-display: flex;
-justify-content: center;
-
+.Contact_container {
+  display: flex;
+  justify-content: center;
 }
-.Contact_contain{
-display: grid;
-grid-template-columns: 1fr 1fr;
-border: 1px solid black;
+.Contact_contain {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid black;
 }
-.Contact_card{
-height: 250px;
-width: 350px;
-justify-content: center;
-
+.Contact_card {
+  height: 250px;
+  width: 350px;
+  justify-content: center;
 }
-.Contact_text_box{
-height: 50px;
-width: 300px;
-margin-top: 10px;
-border-radius: 10px;
-
+.Contact_text_box {
+  height: 50px;
+  width: 300px;
+  margin-top: 10px;
+  border-radius: 10px;
 }
-.Contact_btn_submit{
-margin-top: 5px;
-height: 40px;
-width: 150px;
-border-radius: 10px;
-justify-content: center;
-align-items: center;
-color: red;
-background-color: rgb(115, 115, 242);
-
+.Contact_btn_submit {
+  margin-top: 5px;
+  height: 40px;
+  width: 150px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  background-color: rgb(115, 115, 242);
 }
-#Contact_message{
-
-    margin-top: 10px;
-    border-radius: 10px;
-    
+#Contact_message {
+  margin-top: 10px;
+  border-radius: 10px;
 }
-footer{
-    height: 250px;
-    font-size: 35px;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    background-color: black;
+footer {
+  height: 250px;
+  font-size: 35px;
+  text-align: center;
+  color: white;
+  background-color: black;
 }
-.Home_image{
-
-height: 100%;
-width: 70%;
-animation: glowing-border 2s infinite;
-margin-top: 9%;
-
+.Home_image {
+  height: 100%;
+  width: 70%;
+  animation: glowing-border 2s infinite;
+  margin-top: 9%;
 }
-.Home_container{
-    display: flex;
-    
+.Home_container {
+  display: flex;
 }
-.Home_contain{
-
-display: grid;
-grid-template-columns: 1fr 1fr;
-gap: 10px;
-
-
+.Home_contain {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
 }
-.Home_card{
-   
-height: 100vh;
-width:100%;
-
+.Home_card {
+  height: 100vh;
+  width: 100%;
 }
-.Home_image_flex{
-display: flex;
-justify-content:center;
-
+.Home_image_flex {
+  display: flex;
+  justify-content: center;
 }
-.Home_moto_flex{
-    display: flex;
-    justify-content:center;
-    
-    }
-.Home_get{
-border: 2px solid red;
-background-color: #011122;
-height: 50px;
-width: 200px;
-font-size: 25px;
-color: white;
-border-radius: 7px;
-animation: glowing-border 2s infinite;
+.Home_moto_flex {
+  display: flex;
+  justify-content: center;
 }
-.Home_get:hover{
+.Home_get {
+  border: 2px solid red;
+  background-color: #011122;
+  height: 50px;
+  width: 200px;
+  font-size: 25px;
+  color: white;
+  border-radius: 7px;
+  margin-left: 2%;
+  animation: glowing-border 2s infinite;
+}
+.Home_get:hover {
   background-color: beige;
-    transition: .45s;
-cursor: pointer;
-color: black;
-    }
-    .line {
-        height: 1px; /* Set the height of the line */
-        background-color: black; /* Set the color of the line */
-      }
-      
-      
-      
+  transition: 0.45s;
+  cursor: pointer;
+  color: black;
+}
+.line {
+  height: 3px; /* Set the height of the line */
+  background-color: black; /* Set the color of the line */
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 8%;
+  margin-bottom: 5%;
+}
 
+.moto_service {
+  font-size: 45px;
 
+  font-weight: 700;
+  opacity: 0.8;
+  color: white;
+}
 
-
-    @keyframes glowing-border {
-        0% {
-          border-color: rgba(255, 255, 255, 0.2);
-          box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
-        }
-        50% {
-          border-color: rgba(255, 255, 255, 0.7);
-          box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
-        }
-        100% {
-          border-color: rgba(255, 255, 255, 0.2);
-          box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
-        }
-      }
+@keyframes glowing-border {
+  0% {
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    border-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+  }
+  100% {
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+  }
+}
