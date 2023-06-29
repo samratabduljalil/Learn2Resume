@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color:#243b55;
+  background-color: #243b55;
 }
 nav {
   margin-left: 0px;
@@ -123,8 +123,7 @@ footer {
   display: flex;
   justify-content: center;
 }
-.Home_get {
-  border: 2px solid red;
+.Home_get{
   background-color: #011122;
   height: 50px;
   width: 200px;
@@ -156,49 +155,57 @@ footer {
   opacity: 0.8;
   color: white;
 }
-.sign_text{
-height: 30px;
-width: 250px;
-border-radius: 8px;
-margin: 10px;
+.sign_text {
+  height: 30px;
+  width: 250px;
+  border-radius: 8px;
+  margin: 10px;
 }
-.sign_container{
-display: flex;
+.sign_container {
+  display: flex;
 
-justify-content: center;
-align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-.sign_contain{
+.sign_contain {
   display: grid;
- 
-  grid-template-columns: 1fr ;
+
+  grid-template-columns: 1fr;
   justify-content: center;
   gap: 25px;
-  
-  }
-  .sign_card{
-margin-top: 80px;
-height:450px;
-width: 390px;
-background-color: beige;
-justify-content: center;
-align-items: center;
-text-align: center;
-border-radius: 8px;
-  }
+}
+.sign_card {
+  margin-top: 80px;
+  height: 450px;
+  width: 390px;
+  background-color: beige;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.btn_signup {
+  height: 35px;
+  width: 95px;
+  background-color: transparent;
+  border-radius: 8px;
+  align-items: center;
+  text-align: center;
+  border: 2px solid black;
+}
+.btn_signup:hover {
+  background-color: rgb(149, 218, 84);
+
+  border: 2px solid green;
+}
+
+.sign_text:hover {
+  background-color: antiquewhite;
+}
 
 
-  .btn_signup{
-
-height: 35px;
-width: 95px;
-background-color: #011122;
-border-radius: 8px;
-align-items: center;
-text-align: center;
-
-  }
-@keyframes glowin0g-border {
+@keyframes glowing-border {
   0% {
     border-color: rgba(255, 255, 255, 0.2);
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
