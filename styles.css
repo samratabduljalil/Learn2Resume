@@ -205,6 +205,61 @@ footer {
 }
 
 
+
+.Course_container{
+padding-top: 28px;
+  display: flex;
+  justify-content: center;
+      justify-items: center;
+      
+  
+  }
+  .Course_contain{
+  
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr ;
+      
+      gap: 20px;
+      }
+  .Course_card{
+  
+          height: 250px;
+          width: 210px;
+          border: 2px solid red;
+          background-color: aliceblue;
+          background: rgba(255, 255, 255, 0.3); /* Transparent white background */
+          border-radius: 8px;
+          padding: 20px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          text-align: center;
+          backdrop-filter: blur(10px);
+          }
+          .Course_card:hover{
+  
+            height: 255px;
+            width: 215px;
+            box-shadow: 0 0 20px rgba(237, 3, 3, 0.7);
+            transition: .45s;
+            cursor: pointer;
+            }
+
+
+
+
+
+.Course_click{
+  
+  padding: 9px;
+  background-color: #243b55;
+  margin-top: 47%;
+}
+.Course_p{
+margin-top: 37.5%;
+
+
+}
+
+
 @keyframes glowing-border {
   0% {
     border-color: rgba(255, 255, 255, 0.2);
