@@ -229,7 +229,7 @@ padding-top: 28px;
           background-color: aliceblue;
           background: rgba(255, 255, 255, 0.3); /* Transparent white background */
           border-radius: 8px;
-          padding: 20px;
+          padding: 10px;
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
           text-align: center;
           backdrop-filter: blur(10px);
@@ -244,14 +244,19 @@ padding-top: 28px;
             }
 
 
+iframe{
+height: 200px;
 
+width: 100%;
+border-radius: 10px;
+}
 
 
 .Course_click{
   
   padding: 9px;
   background-color: #243b55;
-  margin-top: 47%;
+  margin-top: 7%;
 }
 .Course_p{
 margin-top: 37.5%;
