@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.parent {
+    background-color: rgb(178, 47, 47);
+    height: 900px;
+    width: 800px;
+    margin-top: 20px;
+    margin-left: 260px;
+    border-radius: 10px;
+}
+
+.left_panel {
+    background-color: rgb(34, 42, 42);
+    height: 885px;
+    width: 300px;
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px
+}
+
+.right_panel {
+    background-color: rgb(77, 161, 161);
+    height: 592px;
+    width: 490px;
+    float: right;
+    margin-right: 2px;
+    margin-top: 5px;
+}
+
+.profile_pic {
+    background-color: blue;
+    height: 170px;
+    width: 170px;
+    margin: 10px 60px;
+}
+
+.info {
+    background-color: green;
+    height: 592px;
+    width: 300px;
+
+}
