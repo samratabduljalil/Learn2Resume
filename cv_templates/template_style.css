@@ -4,17 +4,18 @@ body {
 }
 
 .parent {
-    background-color: rgb(178, 47, 47);
-    height: 900px;
+    background-color: rgb(127, 112, 112);
+    height: 920px;
     width: 800px;
     margin-top: 20px;
     margin-left: 260px;
     border-radius: 10px;
 }
 
+
 .left_panel {
-    background-color: rgb(34, 42, 42);
-    height: 885px;
+    /* background-color: rgb(34, 42, 42); */
+    height: 905px;
     width: 300px;
     float: left;
     margin-left: 5px;
@@ -23,7 +24,7 @@ body {
 
 .right_panel {
     background-color: rgb(77, 161, 161);
-    height: 592px;
+    height: 890px;
     width: 490px;
     float: right;
     margin-right: 2px;
@@ -31,15 +32,79 @@ body {
 }
 
 .profile_pic {
-    background-color: blue;
+    /* background-color: blue; */
     height: 170px;
     width: 170px;
     margin: 10px 60px;
 }
 
 .info {
-    background-color: green;
-    height: 592px;
-    width: 300px;
+    /* background-color: green; */
+    height: 710px;
+    width: 260px;
+    margin-left: 35px;
+    display: flex;
+    flex-direction: column;
+}
 
+.infoX {
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+#avatar {
+    height: 170px;
+    width: 170px;
+    border-radius: 90px;
+}
+ 
+
+.hr_line {
+    background-color: white;
+    height: 2px;
+    width: 260px;
+    border-radius: 10px;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.phn_num {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin-left: 10px;
+}
+
+#phone {
+    font-weight: normal;
+    font-size: 15px;
+    margin-top: 20px;
+    height: 35px;
+}
+
+
+#phn_num {
+    font-weight: normal;
+    font-size: 10px;
+    margin-top: -15px;
+}
+
+#skill {
+    font-weight: normal;
+    font-size: 15px;
+    margin-top: 30px;
+    height: 35px;
+    margin-left: 10px;
+
+}
+
+.phone_skill {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-top: -10px;
 }
