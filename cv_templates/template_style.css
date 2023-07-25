@@ -152,3 +152,19 @@ body {
     margin-top: 25px;
     flex-direction: column;
 }
+
+
+.achivement_left {
+    height: 165px;
+    width: 210px;
+    background-color: blueviolet;
+    float: left;
+}
+
+.achivement_right {
+    height: 165px;
+    width: 210px;
+    background-color: rgb(153, 121, 183);
+    float: right;
+    margin-right: 25px;
+}
