@@ -1,0 +1,98 @@
+body{
+
+    background-color: #20538d; 
+    margin: 0;
+ }
+ .user_card{
+     background-color: #243b55;
+ height: 100vh;
+ width: 20%;
+ padding-top: 35px;
+ color: aliceblue;
+ text-decoration: none;
+ }
+ ul{
+   
+     list-style-type: none;
+     padding: 0;
+     margin: 0;
+     padding-top: 50px;
+ }
+ 
+ ul li a{
+     display: block;
+ color: aliceblue;
+ text-decoration: none;
+ padding: 8px 16px;
+ margin-left: 0px;
+ font-size: 25px;
+ 
+ }
+ ul li a:hover{
+     display: block;
+ color: aliceblue;
+ background-color: #2d4c71;
+ 
+ 
+ 
+ }
+ .sidebar{
+     display: flex;
+     
+     
+     }
+     .user_card2{
+         height: 100vh;
+         width: 80%;
+                 background-color: black;
+                 color: white;
+             }
+             .user_profile_photo{
+         
+                 height: 120px;
+                 width:120px;
+                 border-radius: 60px;
+                 border: 3px solid red;
+             }
+ .top_flex{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ }
+ .user_name{
+ font-size: 35px;
+ text-align: center;
+ }
+ 
+ .user_card2{
+ 
+ background-color: #20538d;
+ 
+ }
+ .container{
+ 
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-left: 25px;
+ 
+ }
+ .contain{
+     
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ gap: 20px;
+ 
+ }
+ .card{
+     height: 350px;
+     width: 350px;
+     background-color: aqua;
+     border-radius: 12px;
+ }
+ h1{
+  text-align: center;
+ font-size: 30px;
+ padding: 10px;
+ }
