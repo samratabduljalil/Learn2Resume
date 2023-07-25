@@ -4,32 +4,25 @@ body {
 }
 
 .parent {
-    background-color: rgb(127, 112, 112);
-    height: 920px;
+    background-color: rgb(180, 193, 168);
+    height: 925px;
     width: 800px;
     margin-top: 20px;
     margin-left: 260px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 
 .left_panel {
-    /* background-color: rgb(34, 42, 42); */
-    height: 905px;
+    background-color: rgb(87, 108, 108);
+    color: aliceblue;
+    height: 925px;
     width: 300px;
     float: left;
-    margin-left: 5px;
-    margin-top: 5px
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
-.right_panel {
-    background-color: rgb(77, 161, 161);
-    height: 890px;
-    width: 490px;
-    float: right;
-    margin-right: 2px;
-    margin-top: 5px;
-}
 
 .profile_pic {
     /* background-color: blue; */
@@ -59,10 +52,17 @@ body {
 }
  
 
-.hr_line {
-    background-color: white;
+.hr_line_left {
+    background-color: rgb(15, 12, 12);
     height: 2px;
     width: 260px;
+    border-radius: 10px;
+}
+
+.hr_line_right {
+    background-color: white;
+    height: 2px;
+    width: 430px;
     border-radius: 10px;
 }
 
@@ -75,7 +75,6 @@ body {
 .phn_num {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     margin-left: 10px;
 }
 
@@ -108,3 +107,105 @@ body {
     align-content: center;
     margin-top: -10px;
 }
+
+.right_panel {
+    float: right;
+    /* background-color: rgb(186, 53, 53); */
+    height: 905px;
+    width: 490px;
+    margin-right: 2px;
+}
+
+.name {
+    height: 150px;
+    width: 455px;
+    /* background-color: aqua; */
+    margin-left: 28px;
+    margin-top: 15px;
+}
+
+#name {
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: white;
+    margin-left: 50px;
+}
+
+
+.exp_achivement_ref {
+    /* background-color: rgb(255, 190, 12); */
+    height: 696px;
+    width: 480px;
+    margin-left: 5px;
+    margin-top: 25px;
+}
+
+.right_info {
+    /* background-color: green; */
+    height: 710px;
+    width: 455px;
+    margin-left: 30px;
+    display: flex;
+    margin-top: 25px;
+    flex-direction: column;
+}
+
+
+.vertical_line {
+    height: 455px;
+    width: 3px;
+    background-color: #5656685e;
+    margin-left: 10px;
+    margin-top: 275px;
+    float: left;
+    border-radius: 120px;
+}
+
+
+
+.achivement_left {
+    height: 165px;
+    width: 210px;
+    /* background-color: blueviolet; */
+    float: left;
+}
+
+.achivement_right {
+    height: 165px;
+    width: 210px;
+    /* background-color: rgb(153, 121, 183); */
+    float: right;
+    margin-right: 25px;
+}
+
+
+.exp_left, .exp_right {
+    /* background-color: blueviolet; */
+    height: 115px;
+    width: 210px;
+    float: left;
+    margin-top: -3px;
+}
+
+.exp_right {
+    /* background-color: rgb(153, 121, 183); */
+    float: right;
+    margin-right: 25px;
+}
+
+.phn_mail {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+#professorMail {
+    font-weight: normal;
+    font-size: 15px;
+    /* margin-top: 20px; */
+    height: 35px;
+}
+
+
+
