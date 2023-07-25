@@ -81,12 +81,12 @@ body{
  .contain{
      
  display: grid;
- grid-template-columns: 1fr 1fr 1fr;
+ grid-template-columns: 1fr 1fr ;
  gap: 20px;
  
  }
  .card{
-     height: 350px;
+     height: 310px;
      width: 350px;
      background-color: aqua;
      border-radius: 12px;
@@ -95,4 +95,11 @@ body{
   text-align: center;
  font-size: 30px;
  padding: 10px;
+ }
+ h3{
+color: black;
+font-size:35px ;
+text-align: center;
+
+
  }
