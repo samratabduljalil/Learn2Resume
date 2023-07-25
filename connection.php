@@ -4,8 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+   body{
+
+    color:red;
+   }
+
+
+    </style>
 </head>
 <body>
-     echo connection isnot secure
+    <?php
+     echo "<table border='1'><th>sd</th><th>sd</th><th>sd</th></table>"
+    ?>
+        <?php
+     echo "goribs"
+    ?>
 </body>
 </html>
