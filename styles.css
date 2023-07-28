@@ -1,11 +1,12 @@
 body {
   margin: 0;
-  background-color: #243b55;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(16,9,121,1) 35%, rgba(0,212,255,1) 100%);
 }
 nav {
   margin-left: 0px;
   display: flex;
-  background-color: rgb(227, 219, 219);
+  background-color: white;
   justify-content: end;
   padding-right: 40px;
   position: fixed;
@@ -31,20 +32,23 @@ nav ul li a:hover {
   height: 100vh;
   width: 100%;
   padding-top: 5%;
-  background-color: #243b55;
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(16,9,121,1) 35%, rgba(0,212,255,1) 100%);
 }
 #Service {
   padding-top: 5%;
   height: 100vh;
   width: 100%;
-  background-color: #243b55;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(16,9,121,1) 35%, rgba(0,212,255,1) 100%);
 }
 
 #About {
   padding-top: 10%;
   height: 100vh;
   width: 100%;
-  background-color: #243b55;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(16,9,121,1) 35%, rgba(0,212,255,1) 100%);
 }
 html {
   scroll-behavior: smooth;
@@ -156,10 +160,14 @@ footer {
   color: white;
 }
 .sign_text {
-  height: 30px;
-  width: 250px;
-  border-radius: 8px;
+  height: 40px;
+  width: 270px;
+  border-radius: 5px;
   margin: 10px;
+  background-color: rgba(255, 255, 255, 0.15); /* Set a translucent background color */
+  backdrop-filter: blur(10px); /* Apply the blur effect for the glass look */
+  font-size: 20px;
+  overflow: hidden;
 }
 .sign_container {
   display: flex;
@@ -178,7 +186,11 @@ footer {
   margin-top: 80px;
   height: 450px;
   width: 390px;
-  background-color: beige;
+  background-color: rgba(255, 255, 255, 0.15); /* Set a translucent background color */
+  backdrop-filter: blur(10px); /* Apply the blur effect for the glass look */
+  border-radius: 10px; /* Add some rounded corners to the card */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow for depth */
+  overflow: hidden;
   justify-content: center;
   align-items: center;
   text-align: center;
