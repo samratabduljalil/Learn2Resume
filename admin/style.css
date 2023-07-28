@@ -113,7 +113,7 @@ body{
 color: black;
 font-size:35px ;
 text-align: center;
-
+margin-top: 0px;
 
  }
  .card:hover{
@@ -136,7 +136,14 @@ align-items: center;
 justify-items: center;
  }
 
+.label{
+  color: black;
+  font-size:35px ;
+  text-align: center;
 
+
+
+}
  
 @keyframes glowing-border {
     0% {
