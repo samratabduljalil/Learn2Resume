@@ -121,6 +121,20 @@ text-align: center;
 
 
  }
+ .img_flex{
+display: flex;
+justify-content: center;
+
+
+ }
+ .card_img{
+
+height: 50px;
+width: 50px;
+justify-content: center;
+align-items: center;
+justify-items: center;
+ }
 
 
  
