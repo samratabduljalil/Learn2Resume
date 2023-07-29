@@ -1,0 +1,42 @@
+.left{
+ background-color: rgb(58, 54, 54);
+height: 100vh;
+width: 20%;
+
+
+}
+.right{
+   
+    background-color:white;
+   height: 100vh;
+   width: 35%;
+   color: black;
+   }
+   .cv_section{
+
+    display: flex;
+    
+
+   }
+   .img{
+    margin-top: 5px;
+height: 250px;
+width: 250px;
+margin-left: 16%;
+border-radius: 4px;
+
+   }
+   .name{
+text-align: center;
+
+
+   }
+   .head{
+
+    background-color: yellow;
+    height: 250px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+   }
