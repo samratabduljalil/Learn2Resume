@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>LogIn</title>
+    <title>SignUp</title>
 </head>
 <body>
-    
 
     <nav>
         <ul>
@@ -22,15 +21,16 @@
 <div class="sign_container">
     <div class="sign_contain">
         <div class="sign_card">
-            <h1>LogIn</h1>
+            <h1>Signup</h1>
 <form action="">
 
+<input type="text" name="" id="" class="sign_text" placeholder="Enter Your Name">
 
 <input type="email" name="" id="" class="sign_text" placeholder="Enter Your Email">
 
 <input type="password" name="" id="" class="sign_text" placeholder="Enter Your Password"><br>
 <button type="submit" class="btn_signup">SignUp</button>
-<h1>Don`t have account? Signup </h1>
+<h1>already have account?<a href="login.php" class="log_link">Log in</a></h1>
 </form>
 </div>
 </div>

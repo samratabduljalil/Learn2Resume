@@ -14,7 +14,7 @@
         <li><a href="#Service">service</a></li>
         <li><a href="admin/admn_dashboard.html">Contact Us</a></li>
 
-        <li><a href="signup.html">SignUp/Login</a></li>
+        <li><a href="signup.php">SignUp/Login</a></li>
       </ul>
     </nav>
 
@@ -46,49 +46,7 @@
 
 
     </section>
-    <section id="About">
-      <form action="" method="post">
-        <div class="Contact_container">
-          <div class="Contact_container">
-            <div class="Contact_card">
-              <input
-                type="text"
-                name=""
-                id="Contact_name"
-                class="Contact_text_box"
-                placeholder="Enter your Name"
-              />
-              <input
-                type="email"
-                name=""
-                id="Contact_email"
-                class="Contact_text_box"
-                placeholder="Enter your email"
-              />
-              <input
-                type="text"
-                name=""
-                id="Contact_phone"
-                class="Contact_text_box"
-                placeholder="Enter your Phone Number"
-              />
-              <button type="submit" id="submit" class="Contact_btn_submit">
-                Send Message
-              </button>
-            </div>
-            <div class="Contact_card">
-              <textarea
-                name=""
-                id="Contact_message"
-                cols="30"
-                rows="10"
-                placeholder="Message write here"
-              ></textarea>
-            </div>
-          </div>
-        </div>
-      </form>
-    </section>
+   
 
     <footer>Copywrite:Cvit</footer>
 
@@ -96,7 +54,7 @@
 
     <script>
       var typed = new Typed("#element", {
-        strings: ['Welcome To Our Website.<pre> Create Your Cv with Cvit.  <button class="Home_get">Get Strated</button></pre> '],
+        strings: ['Welcome To Our Website.<pre> Create Your Cv with Cvit. <a href="signup.php"><button class="Home_get">Get Strated</button></a></pre> '],
         typeSpeed: 25,
         showCursor: false,
       

@@ -40,6 +40,10 @@ body {
     flex-direction: column;
 }
 
+.infoXl {
+    margin-top: 16px;
+    font-size: 30px;
+}
 .infoX {
     margin-top: 50px;
     font-size: 30px;

@@ -1,15 +1,17 @@
 body{
 
-   background-color: #20538d; 
+    background-color: #20538d; 
    margin: 0;
 }
 .user_card{
-    background-color: #243b55;
-height: 100vh;
+    background-color: chocolate;
+height: auto;
 width: 20%;
 padding-top: 35px;
-color: aliceblue;
+color: black;
 text-decoration: none;
+
+
 }
 ul{
   
@@ -21,7 +23,7 @@ ul{
 
 ul li a{
     display: block;
-color: aliceblue;
+    color: black;
 text-decoration: none;
 padding: 8px 16px;
 margin-left: 0px;
@@ -42,9 +44,9 @@ background-color: #2d4c71;
     
     }
     .user_card2{
-        height: 100vh;
+     height: auto;
         width: 80%;
-                background-color: black;
+        background-color: black;
                 color: white;
             }
             .user_profile_photo{
@@ -52,7 +54,7 @@ background-color: #2d4c71;
                 height: 120px;
                 width:120px;
                 border-radius: 60px;
-                border: 3px solid red;
+                
             }
 .top_flex{
 display: flex;
@@ -67,32 +69,126 @@ text-align: center;
 
 .user_card2{
 
-background-color: #20538d;
+background-color: black;
 
-}
-.container{
-
-display: flex;
-justify-content: center;
-align-items: center;
-margin-left: 25px;
-
-}
-.contain{
-    
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-gap: 20px;
-
-}
-.card{
-    height: 350px;
-    width: 350px;
-    background-color: aqua;
-    border-radius: 12px;
 }
 h1{
  text-align: center;
 font-size: 30px;
 padding: 10px;
 }
+
+
+.contain{
+    display: flex;
+    margin-left: 10px;
+}
+
+
+.container{
+    background-color:black;
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+footer{
+
+flex-direction: column;
+display: flex;
+background-color: rgb(0, 5, 5);
+color: aliceblue;
+justify-content: center;
+align-items: center;
+
+}
+.card{
+    background-color: transparent;
+    border-radius: 10px;
+    height: 320px;
+    width: 270px;
+   
+    color: white;
+   
+    text-decoration: none;
+   
+    border: 2px solid ;
+    border-color: chocolate;
+   
+   
+   
+}
+.card:hover{
+    height: 330px;
+    width: 280px;
+   
+    cursor: pointer;
+    transition: .35s;
+    background-color: rgb(66, 63, 63);
+
+
+    color:black;
+
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px) brightness(1.2);
+    border-radius: 10px;
+    
+
+}
+.card:hover > .in_card{
+        margin: 10px;
+        
+        
+        
+        
+}
+
+
+
+.cardtext{
+    display: grid;
+    font-size: 30px;
+    width: 250px;
+    height: 180px;
+   justify-content: center;
+   align-items: center;
+   margin-left: 5px;
+color: chocolate;
+
+   
+   
+   }
+   .cardtext:hover{
+    color: black;
+ 
+ 
+    
+    
+    }
+
+
+    .course{
+        justify-content: center;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-bottom: 30px;
+    
+    margin-top: 25px;
+    
+    
+    }
+    .in_card{
+        display: flex;
+        justify-content: center;
+        background-color: chocolate;
+        
+        
+        
+        
+        }
+        .in_card:hover{
+        
+            margin: 10px;
+        
+        }
