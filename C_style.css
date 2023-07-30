@@ -47,6 +47,12 @@ color: rgb(232, 192, 12);
 animation: glowing-border 2s infinite;
  }
 
+ .img-t{
+ height: 300px;
+width: 250px;
+
+ }
+
 
  @keyframes glowing-border {
     0% {
