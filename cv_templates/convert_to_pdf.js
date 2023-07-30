@@ -13,7 +13,7 @@ function convertHTMLtoPDF() {
         y: 12,
         
         callback: function (doc) {
-            doc.save("output_ar.pdf");
+            doc.save("output_ar2.pdf");
         }
     });
 }

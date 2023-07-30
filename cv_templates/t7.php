@@ -13,7 +13,7 @@
 
 </head>
 <body>
-    <div id="template_ar2" >
+    <div id="template_ar" >
         <div class="parent">
             <div class="left_panel">
                 <div class="profile_pic">
@@ -32,7 +32,7 @@
                             <img id="phone" src="icons/phone.png" alt="">
                             <div class="phn_num">
                                 <strong id="phone">Phone</strong>
-                                <strong id="phn_num">302947029</strong>
+                                <strong id="phn_num"><?php echo "gorib" ?></strong>
                             </div>
                         </div>
 
