@@ -17,7 +17,7 @@
 
 <ul>
     <li><a href="">profile</a></li>
-    <li><a href="">Create Cv</a></li>
+    <li><a href="\chosetemplate.php">Create Cv</a></li>
     <li><a href="">Download CV</a></li>
     <li><a href="">All Courses</a></li>
     <li><a href="\index.php">Home</a></li>

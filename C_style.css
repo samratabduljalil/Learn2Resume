@@ -52,7 +52,12 @@ animation: glowing-border 2s infinite;
 width: 250px;
 
  }
+.chosen{
+ text-align: center;
+color: rgb(232, 192, 12) ;
 
+
+}
 
  @keyframes glowing-border {
     0% {
