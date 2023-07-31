@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -32,41 +33,37 @@
           
           <div class="Home_card">
             <div class="Home_moto_flex">
-            <div class="moto"><samp> .</samp> <span id="element"></span></div>
+            <div class="moto"><samp></samp> Uploading <span id="element"></span></div>
         </div>
           </div>
-          <div class="Home_card">
-            <div class="Home_image_flex">
-            <img src="img/1.png" alt="" class="Home_image" /></div>
-          </div>
+         
+          <img src="\img\load-36.gif" alt="">
+         
         </div>
       </div>
     </section>
-    <section id="Service">
-      
-      <div class="moto_service"><P>.Create Your CV</P></div>
-      <div class="moto_service"><samp> .</samp> <span id="element">Create your First CV with us<button class="Home_get">Create CV</button></span></div>
-      <div class="line"></div>
-      <div class="moto_service"><P>Improve Your CV</P></div>
-      <div class="moto_service"><samp> .</samp> <span id="element">Improve Your Skills with Our free Cources<button class="Home_get">Courses</button></span></div>
-      
-
-
-
-    </section>
    
-
-    <footer>Copywrite:Cvit</footer>
 
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
     <script>
       var typed = new Typed("#element", {
-        strings: ['Welcome To Our Website.<pre> Create Your Cv with Cvit. <a href="signup.php"><button class="Home_get">Get Strated</button></a></pre> '],
-        typeSpeed: 25,
+        strings: ['......'],
+        typeSpeed: 1000,
+        backSpeed: 1,
+        loop: true,
         showCursor: false,
       
       });
     </script>
   </body>
 </html>
+
+
+
+<?php
+sleep(3);
+
+
+
+?>

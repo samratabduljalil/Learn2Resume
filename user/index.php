@@ -21,6 +21,7 @@
     <li><a href="">Download CV</a></li>
     <li><a href="">All Courses</a></li>
     <li><a href="\index.php">Home</a></li>
+    <li><a href="\index.php">Logout</a></li>
 
 </ul>
 </div>
