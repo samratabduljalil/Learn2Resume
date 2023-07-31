@@ -1,25 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<?php
 
-    <style>
-   body{
+$hostname = 'localhost';    // Replace with your database server hostname
+$username = 'root';      // Replace with your database username
+$password = '';  // Replace with your database password
+$database = 'cv';      // Replace with your database name
 
-    color:red;
-   }
+// Attempt to connect to the database
+$connection = mysqli_connect($hostname, $username, $password, $database);
+
+// Check if the connection was successful
+if (!$connection) {
+    die('Database connection error: ' . mysqli_connect_error());
+}
 
 
-    </style>
-</head>
-<body>
-    <?php
-     echo "<table border='1'><th>sd</th><th>sd</th><th>sd</th></table>"
-    ?>
-        <?php
-     echo "goribs"
-    ?>
-</body>
-</html>
+
+
+
+
+?>

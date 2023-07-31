@@ -22,13 +22,13 @@
     <div class="sign_contain">
         <div class="sign_card">
             <h1>Signup</h1>
-<form action="">
+<form action="sign_php.php" method="post">
 
-<input type="text" name="" id="" class="sign_text" placeholder="Enter Your Name">
+<input type="text" name="name" id="name" class="sign_text" placeholder="Enter Your Name">
 
-<input type="email" name="" id="" class="sign_text" placeholder="Enter Your Email">
+<input type="email" name="email" id="email" class="sign_text" placeholder="Enter Your Email">
 
-<input type="password" name="" id="" class="sign_text" placeholder="Enter Your Password"><br>
+<input type="password" name="password" id="password" class="sign_text" placeholder="Enter Your Password"><br>
 <button type="submit" class="btn_signup">SignUp</button>
 <h1>already have account?<a href="login.php" class="log_link">Log in</a></h1>
 </form>

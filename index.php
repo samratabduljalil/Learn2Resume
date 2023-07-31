@@ -8,13 +8,21 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+  <?php session_start()?>
     <nav>
       <ul>
         <li><a href="#Home">Home</a></li>
         <li><a href="#Service">service</a></li>
         <li><a href="admin/admn_dashboard.html">Contact Us</a></li>
+        <?php if($_SESSION['name']==TRUE) { ?>
+        <li><a href="\user\index.php"><?php echo $_SESSION['name'] ?></a></li>
+        <?php }else{
+                  ?>
+         <li><a href="signup.php">SignUp/Login</a></li>
+         <?php }?>
 
-        <li><a href="signup.php">SignUp/Login</a></li>
+
+
       </ul>
     </nav>
 

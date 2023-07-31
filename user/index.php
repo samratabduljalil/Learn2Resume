@@ -7,12 +7,13 @@
     <title>User Dashboard</title>
 </head>
 <body>
+<?php session_start()?>
     <section class="sidebar">
 
 <div class="user_card">
     <div class="top_flex">
     <img src="/img/01.jpg" alt="" class="user_profile_photo"></div>
-   <p class="user_name">Samrat Abdul Jalil</p>
+   <p class="user_name"> <?php echo $_SESSION['name'] ?></p>
 
 <ul>
     <li><a href="">profile</a></li>
