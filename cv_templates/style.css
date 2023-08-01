@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(16,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+
+.yu{
+background-color: transparent;
+    color: yellow;
+    justify-self: center;
+    margin-left: 350px;
+    padding: 15px;
+    animation: glowing-border 2s infinite;
+    font-size: 30px;
+    margin-bottom: 20px;
+
+    }
+    #name {
+        font-size:30px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        color: white;
+        margin-left: 50px;
+    }
+
+
+    @keyframes glowing-border {
+        0% {
+          border-color: rgba(255, 255, 255, 0.2);
+          box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+        }
+        50% {
+          border-color: rgba(255, 255, 255, 0.7);
+          box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+        }
+        100% {
+          border-color: rgba(255, 255, 255, 0.2);
+          box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+        }
+      }
+      

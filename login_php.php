@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         
            $_SESSION['name']=$user['name'];
            $_SESSION['image']=$user['image'];
-           $_SESSION['id']=$user['id'];
+           $_SESSION['id']=$user['id_user'];
            header("location: \user\index.php");
 
     } else {

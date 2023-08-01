@@ -1,6 +1,8 @@
 body {
     margin: 0;
     padding: 0;
+    background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(16,9,121,1) 35%, rgba(0,212,255,1) 100%);
 }
 
 .parent {
@@ -125,7 +127,7 @@ body {
 }
 
 #name {
-    font-size: 50px;
+    font-size:30px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     color: white;

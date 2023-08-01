@@ -18,10 +18,10 @@
 <ul>
     <li><a href="">profile</a></li>
     <li><a href="\chosetemplate.php">Create Cv</a></li>
-    <li><a href="\download.php">Download CV</a></li>
+    <li><a href="\cv_templates\t7.php">Download CV</a></li>
     <li><a href="">All Courses</a></li>
     <li><a href="\index.php">Home</a></li>
-    <li><a href="\index.php">Logout</a></li>
+    <li><a href="\logout.php">Logout</a></li>
 
 </ul>
 </div>

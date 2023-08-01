@@ -10,9 +10,9 @@
 
     <nav>
         <ul>
-          <li><a href="index.html#Home">Home</a></li>
-          <li><a href="index.html#Service">service</a></li>
-          <li><a href="index.html#About">Contact Us</a></li>
+          <li><a href="index.php#Home">Home</a></li>
+          <li><a href="index.php#Service">service</a></li>
+          <li><a href="index.php#About">Contact Us</a></li>
   
           <li><a href="signup.html">SignUp/Login</a></li>
         </ul>

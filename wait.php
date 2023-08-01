@@ -56,15 +56,15 @@
       
       });
     </script>
-<?php
-echo "o";
-sleep(3);
-header("location: download.php");
 
-?>
   </body>
 </html>
 
+<?php
+echo "o";
+sleep(3);
+header("location: \cv_templates/t7.php");
 
+?>
 
 

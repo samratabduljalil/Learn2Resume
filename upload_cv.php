@@ -26,7 +26,7 @@ $degree2=$_POST['degree2'];
 $university2=$_POST['university2'];
 $_100wrd=$_POST['100wrd'];
 
-
+session_start();
 
 
 include('connection.php');
@@ -34,7 +34,7 @@ include('connection.php');
 
 
 
-$query = "INSERT INTO `cv_template`( `name`, `phone`, `eamil`, `address`, `degree1`, `degree2`,  `edu_institution1`, `edu_institution2`,  `skill1`, `skill2`, `skill3`, `why`,  `company1`, `company2`,  `Cdate1`, `Cdate2`,  `refer_name1`, `refer_name2`,  `refer_dg1`, `refer_dg2`,  `achivment1`, `achivment2`, `achivment3`,  `achivment1_short`, `achivment2_short`, `achivment3_short`) VALUES ('{$name}','{$phone}','{$email}','{$address}','{$degree1}','{$degree2}','{$university1}','{$university2}','{$soft_s}','{$hard_s}','{$other_s}','{$_100wrd}','{$Company1}','{$Company2}','{$c_date1}','{$c_date2}','{$re_name1}','{$re_name2}','{$re_position1}','{$re_position2}','{$acchivement1}','{$acchivement2}','{$acchivement3}','{$shor1}','{$shor2}','{$shor3}')";
+$query = "INSERT INTO `cv_template`( `name`, `phone`, `eamil`, `address`, `degree1`, `degree2`,  `edu_institution1`, `edu_institution2`,  `skill1`, `skill2`, `skill3`, `why`,  `company1`, `company2`,  `Cdate1`, `Cdate2`,  `refer_name1`, `refer_name2`,  `refer_dg1`, `refer_dg2`,  `achivment1`, `achivment2`, `achivment3`,  `achivment1_short`, `achivment2_short`, `achivment3_short`,`user_id`) VALUES ('{$name}','{$phone}','{$email}','{$address}','{$degree1}','{$degree2}','{$university1}','{$university2}','{$soft_s}','{$hard_s}','{$other_s}','{$_100wrd}','{$Company1}','{$Company2}','{$c_date1}','{$c_date2}','{$re_name1}','{$re_name2}','{$re_position1}','{$re_position2}','{$acchivement1}','{$acchivement2}','{$acchivement3}','{$shor1}','{$shor2}','{$shor3}','{$_SESSION['id']}')";
 
 
 if (mysqli_query($connection, $query)) {

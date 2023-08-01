@@ -11,7 +11,7 @@
 
     <nav>
         <ul>
-          <li><a href="index.html#Home">Home</a></li>
+        <li><a href="index.php#Home">Home</a></li>
           <li><a href="index.html#Service">service</a></li>
           <li><a href="index.html#About">Contact Us</a></li>
   
@@ -29,7 +29,7 @@
 <input type="email" name="email" id="email" class="sign_text" placeholder="Enter Your Email">
 
 <input type="password" name="password" id="password" class="sign_text" placeholder="Enter Your Password"><br>
-<button type="submit" class="btn_signup">SignUp</button>
+<button type="submit" class="btn_signup">LogIn</button>
 <h1>Don`t have account?<a href="signup.php" class="log_link"> Signup</a> </h1>
 </form>
 </div>
