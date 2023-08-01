@@ -19,7 +19,7 @@ session_start();
     $query = "SELECT * FROM cv_template WHERE user_id = '{$_SESSION['id']}' LIMIT 1";
     $result = mysqli_query($connection, $query);
     $user = mysqli_fetch_assoc($result);
- 
+    if(isset($user['name'] )) { 
 
 ?>
 
@@ -29,7 +29,7 @@ session_start();
         <div class="parent">
             <div class="left_panel">
                 <div class="profile_pic">
-                    <img id="avatar" src="icons/simon_riley.png">
+                    <img id="avatar" src="/<?php echo  $user['image'] ?>">
                 </div>
 
                 <div class="info">
@@ -275,4 +275,11 @@ session_start();
 
 </body>
     <script type="text/javascript" src="convert_to_pdf.js"></script>
+    <?php }else{?>
+     
+
+<a href="/index.php"> <input type="button" class="yu" value="Back To Home"  ></a>
+
+
+        <?php } ?>
 </html>

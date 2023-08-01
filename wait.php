@@ -1,5 +1,8 @@
 
-<!DOCTYPE html>
+
+
+<?php
+echo '<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -15,8 +18,8 @@
         <li><a href="/index.php#Home">Home</a></li>
         <li><a href="#Service">service</a></li>
         <li><a href="admin/admn_dashboard.html">Contact Us</a></li>
-        <?php if(isset($_SESSION['name'] )) { ?>
-        <li><a href="\user\index.php"><?php echo $_SESSION['name'] ?></a></li>
+        <?php if(isset($_SESSION["name"] )) { ?>
+        <li><a href="\user\index.php"><?php echo $_SESSION["name"] ?></a></li>
         <?php }else{
                   ?>
          <li><a href="signup.php">SignUp/Login</a></li>
@@ -48,7 +51,7 @@
 
     <script>
       var typed = new Typed("#element", {
-        strings: ['......'],
+        strings: ["......"],
         typeSpeed: 1000,
         backSpeed: 1,
         loop: true,
@@ -58,13 +61,15 @@
     </script>
 
   </body>
-</html>
-
-<?php
-echo "o";
-sleep(3);
-header("location: \cv_templates/t7.php");
+</html>';
 
 ?>
+<?php
 
+
+
+
+sleep(3);
+header("location: \cv_templates/t7.php");
+?>
 

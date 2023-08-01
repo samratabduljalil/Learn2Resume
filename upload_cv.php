@@ -32,9 +32,42 @@ session_start();
 include('connection.php');
 
 
+$targetFile;
+
+// Check if the form was submitted
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['image'])) {
+    $uploadDirectory = 'img/'; // Directory where images will be stored
+
+    // Validate the uploaded file
+    $allowedExtensions = array('jpg', 'jpeg', 'png', 'gif');
+    $fileExtension = strtolower(pathinfo($_FILES['image']['name'], PATHINFO_EXTENSION));
+
+    if (!in_array($fileExtension, $allowedExtensions)) {
+        die('Error: Invalid file format. Only JPG, JPEG, PNG, and GIF images are allowed.');
+    }
+
+    // Create the upload directory if it doesn't exist
+    if (!is_dir($uploadDirectory)) {
+        mkdir($uploadDirectory, 0777, true);
+    }
+
+    $targetFile = $uploadDirectory . basename($_FILES['image']['name']);
 
 
-$query = "INSERT INTO `cv_template`( `name`, `phone`, `eamil`, `address`, `degree1`, `degree2`,  `edu_institution1`, `edu_institution2`,  `skill1`, `skill2`, `skill3`, `why`,  `company1`, `company2`,  `Cdate1`, `Cdate2`,  `refer_name1`, `refer_name2`,  `refer_dg1`, `refer_dg2`,  `achivment1`, `achivment2`, `achivment3`,  `achivment1_short`, `achivment2_short`, `achivment3_short`,`user_id`) VALUES ('{$name}','{$phone}','{$email}','{$address}','{$degree1}','{$degree2}','{$university1}','{$university2}','{$soft_s}','{$hard_s}','{$other_s}','{$_100wrd}','{$Company1}','{$Company2}','{$c_date1}','{$c_date2}','{$re_name1}','{$re_name2}','{$re_position1}','{$re_position2}','{$acchivement1}','{$acchivement2}','{$acchivement3}','{$shor1}','{$shor2}','{$shor3}','{$_SESSION['id']}')";
+
+    // Move the uploaded file to the upload directory
+    if (move_uploaded_file($_FILES['image']['tmp_name'], $targetFile)) {
+        echo "Image uploaded successfully.";
+    } else {
+        echo "Error: Image upload failed.";
+    }
+}
+
+
+
+
+
+$query = "INSERT INTO `cv_template`( `name`, `phone`, `eamil`, `address`, `degree1`, `degree2`,  `edu_institution1`, `edu_institution2`,  `skill1`, `skill2`, `skill3`, `why`,  `company1`, `company2`,  `Cdate1`, `Cdate2`,  `refer_name1`, `refer_name2`,  `refer_dg1`, `refer_dg2`,  `achivment1`, `achivment2`, `achivment3`,  `achivment1_short`, `achivment2_short`, `achivment3_short`,`user_id`,`image`) VALUES ('{$name}','{$phone}','{$email}','{$address}','{$degree1}','{$degree2}','{$university1}','{$university2}','{$soft_s}','{$hard_s}','{$other_s}','{$_100wrd}','{$Company1}','{$Company2}','{$c_date1}','{$c_date2}','{$re_name1}','{$re_name2}','{$re_position1}','{$re_position2}','{$acchivement1}','{$acchivement2}','{$acchivement3}','{$shor1}','{$shor2}','{$shor3}','{$_SESSION['id']}','{$targetFile}')";
 
 
 if (mysqli_query($connection, $query)) {

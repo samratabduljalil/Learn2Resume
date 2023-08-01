@@ -296,7 +296,7 @@
 </div>
 </form>
 
-<button type="button" class="btn btn-primary btn-center" data-toggle="modal" data-target="#exampleModal">
+<button type="button" class="btn btn-primary hy" data-toggle="modal" data-target="#exampleModal">
 Submit
 </button>
     <br><br>
