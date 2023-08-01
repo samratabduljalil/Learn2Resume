@@ -281,14 +281,7 @@ color: yellow;
 font-size: 35px;
 
 }
-.d_button{
 
-align-items: center;
-justify-content: center;
-color: yellow;
-padding: 10px;
-font-size: 20px;
-}
 
 @keyframes glowing-border {
   0% {
@@ -304,11 +297,3 @@ font-size: 20px;
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
   }
 }
-.d_button{
-
-  align-items: center;
-  justify-content: center;
-  color: yellow;
-  padding: 10px;
-  font-size: 20px;
-  }

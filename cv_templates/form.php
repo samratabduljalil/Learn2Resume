@@ -181,8 +181,8 @@
                         <div class="phone">
                             <img id="phone" src="icons/certificate.png" alt="">
                             <div class="phn_num">
-                            <input type="text" name="acchivement2" id="" class="input_text"  placeholder="Achivement"  >
-                                <input type="text" name="shor2" id="" placeholder="short details" class="input_text">
+                            <input type="text" name="acchivement3" id="" class="input_text"  placeholder="Achivement"  >
+                                <input type="text" name="shor3" id="" placeholder="short details" class="input_text">
                             </div>
                         </div>
 

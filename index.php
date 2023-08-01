@@ -13,7 +13,7 @@
       <ul>
         <li><a href="#Home">Home</a></li>
         <li><a href="#Service">service</a></li>
-        <li><a href="admin/admn_dashboard.html">Contact Us</a></li>
+        <li><a href="download.php">Contact Us</a></li>
         <?php if(isset($_SESSION['name'] )) { ?>
         <li><a href="\user\index.php"><?php echo $_SESSION['name'] ?></a></li>
         <?php }else{

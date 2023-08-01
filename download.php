@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CVit</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="sk.css"/>
   </head>
   <body>
   <?php session_start()?>
     <nav>
       <ul>
-        <li><a href="#Home">Home</a></li>
+        <li><a href="/index.php#Home">Home</a></li>
         <li><a href="#Service">service</a></li>
         <li><a href="admin/admn_dashboard.html">Contact Us</a></li>
         <?php if(isset($_SESSION['name'] )) { ?>
@@ -28,27 +29,23 @@
     </nav>
 
     <section id="Home">
-      <div class="Home_container">
-        <div class="Home_contain">
-         
-           
+      <div class="hc">
+        <h1>Click Here to Download........</h1>
+      <button class="d_button">Download</button>
         
-            <button class="d_button">Download</button>
+         
+    
+        
+            
         </div>
-      </div>
+   
     </section>
    
-    <button class="d_button">Download</button>
+   
+
     
-    </script>
+   
   </body>
 </html>
 
 
-
-<?php
-sleep(3);
-
-
-
-?>

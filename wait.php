@@ -12,7 +12,7 @@
   <?php session_start()?>
     <nav>
       <ul>
-        <li><a href="#Home">Home</a></li>
+        <li><a href="/index.php#Home">Home</a></li>
         <li><a href="#Service">service</a></li>
         <li><a href="admin/admn_dashboard.html">Contact Us</a></li>
         <?php if(isset($_SESSION['name'] )) { ?>
@@ -56,14 +56,15 @@
       
       });
     </script>
+<?php
+echo "o";
+sleep(3);
+header("location: download.php");
+
+?>
   </body>
 </html>
 
 
 
-<?php
-sleep(3);
 
-
-
-?>

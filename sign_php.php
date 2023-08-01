@@ -7,7 +7,7 @@ $name = $_POST["name"];
 $email = $_POST['email'];
 $password = $_POST['password'];
 
-$query = "INSERT INTO cv_user( name, eamil, password) VALUES ('{$name}', '{$email}', '{$password}')";
+$query = "INSERT INTO cv_user( name, email, password) VALUES ('{$name}', '{$email}', '{$password}')";
 
 
 if (mysqli_query($connection, $query)) {
