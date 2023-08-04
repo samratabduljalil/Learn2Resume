@@ -139,10 +139,11 @@ body {
 }
 
 #name {
-    font-size: 60px;
+    font-size: 50px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     color: white;
+    text-align: center;
 }
 
 
