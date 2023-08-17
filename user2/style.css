@@ -1,6 +1,6 @@
 body{
 
-    background-color: #20538d; 
+    background-color:white; 
    margin: 0;
 }
 .user_card{
@@ -46,7 +46,7 @@ background-color: #2d4c71;
     .user_card2{
      height: auto;
         width: 80%;
-        background-color: black;
+      
                 color: white;
             }
             .user_profile_photo{
@@ -69,10 +69,10 @@ text-align: center;
 
 .user_card2{
     
-display:flex;
+    display:flex;
 
 justify-content: center;
-background-color: black;
+
 
 }
 h1{
@@ -212,6 +212,10 @@ color: chocolate;
             align-items: center;
             border-radius: 100px;
             border: 1px solid wheat;
+            
+            top: 8%;
+            left: 35%;
+            z-index: 2;
     
             }
 
@@ -228,8 +232,11 @@ color: chocolate;
                
             }
         .newsfeed{
-
-            height: 100%;
-                width: 100%;
+              position: absolute;
+              height: 85%;
+              width: 56%;
+              top: 20%;
+              left: 32%;
+              z-index: 1;
                 background-color: aliceblue;
         }
