@@ -28,7 +28,12 @@
 
 <input type="email" name="email" id="email" class="sign_text" placeholder="Enter Your Email">
 
-<input type="password" name="password" id="password" class="sign_text" placeholder="Enter Your Password"><br>
+<input type="password" name="password" id="password" class="sign_text" placeholder="Enter Your Password">
+<select id="sign" name="sign" class="sign_text">
+  <option value="admin" class="sign_text">Admin</option>
+  <option value="user" class="sign_text">User</option>
+ 
+</select><br>
 <button type="submit" class="btn_signup">SignUp</button>
 <h1>already have account?<a href="login.php" class="log_link">Log in</a></h1>
 </form>

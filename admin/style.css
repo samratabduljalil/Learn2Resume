@@ -1,10 +1,10 @@
 body{
 
-    background-color: #20538d; 
+    
     margin: 0;
  }
  .user_card{
-    background: rgb(66, 60, 183);
+  
    
  height: 100vh;
  width: 20%;
@@ -31,8 +31,8 @@ body{
  }
  ul li a:hover{
      display: block;
- color: aliceblue;
- background-color: #2d4c71;
+ 
+ background-color:  rgb(241, 245, 237);;
  
  
  
@@ -45,8 +45,7 @@ body{
      .user_card2{
          height: 100vh;
          width: 80%;
-         background: rgb(2,0,36);
-         background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(16,9,121,1) 35%, rgba(0,212,255,1) 100%);
+        
                  color: white;
              }
              .user_profile_photo{
@@ -69,7 +68,7 @@ body{
  
  .user_card2{
  
- background-color: #20538d;
+ background-color: rgb(241, 245, 237);
  
  }
  .container{
@@ -117,7 +116,7 @@ margin-top: 0px;
 
  }
  .card:hover{
-    box-shadow: 0 0 20px rgb(2, 97, 207), 0 0 40px rgb(2, 71, 120);
+    box-shadow: 0 0 20px rgb(255, 255, 255), 0 0 40px rgb(255, 255, 255);
 
 
  }

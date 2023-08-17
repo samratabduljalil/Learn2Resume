@@ -7,7 +7,7 @@ nav {
   margin-left: 0px;
   display: flex;
   background-color: white;
-  justify-content: end;
+  justify-content: center;
   padding-right: 40px;
   position: fixed;
   width: 100%;
@@ -184,7 +184,7 @@ footer {
 }
 .sign_card {
   margin-top: 80px;
-  height: 450px;
+  height: 500px;
   width: 390px;
   background-color: rgba(255, 255, 255, 0.15); /* Set a translucent background color */
   backdrop-filter: blur(10px); /* Apply the blur effect for the glass look */
