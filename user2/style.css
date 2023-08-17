@@ -5,7 +5,7 @@ body{
 }
 .user_card{
     background-color: chocolate;
-height: auto;
+height: 100vh;
 width: 20%;
 padding-top: 35px;
 color: black;
@@ -68,7 +68,9 @@ text-align: center;
 }
 
 .user_card2{
-
+    
+display:flex;
+justify-content: center;
 background-color: black;
 
 }
@@ -191,4 +193,12 @@ color: chocolate;
         
             margin: 10px;
         
+        }
+        .cover_photo{
+        height: 20%;
+        width: 70%;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+
         }
