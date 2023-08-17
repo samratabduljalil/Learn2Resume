@@ -300,6 +300,17 @@ font-weight: 600;
         left: 41.5%;
        }
        .ski_title{
-
+        position: absolute;
+        height: 50px;
+        top: 15%;
+        left: 43.5%;
+        font-size: 25px;
         
+       }
+       .ski_skills{
+        position: absolute;
+        height: 50px;
+        top: 45%;
+        left: 3.5%;
+        font-size: 25px;
        }
