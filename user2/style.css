@@ -270,7 +270,7 @@ font-weight: 600;
         top: 20%;
         left: 7%;
       
-          background-color: black;
+        background-color: rgb(255, 255, 255);
           
        }
        .education{
@@ -280,7 +280,7 @@ font-weight: 600;
         top: 20%;
         left: 52%;
       
-          background-color: black;
+        background-color: rgb(255, 255, 255);
           
        }
        .skills{
@@ -302,8 +302,8 @@ font-weight: 600;
        .ski_title{
         position: absolute;
         height: 50px;
-        top: 15%;
-        left: 43.5%;
+        top: 11%;
+        left: 41.5%;
         font-size: 25px;
         
        }
@@ -314,3 +314,23 @@ font-weight: 600;
         left: 3.5%;
         font-size: 25px;
        }
+       .work_title{
+        position: absolute;
+        height: 50px;
+        top: 10%;
+        left: 35.5%;
+        font-size: 25px;
+
+
+       }
+       .edu_title{
+        position: absolute;
+        height: 50px;
+        top: 10%;
+        left: 35.5%;
+        font-size: 25px;
+
+
+       }
+    
+    
