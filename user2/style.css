@@ -253,12 +253,43 @@ left: 32%;
         }
         .pro_name{
 
-font-size: 25px;
+font-size: 35px;
+font-weight: 600;
 
         }
         .pro_occupation{
-
+            font-size: 25px;
+            font-weight: 300;
 
             
         }
-       
+       .work{
+        position: absolute;
+        height: 35%;
+        width: 40%;
+        top: 20%;
+        left: 2%;
+      
+          background-color: black;
+          
+       }
+       .education{
+        position: absolute;
+        height: 35%;
+        width: 40%;
+        top: 20%;
+        left: 50%;
+      
+          background-color: black;
+          
+       }
+       .education{
+        position: absolute;
+        height: 35%;
+        width: 40%;
+        top: 20%;
+        left: 50%;
+      
+          background-color: black;
+          
+       }
