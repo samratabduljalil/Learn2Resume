@@ -70,6 +70,7 @@ text-align: center;
 .user_card2{
     
 display:flex;
+
 justify-content: center;
 background-color: black;
 
@@ -226,3 +227,9 @@ color: chocolate;
                 width: 100%;
                
             }
+        .newsfeed{
+
+            height: 100%;
+                width: 100%;
+                background-color: aliceblue;
+        }
