@@ -4,7 +4,7 @@ body{
    margin: 0;
 }
 .user_card{
-    background-color: chocolate;
+    background-color: rgb(247, 236, 236) ;
 height: 100vh;
 width: 20%;
 padding-top: 35px;
@@ -213,7 +213,7 @@ color: chocolate;
             border-radius: 100px;
             border: 1px solid wheat;
             
-            top: 8%;
+            top: 4%;
             left: 35%;
             z-index: 2;
     
@@ -239,4 +239,26 @@ color: chocolate;
               left: 32%;
               z-index: 1;
                 background-color: aliceblue;
+                color:black;
         }
+        .main_pro{
+position: absolute;
+top: 2%;
+left: 32%;
+
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            
+        }
+        .pro_name{
+
+font-size: 25px;
+
+        }
+        .pro_occupation{
+
+
+            
+        }
+       
