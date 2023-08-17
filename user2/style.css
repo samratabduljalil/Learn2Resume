@@ -213,3 +213,16 @@ color: chocolate;
             border: 1px solid wheat;
     
             }
+
+            .profile_size{
+
+                height: 200px;
+                width: 200px;
+                border-radius: 100px;
+            }
+            .cover_size{
+
+                height: 100%;
+                width: 100%;
+               
+            }
