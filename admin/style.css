@@ -145,6 +145,7 @@ justify-items: center;
 }
 
 .add_flex{
+  margin-top: 350px;
  display: flex;
 justify-content: center;
 align-items: center;
@@ -152,6 +153,16 @@ justify-items: center;
 justify-self: center;
 
 }
+.btn_add{
+padding: 10px;
+background-color: aliceblue;
+
+}
+.chose{
+  padding: 10px;
+  background-color: aliceblue;
+  text-align: center;
+  }
  
 @keyframes glowing-border {
     0% {
