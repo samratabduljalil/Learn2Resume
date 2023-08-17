@@ -202,3 +202,14 @@ color: chocolate;
         align-items: center;
 
         }
+        .profile_photo{
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            background-color: white;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100px;
+            border: 1px solid wheat;
+    
+            }
