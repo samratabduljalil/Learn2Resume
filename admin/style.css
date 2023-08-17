@@ -143,6 +143,15 @@ justify-items: center;
 
 
 }
+
+.add_flex{
+ display: flex;
+justify-content: center;
+align-items: center;
+justify-items: center;
+justify-self: center;
+
+}
  
 @keyframes glowing-border {
     0% {
