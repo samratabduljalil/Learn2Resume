@@ -265,30 +265,30 @@ font-weight: 600;
         }
        .work{
         position: absolute;
-        height: 35%;
-        width: 40%;
+        height: 39%;
+        width: 47%;
         top: 20%;
-        left: 7%;
+        left: 2%;
       
         background-color: rgb(255, 255, 255);
           
        }
        .education{
         position: absolute;
-        height: 35%;
-        width: 40%;
+        height: 39%;
+        width: 47%;
         top: 20%;
-        left: 52%;
+        left: 51%;
       
         background-color: rgb(255, 255, 255);
           
        }
        .skills{
         position: absolute;
-        height: 35%;
-        width: 40%;
+        height: 39%;
+        width: 47%;
         top: 60%;
-        left: 30%;
+        left: 26%;
       
           background-color: rgb(255, 255, 255);
           
@@ -338,5 +338,27 @@ font-weight: 600;
         height: 50px;
         top: 0%;
         left: 0%;
+    }
+    .uni1_img{
+        position: absolute;
+        height: 50px;
+        top: 40%;
+        left: 0%;
+
+
+    }
+    .uni2_img{
+        position: absolute;
+        height: 50px;
+        top: 0%;
+        left: 0%;
+
+    }
+    .list_edu{
+        position: absolute;
+        
+        top: 25%;
+        left: 20%;
+
     }
     
