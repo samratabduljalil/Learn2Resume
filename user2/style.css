@@ -342,16 +342,16 @@ font-weight: 600;
     .uni1_img{
         position: absolute;
         height: 50px;
-        top: 40%;
-        left: 0%;
+        top: 30%;
+        left: 2%;
 
 
     }
     .uni2_img{
         position: absolute;
         height: 50px;
-        top: 0%;
-        left: 0%;
+        top: 60%;
+        left: 2%;
 
     }
     .list_edu{
@@ -361,4 +361,23 @@ font-weight: 600;
         left: 20%;
 
     }
-    
+    .ex_{
+        position: absolute;
+        
+        top: 25%;
+        left: 25%;
+    }
+    .ex1_img{
+        position: absolute;
+        height: 50px;
+        top: 30%;
+        left: 4%;
+
+    }
+    .ex2_img{
+        position: absolute;
+        height: 50px;
+        top: 65%;
+        left: 4%;
+
+    }
