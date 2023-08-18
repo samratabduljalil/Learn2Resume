@@ -30,42 +30,42 @@ margin-top: 10%;
 position: absolute;
 height: 50px;
 border-radius: 50px;
-top: 0%;
-left: 10%;
+top: 2%;
+left: 25%;
 border: 5px solid green;
 }
 .i4{
     position: absolute;
     height: 50px;
     border-radius: 50px;
-    top: 0%;
-    left: 40%;
+    top: 2%;
+    left: 70%;
     border: 5px solid green;
     }
     .i2{
         position: absolute;
         height: 50px;
         border-radius: 50px;
-        top: 0%;
-        left: 20%;
+        top: 2%;
+        left: 40%;
         border: 5px solid green;
         }
         .i3{
             position: absolute;
             height: 50px;
             border-radius: 50px;
-            top: 0%;
-            left: 30%;
+            top: 2%;
+            left: 55%;
             border: 5px solid green;
             }
             .h3{
                 position: absolute;
-               
+             
                 width: 10%;
-            
-                top: 30%;
+                border: 2px solid green;
+                top: 40%;
                 left: 30%;
-                border: 5px solid green;
+                
                 }
                 .h1{
                     position: absolute;
