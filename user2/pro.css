@@ -26,3 +26,71 @@ margin-top: 10%;
     justify-content: center;
 
 }
+.i1{
+position: absolute;
+height: 50px;
+border-radius: 50px;
+top: 0%;
+left: 10%;
+border: 5px solid green;
+}
+.i4{
+    position: absolute;
+    height: 50px;
+    border-radius: 50px;
+    top: 0%;
+    left: 40%;
+    border: 5px solid green;
+    }
+    .i2{
+        position: absolute;
+        height: 50px;
+        border-radius: 50px;
+        top: 0%;
+        left: 20%;
+        border: 5px solid green;
+        }
+        .i3{
+            position: absolute;
+            height: 50px;
+            border-radius: 50px;
+            top: 0%;
+            left: 30%;
+            border: 5px solid green;
+            }
+            .h3{
+                position: absolute;
+               
+                width: 10%;
+            
+                top: 30%;
+                left: 30%;
+                border: 5px solid green;
+                }
+                .h1{
+                    position: absolute;
+                   
+                    width: 10%;
+                
+                    top: 30%;
+                    left: 30%;
+                    border: 5px solid green;
+                    }
+                    .h2{
+                        position: absolute;
+                       
+                        width: 10%;
+                    
+                        top: 30%;
+                        left: 30%;
+                        border: 5px solid green;
+                        }
+                        .h4{
+                            position: absolute;
+                           
+                            width: 10%;
+                        
+                            top: 30%;
+                            left: 30%;
+                            border: 5px solid green;
+                            }
