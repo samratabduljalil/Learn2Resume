@@ -4,7 +4,8 @@ display:flex;
 background-color: aliceblue;
 justify-content: center;
 align-items: center;
-
+height: 200px;
+width: 390px;
 }
 .text_area{
 
