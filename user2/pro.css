@@ -1,20 +1,28 @@
 .design{
 
 display:flex;
-background-color: aliceblue;
-justify-content: center;
-align-items: center;
-height: 200px;
-width: 390px;
+background-color: rgb(22, 133, 230);
+
+height: 800px;
+width: 800px;
+border-radius: 10px;
+padding: 5px;
 }
 .text_area{
-
-height: 200px;
-width: 390px;
+margin-top: 10px;
+height: 100px;
+width: 793px;
 
 }
 .text_box1{
-
+margin-top: 5px;
     height: 50px;
 width: 390px;
+}
+.con{
+margin-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
