@@ -332,5 +332,11 @@ font-weight: 600;
 
 
        }
-    
+    .in_img{
+
+        position: absolute;
+        height: 50px;
+        top: 0%;
+        left: 0%;
+    }
     
