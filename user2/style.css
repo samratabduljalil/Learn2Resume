@@ -429,3 +429,24 @@ left: 15%;
         border-radius: 10px;
         background-color: rgb(0, 149, 255);
        }
+       .pr_i1{
+        position: absolute;
+height: 30px;
+top: 36.5%;
+left: 5%;
+
+       }
+       .pr_i2{
+        position: absolute;
+height: 30px;
+top: 52%;
+left: 5%;
+
+       }
+       .pr_i3{
+        position: absolute;
+height: 30px;
+top: 66%;
+left: 5%;
+
+       }
