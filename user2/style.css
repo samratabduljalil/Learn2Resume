@@ -5,7 +5,7 @@ body{
 }
 .user_card{
     background-color: rgb(247, 236, 236) ;
-height: 100vh;
+height: 105vh;
 width: 20%;
 padding-top: 35px;
 color: black;
@@ -233,8 +233,9 @@ color: chocolate;
             }
         .newsfeed{
               position: absolute;
-              height: 85%;
+              height: 90%;
               width: 56%;
+              margin-bottom: 20px;
               top: 20%;
               left: 32%;
               z-index: 1;
@@ -288,9 +289,19 @@ font-weight: 600;
         height: 39%;
         width: 47%;
         top: 60%;
-        left: 26%;
+        left: 2%;
       
           background-color: rgb(255, 255, 255);
+          
+       }
+       .personal{
+        position: absolute;
+        height: 39%;
+        width: 47%;
+        top: 60%;
+        left: 51%;
+      
+        background-color: rgb(255, 255, 255);
           
        }
        .ski_img{
@@ -381,3 +392,40 @@ font-weight: 600;
         left: 4%;
 
     }
+    .pr_title{
+        position: absolute;
+        height: 50px;
+        top: 11%;
+        left: 28%;
+        font-size: 25px;
+        
+       }
+       .pr1{
+        position: absolute;
+font-size: 20px;
+top: 30%;
+left: 15%;
+
+       }
+       .pr2{
+        position: absolute;
+font-size: 20px;
+top: 46%;
+left: 15%;
+
+       }
+       .pr3{
+        position: absolute;
+font-size: 20px;
+top: 62%;
+left: 15%;
+
+       }
+       .ski_btn{
+
+        padding: 5px;
+        font-size: 20px;
+        margin-top: 3px;
+        border-radius: 10px;
+        background-color: rgb(0, 149, 255);
+       }
