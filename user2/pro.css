@@ -3,7 +3,7 @@
 display:flex;
 background-color: rgb(22, 133, 230);
 
-height: 350px;
+height: 390px;
 width: 800px;
 border-radius: 10px;
 padding: 5px;
@@ -169,4 +169,9 @@ font-size: 15px;
                             .red{
 
                                 color: red;
+                            }
+                            .top_pro{
+                                font-size: 25px;
+                                color: rgba(1, 16, 55, 0.804);
+                                text-align: center;
                             }
