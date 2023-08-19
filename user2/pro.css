@@ -3,7 +3,7 @@
 display:flex;
 background-color: rgb(22, 133, 230);
 
-height: 800px;
+height: 600px;
 width: 800px;
 border-radius: 10px;
 padding: 5px;
@@ -33,6 +33,7 @@ border-radius: 50px;
 top: 2%;
 left: 25%;
 border: 5px solid green;
+z-index: 2;
 }
 .i4{
     position: absolute;
@@ -40,7 +41,8 @@ border: 5px solid green;
     border-radius: 50px;
     top: 2%;
     left: 70%;
-    border: 5px solid green;
+    border: 5px solid red;
+    z-index: 2;
     }
     .i2{
         position: absolute;
@@ -48,7 +50,8 @@ border: 5px solid green;
         border-radius: 50px;
         top: 2%;
         left: 40%;
-        border: 5px solid green;
+        border: 5px solid red;
+        z-index: 2;
         }
         .i3{
             position: absolute;
@@ -56,41 +59,90 @@ border: 5px solid green;
             border-radius: 50px;
             top: 2%;
             left: 55%;
-            border: 5px solid green;
+            border: 5px solid red;
+            z-index: 2;
             }
-            .h3{
-                position: absolute;
-             
-                width: 10%;
-                border: 2px solid green;
-                top: 40%;
-                left: 30%;
-                
-                }
+            
                 .h1{
                     position: absolute;
                    
-                    width: 10%;
+                    width: 11.6%;
                 
-                    top: 30%;
-                    left: 30%;
-                    border: 5px solid green;
+                    top: 4.7%;
+                    left: 28.6%;
+                    border: 2px solid red;
                     }
                     .h2{
                         position: absolute;
-                       
-                        width: 10%;
-                    
-                        top: 30%;
-                        left: 30%;
-                        border: 5px solid green;
+                   
+                    width: 11.6%;
+                
+                    top: 4.7%;
+                    left: 43.6%;
+                    border: 2px solid red;
                         }
-                        .h4{
+                        .h3{
                             position: absolute;
-                           
-                            width: 10%;
-                        
-                            top: 30%;
-                            left: 30%;
-                            border: 5px solid green;
+                   
+                    width: 11.6%;
+                
+                    top: 4.7%;
+                    left: 58.6%;
+                    border: 2px solid red;
+                            }
+
+                            .btn_submit{
+                                margin-top: 10px;
+                                margin-left: 75%;
+                            padding: 15px;
+width: 20%;
+background-color: rgb(69, 227, 69);
+
+                            }
+                            .pro{
+                                position: absolute;
+                   
+                               font-size: 20px;
+                            
+                                top: 8%;
+                                left: 23%;
+                            }
+                            .edu{
+                                position: absolute;
+                   
+                               font-size: 20px;
+                            
+                                top: 8%;
+                                left: 39.4%;
+                            }
+                            .exp{
+                                position: absolute;
+                   
+                               font-size: 20px;
+                            
+                                top: 8%;
+                                left: 54.4%;
+                            }
+                            .ski{
+                                position: absolute;
+                   
+                               font-size: 20px;
+                            
+                                top: 8%;
+                                left: 70.5%;
+                            }
+                            .green{
+
+                                border: 5px solid green;
+                            }
+                            .green_line{
+
+                                border: 3.5px solid green;
+
+                            }
+                            .c1{
+                                height: 30px;
+                                position: absolute;
+                                top: 1.5%;
+                                left: 33.6%;
                             }
