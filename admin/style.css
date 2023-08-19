@@ -166,15 +166,15 @@ background-color: aliceblue;
  
 @keyframes glowing-border {
     0% {
-      border-color: rgba(255, 255, 255, 0.2);
-      box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+      border-color: rgba(229, 13, 13, 0.2);
+      box-shadow: 0 0 5px rgba(243, 5, 5, 0.2);
     }
     50% {
-      border-color: rgba(255, 255, 255, 0.7);
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+      border-color: rgba(255, 5, 5, 0.7);
+      box-shadow: 0 0 20px rgba(247, 2, 2, 0.7);
     }
     100% {
-      border-color: rgba(255, 255, 255, 0.2);
-      box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+      border-color: rgba(241, 7, 7, 0.2);
+      box-shadow: 0 0 5px rgba(143, 1, 1, 0.2);
     }
   }
