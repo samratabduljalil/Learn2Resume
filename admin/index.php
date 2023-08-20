@@ -21,7 +21,7 @@
     <li><a href="">All Courses</a></li>
     <li><a href="addtemplate.html">Add Template</a></li>
     <li><a href="./index.php">Home</a></li>
-    <li><a href="">Log Out</a></li>
+    <li><a href="/logout.php">Log Out</a></li>
 
 </ul>
 </div>
