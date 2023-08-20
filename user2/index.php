@@ -25,6 +25,8 @@
 
 </ul>
 </div>
+
+<?php  if(isset($_SESSION['position'])) { ?>
 <div class="user_card2">
 
  <div class="cover_photo">
@@ -118,7 +120,12 @@
 
  </div>
  
+ <?php }else{ ?>
 
+<h1>Please Update Your details otherWise You cannot create your cv </h1>
+
+
+    <?php } ?>
 </div>
 
 </div>
