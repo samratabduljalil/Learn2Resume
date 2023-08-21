@@ -42,7 +42,7 @@
 
  <div class="newsfeed">
     <div class="main_pro">
-        <p><span class="pro_name">Samrat Abdul Jalil </span><br><span class="pro_occupation">Software Engineer</span></p>
+        <p><span class="pro_name"><?php echo $_SESSION['name'] ?> </span><br><span class="pro_occupation">Software Engineer</span></p>
     </div>
 
 <div class="work">
