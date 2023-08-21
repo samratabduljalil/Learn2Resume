@@ -8,7 +8,7 @@
 </head>
 <body>
 <?php session_start()?>
-<?php  if($_SESSION['sposition'] != Null) { ?>
+<?php  if($_SESSION['position'] != Null) { ?>
     <section class="sidebar">
 
 <div class="user_card">
@@ -17,9 +17,9 @@
    <p class="user_name"> <?php echo $_SESSION['name'] ?></p>
 
 <ul>
-    <li><a href="">profile</a></li>
+  
     <li><a href="\chosetemplate.php">Create Cv</a></li>
-    <li><a href="\cv_templates\t7.php">Download CV</a></li>
+    <li><a href="\cv_templates\t7.php">Edit Profile</a></li>
     <li><a href="">All Courses</a></li>
     <li><a href="\index.php">Home</a></li>
     <li><a href="\logout.php">Logout</a></li>
