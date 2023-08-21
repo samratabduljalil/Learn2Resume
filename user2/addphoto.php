@@ -12,7 +12,7 @@
     
 <div class="con">
     <div class="design2">
-    <form action="" method="post">
+    <form action="upload_data.php" method="post">
       
 
                       <p class="top_pro">Add Your Image</p>
