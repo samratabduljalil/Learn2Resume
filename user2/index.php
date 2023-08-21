@@ -8,6 +8,7 @@
 </head>
 <body>
 <?php session_start()?>
+<?php  if(isset($_SESSION['position'])) { ?>
     <section class="sidebar">
 
 <div class="user_card">
@@ -26,7 +27,7 @@
 </ul>
 </div>
 
-<?php  if(isset($_SESSION['position'])) { ?>
+
 <div class="user_card2">
 
  <div class="cover_photo">
@@ -120,12 +121,12 @@
 
  </div>
  
- <?php }else{ ?>
+ <?php }else{ 
 
-<h1>Please Update Your details otherWise You cannot create your cv </h1>
+    header("location: \user2\profile.php");
 
 
-    <?php } ?>
+     } ?>
 </div>
 
 </div>

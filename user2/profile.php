@@ -22,17 +22,17 @@
     
 <div class="con">
     <div class="design">
-    <form action="" method="post">
+    <form action="\user2\profile1.php" method="post">
         <p class="top_pro">Enter Your Personal Details</p>
         <textarea name="" id="" cols="30" rows="10" class="text_area" required>Write About You (in 50 word)</textarea>
-    <input type="text" name="" id="" class="text_box1" placeholder="Enter Your name" required>
+   
     <input type="text" name="" id="" class="text_box1" placeholder="Enter Your Phone Number" required>
-    <input type="email" name="" id="" class="text_box1" placeholder="Enter Your Email" required>
-    <input type="text" name="" id="" class="text_box1" placeholder="Enter Your Address" required>
-    <input type="text" name="" id="" class="text_box1" placeholder="Enter Your Occupation" required>
+    <input type="text" name="" id="" class="text_box1" placeholder="Enter Your Current Position" required>
+    <input type="text" name="" id="" class="text_box1" placeholder="Enter Your Current Address" required>
+    
 
 
-             <a href="profile1.html"><button class="btn_submit" type="submit">save and next</button></a>
+             <button class="btn_submit" type="submit">save and next</button>
 
     </form>
 </div></div>

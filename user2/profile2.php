@@ -24,7 +24,7 @@
     
 <div class="con">
     <div class="design">
-    <form action="" method="post">
+    <form action="\user2\profile3.php" method="post">
         <p class="top_pro">Works Exprience</p>
         <input type="text" name="" id="" class="text_box1" placeholder="Organigetion  Name*" required>
     

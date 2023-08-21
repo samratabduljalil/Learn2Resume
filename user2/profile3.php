@@ -25,7 +25,7 @@
     
 <div class="con">
     <div class="design">
-    <form action="" method="post">
+    <form action="\user2\addphoto.php" method="post">
 
 <p class="top_pro">Enter Your Top six Skills</p>
 
@@ -40,7 +40,7 @@
               
               <input type="text" name="" id="" class="text_box1" placeholder="Skills one" >
 
-             <a href="profile1.html"><button class="btn_submit" type="submit">save and next</button></a>
+             <button class="btn_submit" type="submit">save and next</button>
 
     </form>
 </div></div>

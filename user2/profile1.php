@@ -23,7 +23,7 @@
     
 <div class="con">
     <div class="design">
-    <form action="" method="post">
+    <form action="\user2\profile2.php" method="post">
         <p class="top_pro">Enter Your Educational Details</p>
     <input type="text" name="" id="" class="text_box1" placeholder='Instution Name* ' required>
     
