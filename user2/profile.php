@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="pro.css">
     <title>Profile</title>
 </head>
+
+
 <body>
 <p class="pro">Personal Details</p>
 <p class="edu">Education</p>
@@ -24,11 +26,11 @@
     <div class="design">
     <form action="\user2\profile1.php" method="post">
         <p class="top_pro">Enter Your Personal Details</p>
-        <textarea name="" id="" cols="30" rows="10" class="text_area" required>Write About You (in 50 word)</textarea>
+        <textarea name="about" id="" cols="30" rows="10" class="text_area" required placeholder="Write About You (in 50 word)"></textarea>
    
-    <input type="text" name="" id="" class="text_box1" placeholder="Enter Your Phone Number" required>
-    <input type="text" name="" id="" class="text_box1" placeholder="Enter Your Current Position" required>
-    <input type="text" name="" id="" class="text_box1" placeholder="Enter Your Current Address" required>
+    <input type="text" name="phone" id="" class="text_box1" placeholder="Enter Your Phone Number" required>
+    <input type="text" name="position" id="" class="text_box1" placeholder="Enter Your Current Position" required>
+    <input type="text" name="address" id="" class="text_box1" placeholder="Enter Your Current Address" required>
     
 
 

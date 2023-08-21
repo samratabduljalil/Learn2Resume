@@ -7,7 +7,19 @@
     <title>edit Profile</title>
 </head>
 <body>
+<?php session_start();
+$_SESSION['s1']=$_POST['s1'];
+$_SESSION['s2']=$_POST['s2'];
+$_SESSION['s3']=$_POST['s3'];
+$_SESSION['s4']=$_POST['s4'];
+$_SESSION['s5']=$_POST['s5'];
+$_SESSION['s6']=$_POST['s6'];
 
+
+
+
+
+?>
  
     
 <div class="con">
@@ -19,9 +31,9 @@
                       <label for="image" class="l">Profile Photo:</label>
                     
                   
-                   <input type="file" name="" id="" >
+                   <input type="file" name="pro_img" id="" >
                    <label for="image" class="l2">Cover Photo:</label>
-                   <input type="file" name="" id="" >
+                   <input type="file" name="co_img" id="" >
 
 
 

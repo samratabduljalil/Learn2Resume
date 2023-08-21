@@ -6,6 +6,17 @@
     <link rel="stylesheet" href="pro.css">
     <title>Profile</title>
 </head>
+
+<?php session_start();
+$_SESSION['phone']=$_POST['phone'];
+$_SESSION['about']=$_POST['about'];
+$_SESSION['address']=$_POST['address'];
+$_SESSION['position']=$_POST['phone'];
+
+
+
+
+?>
 <body>
     <img src="\img\check-button.png" alt="" class="c1">
 <p class="pro">Personal Details</p>
@@ -25,16 +36,16 @@
     <div class="design">
     <form action="\user2\profile2.php" method="post">
         <p class="top_pro">Enter Your Educational Details</p>
-    <input type="text" name="" id="" class="text_box1" placeholder='Instution Name* ' required>
+    <input type="text" name="edu1" id="" class="text_box1" placeholder='Instution Name* ' required>
     
 
- <input type="text" name="" id="" class="text_box1" placeholder="Instution Name" >
- <input type="text" name="" id="" class="text_box1" placeholder="Degree*" required>
+ <input type="text" name="edu2" id="" class="text_box1" placeholder="Instution Name" >
+ <input type="text" name="deg1" id="" class="text_box1" placeholder="Degree*" required>
   
-    <input type="text" name="" id="" class="text_box1" placeholder="Degree" >
-    <input type="text" name="" id="" class="text_box1" placeholder="Obtain CGPA/GPA*" required>
+    <input type="text" name="deg2" id="" class="text_box1" placeholder="Degree" >
+    <input type="text" name="cgpa1" id="" class="text_box1" placeholder="Obtain CGPA/GPA*" required>
        
-       <input type="text" name="" id="" class="text_box1" placeholder="Obtain CGPA/GPA" >
+       <input type="text" name="cgpa2" id="" class="text_box1" placeholder="Obtain CGPA/GPA" >
        
 
              <a href="profile1.html"><button class="btn_submit" type="submit">save and next</button></a>
