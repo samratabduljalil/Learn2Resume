@@ -8,7 +8,7 @@
 </head>
 <body>
 <?php session_start()?>
-<?php  if(isset($_SESSION['position'])) { ?>
+<?php  if($_SESSION['sposition'] != Null) { ?>
     <section class="sidebar">
 
 <div class="user_card">
@@ -91,20 +91,20 @@
     <img src="\img\competence.png" alt="" class="ski_img">
     <p class="ski_title">Skills</p>
     <div class="ski_skills">
-    <?php if(isset($_SESSION['s1'] )){ ?>
+    <?php if($_SESSION['s1'] != Null){ ?>
 <p class="ski_btn"><?php echo $_SESSION['s1'] ?></p> 
-<?php } if(isset($_SESSION['s2'] )) { ?>
+<?php } if($_SESSION['s2'] != Null) { ?>
 
 <p class="ski_btn"><?php echo $_SESSION['s2'] ?></p> 
-<?php } if(isset($_SESSION['s3'] )){ ?>
+<?php } if($_SESSION['s3'] != Null){ ?>
 <p class="ski_btn"><?php echo $_SESSION['s3'] ?></p>
 
-<?php } if(isset($_SESSION['s4'] )){ ?>
+<?php } if($_SESSION['s4'] != Null){ ?>
 <p class="ski_btn"><?php echo $_SESSION['s4'] ?></p>
 
-<?php } if(isset($_SESSION['s5'] )){?>
+<?php } if($_SESSION['s5'] != Null){?>
 <p class="ski_btn"><?php echo $_SESSION['s5'] ?></p>
-<?php } if(isset($_SESSION['s6'] )){?>
+<?php } if($_SESSION['s6'] != Null){?>
 <p class="ski_btn"><?php echo $_SESSION['s6'] ?></p>
 <?php } ?>
 </div>
