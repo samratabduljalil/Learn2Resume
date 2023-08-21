@@ -24,16 +24,16 @@ $_SESSION['s6']=$_POST['s6'];
     
 <div class="con">
     <div class="design2">
-    <form action="upload_data.php" method="post">
+    <form action="upload_data.php" method="post" enctype="multipart/form-data">
       
 
                       <p class="top_pro">Add Your Image</p>
                       <label for="image" class="l">Profile Photo:</label>
                     
                   
-                   <input type="file" name="pro_img" id="" >
+                   <input type="file" name="pro_img" id="pro_img" >
                    <label for="image" class="l2">Cover Photo:</label>
-                   <input type="file" name="co_img" id="" >
+                   <input type="file" name="co_img" id="co_img" >
 
 
 

@@ -11,7 +11,7 @@
 $_SESSION['phone']=$_POST['phone'];
 $_SESSION['about']=$_POST['about'];
 $_SESSION['address']=$_POST['address'];
-$_SESSION['position']=$_POST['phone'];
+$_SESSION['position']=$_POST['position'];
 
 
 

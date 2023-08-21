@@ -32,18 +32,18 @@
 
  <div class="cover_photo">
 
-<img src="/img/04.jpg" alt="" class="cover_size">
+<img src="<?php echo $_SESSION['image_co'] ?>" alt="" class="cover_size">
 
  </div>
  <div class="profile_photo">
 
-  <img src="/img/account.png" alt="" class="profile_size">
+  <img src="<?php echo $_SESSION['img'] ?>" alt="" class="profile_size">
   
  </div>
 
  <div class="newsfeed">
     <div class="main_pro">
-        <p><span class="pro_name"><?php echo $_SESSION['name'] ?> </span><br><span class="pro_occupation">Software Engineer</span></p>
+        <p><span class="pro_name"><?php echo $_SESSION['name'] ?> </span><br><span class="pro_occupation"><?php echo $_SESSION['position'] ?></span></p>
     </div>
 
 <div class="work">
@@ -52,10 +52,10 @@
 
     <img src="\img\certificate (3).png" alt="" class="uni1_img">
     <div class="list_edu">
-    <p class="uni1">United International University <br>
+    <p class="uni1"><?php echo $_SESSION['edu1'] ?>  <br>
     B.Sc in Computer Science and Engineering<br>
    CGPA/GPA:2.10</p>
-   <p class="uni1">United International University <br>
+   <p class="uni1"><?php echo $_SESSION['edu2'] ?>  <br>
     B.Sc in Computer Science and Engineering<br>
    CGPA/GPA:2.10</p>
 </div>

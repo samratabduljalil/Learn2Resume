@@ -4,13 +4,7 @@
 
 
 session_start();
-
-
-
-
-include('connection.php');
-
-
+echo $_FILES['pro_img']['name'];
 $targetFile1;
 $targetFile2;
 
@@ -47,21 +41,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['pro_img']) && isset(
 
 
 
-$query="UPDATE `cv_user` SET `phone`='{$_SESSION['phone']}',`position`='{$_SESSION['position']}',`edu_1`='{$_SESSION['edu1']}',`edu_2`='{$_SESSION['edu2']}',`degree_1`='{$_SESSION['deg1']}',`degree_2`='{$_SESSION['deg2']}',`cgpa_1`='{$_SESSION['cgpa1']}',`cgpa_2`='{$_SESSION['cgpa2']}',`c_name_1`='{$_SESSION['og1']}',`c_name_2`='{$_SESSION['og2']}',`c_position_1`='{$_SESSION['p1']}',`c_position_2`='{$_SESSION['p2']}',`c_year_1`='{$_SESSION['y1']}',`c_year_2`='{$_SESSION['y2']}',`skills_1`='{$_SESSION['s1']}',`skills_2`='{$_SESSION['s2']}',`skills_3`='{$_SESSION['s3']}',`skills_4`='{$_SESSION['s4']}',`skills_5`='{$_SESSION['s5']}',`skills_6`='{$_SESSION['s6']}',`img`='{$targetFile1}',`about`='{$_SESSION['about']}',`address`='{$_SESSION['address']}',`image_co`='{$targetFile2}' WHERE UserID = {$_SESSION['id']}";
-
-
-
-
-
-if (mysqli_query($connection, $query)) {
-    header("location: index.php");
- } else {
-    echo "Error inserting data: " . mysqli_error($connection);
- }
-
-
- $_SESSION['image_co']=$targetFile2;
- $_SESSION['img']=$targetFile1;
 ?>
 
 

@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
            }else{
             $_SESSION['name']=$user['name'];
             $_SESSION['image']=$user['image'];
-            $_SESSION['id']=$user['id_user'];
+            $_SESSION['id']=$user['UserID'];
             $_SESSION['admin']=TRUE;
             
           
