@@ -53,11 +53,11 @@
     <img src="\img\certificate (3).png" alt="" class="uni1_img">
     <div class="list_edu">
     <p class="uni1"><?php echo $_SESSION['edu1'] ?>  <br>
-    B.Sc in Computer Science and Engineering<br>
-   CGPA/GPA:2.10</p>
+    <?php echo $_SESSION['deg1'] ?> <br>
+    <?php echo $_SESSION['cgpa2'] ?></p>
    <p class="uni1"><?php echo $_SESSION['edu2'] ?>  <br>
-    B.Sc in Computer Science and Engineering<br>
-   CGPA/GPA:2.10</p>
+   <?php echo $_SESSION['deg2'] ?><br>
+   <?php echo $_SESSION['cgpa1'] ?></p>
 </div>
     <img src="\img\certificate (3).png" alt="" class="uni2_img">
 
@@ -76,10 +76,10 @@
     <img src="\img\working-time.png" alt="" class="ex1_img">
     <img src="\img\working-time.png" alt="" class="ex2_img">
     <div class="ex_">
-    <p class="uni1">Vivasoft Ltd. <br>
-        2022-2024</p><br>
-       <p class="uni1">BjIT<br>
-        2022-2024</p>
+    <p class="uni1"><?php echo $_SESSION['og1'] ?><br>
+    <?php echo $_SESSION['y1'] ?></p><br>
+       <p class="uni1"><?php echo $_SESSION['og2'] ?><br>
+       <?php echo $_SESSION['y2'] ?></p>
     </div>
 </div>
 
@@ -91,9 +91,22 @@
     <img src="\img\competence.png" alt="" class="ski_img">
     <p class="ski_title">Skills</p>
     <div class="ski_skills">
-<button class="ski_btn">samrat abdul Jalil</button> <button class="ski_btn">samrat abdul Jalil</button> <button class="ski_btn">samrat abdul Jalil</button>
-<button class="ski_btn">samrat abdul Jalil</button>
-<button class="ski_btn">samrat abdul Jalil</button>
+    <?php if(isset($_SESSION['s1'] )){ ?>
+<p class="ski_btn"><?php echo $_SESSION['s1'] ?></p> 
+<?php } if(isset($_SESSION['s2'] )) { ?>
+
+<p class="ski_btn"><?php echo $_SESSION['s2'] ?></p> 
+<?php } if(isset($_SESSION['s3'] )){ ?>
+<p class="ski_btn"><?php echo $_SESSION['s3'] ?></p>
+
+<?php } if(isset($_SESSION['s4'] )){ ?>
+<p class="ski_btn"><?php echo $_SESSION['s4'] ?></p>
+
+<?php } if(isset($_SESSION['s5'] )){?>
+<p class="ski_btn"><?php echo $_SESSION['s5'] ?></p>
+<?php } if(isset($_SESSION['s6'] )){?>
+<p class="ski_btn"><?php echo $_SESSION['s6'] ?></p>
+<?php } ?>
 </div>
 
 
@@ -108,9 +121,9 @@
 
     <p class="pr_title">Personal details</p>
     
-<p class="pr1">samrat@gmail.com</p>
-<p class="pr2">017777777777</p>
-<p class="pr3">Satarkul,Badda, Dhaka</p>
+<p class="pr1"><?php echo $_SESSION['email'] ?></p>
+<p class="pr2"><?php echo $_SESSION['phone'] ?></p>
+<p class="pr3"><?php echo $_SESSION['address'] ?></p>
 
 
 

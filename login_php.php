@@ -26,6 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
            header("location: \admin\index.php");
            }else{
             $_SESSION['name']=$user['name'];
+            $_SESSION['email']=$user['email'];
             $_SESSION['img']=$user['img'];
             $_SESSION['id']=$user['UserID'];
             $_SESSION['image_co']=$user['image_co'];
