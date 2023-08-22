@@ -19,7 +19,7 @@
 <ul>
   
     <li><a href="\chosetemplate.php">Create Cv</a></li>
-    <li><a href="\cv_templates\t7.php">Edit Profile</a></li>
+    <li><a href="editprofile.php">Edit Profile</a></li>
     <li><a href="">All Courses</a></li>
     <li><a href="\index.php">Home</a></li>
     <li><a href="\logout.php">Logout</a></li>
