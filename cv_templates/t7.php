@@ -12,14 +12,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <?php
-include('connection.php');
+
 session_start();
 
-    
-    $query = "SELECT * FROM cv_template WHERE user_id = '{$_SESSION['id']}' LIMIT 1";
-    $result = mysqli_query($connection, $query);
-    $user = mysqli_fetch_assoc($result);
-    if(isset($user['name'] )) { 
+   
 
 ?>
 
@@ -29,7 +25,7 @@ session_start();
         <div class="parent">
             <div class="left_panel">
                 <div class="profile_pic">
-                    <img id="avatar" src="/<?php echo  $user['image'] ?>">
+                    <img id="avatar" src="/user2/<?php echo $_SESSION['img'] ?>">
                 </div>
 
                 <div class="info">
@@ -44,7 +40,7 @@ session_start();
                             <img id="phone" src="icons/phone.png" alt="">
                             <div class="phn_num">
                                 <strong id="phone">Phone</strong>
-                                <strong id="phn_num"><?php echo  $user['phone'] ?></strong>
+                                <strong id="phn_num"><?php echo $_SESSION['phone'] ?></strong>
                             </div>
                         </div>
 
@@ -53,7 +49,7 @@ session_start();
                             <img id="phone" src="icons/mail.png" alt="">
                             <div class="phn_num">
                                 <strong id="phone">Mail</strong>
-                                <strong id="phn_num"><?php echo  $user['eamil'] ?></strong>
+                                <strong id="phn_num"><?php echo   $_SESSION['email']  ?></strong>
                             </div>
                         </div>
 
@@ -62,7 +58,7 @@ session_start();
                             <img id="phone" src="icons/home.png" alt="">
                             <div class="phn_num">
                                 <strong id="phone">Address</strong>
-                                <strong id="phn_num"><?php echo  $user['address'] ?></strong>
+                                <strong id="phn_num"><?php echo   $_SESSION['address']  ?></strong>
                             </div>
                         </div>
                     </div>
@@ -81,8 +77,8 @@ session_start();
                         <div class="phone">
                             <img id="phone" src="icons/school.png" alt="">
                             <div class="phn_num">
-                                <strong id="phone"><?php echo  $user['degree1'] ?></strong>
-                                <strong id="phn_num"><?php echo  $user['edu_institution1'] ?></strong>
+                                <strong id="phone"><?php echo   $_SESSION['deg1']  ?></strong>
+                                <strong id="phn_num"><?php echo   $_SESSION['edu1']  ?></strong>
                             </div>
                         </div>
 
@@ -90,8 +86,8 @@ session_start();
                         <div class="phone">
                             <img id="phone" src="icons/school.png" alt="">
                             <div class="phn_num">
-                            <strong id="phone"><?php echo  $user['degree2'] ?></strong>
-                                <strong id="phn_num"><?php echo  $user['edu_institution2'] ?></strong>
+                            <strong id="phone"><?php echo   $_SESSION['deg2']  ?></strong>
+                                <strong id="phn_num"><?php echo   $_SESSION['edu2']  ?></strong>
                             </div>
                         </div>
 
@@ -112,17 +108,17 @@ session_start();
                         
                         <div class="phone_skill">
                             <img id="phone" src="icons/skill.jpg" alt="">
-                            <strong id="skill"><?php echo  $user['skill1'] ?></strong>
+                            <strong id="skill"><?php echo $_SESSION['s1']  ?></strong>
                         </div>
 
                         <div class="phone_skill">
                             <img id="phone" src="icons/skill.jpg" alt="">
-                            <strong id="skill"><?php echo  $user['skill2'] ?></strong>
+                            <strong id="skill"><?php echo  $_SESSION['s2'] ?></strong>
                         </div>
                         
                         <div class="phone_skill">
                             <img id="phone" src="icons/skill.jpg" alt="">
-                            <strong id="skill"><?php echo  $user['skill3'] ?></strong>
+                            <strong id="skill"><?php echo  $_SESSION['s3'] ?></strong>
                         </div>
 
                     </div>
@@ -140,9 +136,9 @@ session_start();
                 <div class="vertical_line"></div>
 
                 <div class="name">
-                    <strong id="name"><?php echo  $user['name'] ?></strong>
+                    <strong id="name"><?php echo  $_SESSION['name'] ?></strong>
                     <p>
-                    <?php echo  $user['why'] ?>
+                    <?php echo  $_SESSION['about'] ?>
                     </p>
                 </div>
 
@@ -275,11 +271,10 @@ session_start();
 
 </body>
     <script type="text/javascript" src="convert_to_pdf.js"></script>
-    <?php }else{?>
+    <
      
 
 <a href="/index.php"> <input type="button" class="yu" value="Back To Home"  ></a>
 
 
-        <?php } ?>
 </html>

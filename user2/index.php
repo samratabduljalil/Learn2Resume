@@ -32,7 +32,7 @@
 
  <div class="cover_photo">
 
-<img src="<?php echo $_SESSION['image_co'] ?>" alt="" class="cover_size">
+<img src="<?php echo $_SESSION['image_co'] ?>" alt="cover image" class="cover_size">
 
  </div>
  <div class="profile_photo">
