@@ -92,20 +92,20 @@
     <p class="ski_title">Skills</p>
     <div class="ski_skills">
     <?php if($_SESSION['s1'] != Null){ ?>
-<p class="ski_btn"><?php echo $_SESSION['s1'] ?></p> 
+<button class="ski_btn"><?php echo $_SESSION['s1'] ?></button> 
 <?php } if($_SESSION['s2'] != Null) { ?>
 
-<p class="ski_btn"><?php echo $_SESSION['s2'] ?></p> 
+<button class="ski_btn"><?php echo $_SESSION['s2'] ?></button> 
 <?php } if($_SESSION['s3'] != Null){ ?>
-<p class="ski_btn"><?php echo $_SESSION['s3'] ?></p>
+<button class="ski_btn"><?php echo $_SESSION['s3'] ?></button>
 
 <?php } if($_SESSION['s4'] != Null){ ?>
-<p class="ski_btn"><?php echo $_SESSION['s4'] ?></p>
+<button class="ski_btn"><?php echo $_SESSION['s4'] ?></button>
 
 <?php } if($_SESSION['s5'] != Null){?>
-<p class="ski_btn"><?php echo $_SESSION['s5'] ?></p>
+<button class="ski_btn"><?php echo $_SESSION['s5'] ?></button>
 <?php } if($_SESSION['s6'] != Null){?>
-<p class="ski_btn"><?php echo $_SESSION['s6'] ?></p>
+<button class="ski_btn"><?php echo $_SESSION['s6'] ?></button>
 <?php } ?>
 </div>
 
@@ -139,8 +139,7 @@
     header("location: \user2\profile.php");
 
 
-     } ?>
-</div>
+     } ?></div>
 
 </div>
     </section>
