@@ -4,7 +4,7 @@ body{
    margin: 0;
 }
 .user_card{
-    background-color: chocolate;
+    background-color: rgb(247, 236, 236) ;
 height: auto;
 width: 20%;
 padding-top: 35px;
@@ -46,7 +46,7 @@ background-color: #2d4c71;
     .user_card2{
      height: auto;
         width: 80%;
-        background-color: black;
+        background-color: rgb(255, 255, 255);
                 color: white;
             }
             .user_profile_photo{
@@ -69,7 +69,8 @@ text-align: center;
 
 .user_card2{
 
-background-color: black;
+    background-color: rgb(255, 255, 255);
+    color: black;
 
 }
 h1{
@@ -86,7 +87,7 @@ padding: 10px;
 
 
 .container{
-    background-color:black;
+    background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     margin-left: 10px;
@@ -171,7 +172,7 @@ color: chocolate;
         justify-content: center;
     display: grid;
     gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
     margin-bottom: 30px;
     
     margin-top: 25px;
