@@ -8,6 +8,46 @@ width: 800px;
 border-radius: 10px;
 padding: 5px;
 }
+.design10{
+
+    display:flex;
+    background-color: rgb(22, 133, 230);
+    justify-content: center;
+    height: auto;
+    width: 800px;
+    border-radius: 10px;
+    
+    }
+
+
+    table {
+        border-collapse: collapse;
+        width: 80%;
+        margin: 20px auto;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+  
+      th, td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+  
+      th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+      }
+  
+      tr:hover {
+        background-color: #f5f5f5;
+      }
+    .un{
+border: 1px solid black;
+
+
+    }
+
+
 .text_area{
 margin-top: 10px;
 height: 60px;
@@ -26,6 +66,7 @@ margin-top: 10%;
     justify-content: center;
 
 }
+
 .i1{
 position: absolute;
 height: 50px;
