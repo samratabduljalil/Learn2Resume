@@ -16,7 +16,7 @@
 
 <ul>
     <li><a href="">profile</a></li>
-    <li><a href="">Add Course</a></li>
+    <li><a href="addcourse.php">Add Course</a></li>
     <li><a href="">Add Question</a></li>
     <li><a href="">Add video</a></li>
     <li><a href="">All course Data</a></li>

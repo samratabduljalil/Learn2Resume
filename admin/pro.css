@@ -216,6 +216,11 @@ font-size: 15px;
                                 color: rgba(1, 16, 55, 0.804);
                                 text-align: center;
                             }
+                            .top_pro1{
+                                font-size: 30px;
+                                color: rgba(18, 238, 51, 0.804);
+                                text-align: center;
+                            }
                             .design2{
 
                                 display:flex;
