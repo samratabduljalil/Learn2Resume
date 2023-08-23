@@ -1,0 +1,195 @@
+.design{
+
+display:flex;
+background-color: rgb(22, 133, 230);
+
+height: 390px;
+width: 800px;
+border-radius: 10px;
+padding: 5px;
+}
+.text_area{
+margin-top: 10px;
+height: 100px;
+width: 793px;
+
+}
+.text_box1{
+margin-top: 5px;
+    height: 50px;
+width: 390px;
+}
+.con{
+margin-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.i1{
+position: absolute;
+height: 50px;
+border-radius: 50px;
+top: 2%;
+left: 25%;
+border: 5px solid green;
+z-index: 2;
+}
+.i4{
+    position: absolute;
+    height: 50px;
+    border-radius: 50px;
+    top: 2%;
+    left: 70%;
+    border: 5px solid red;
+    z-index: 2;
+    }
+    .i2{
+        position: absolute;
+        height: 50px;
+        border-radius: 50px;
+        top: 2%;
+        left: 40%;
+        border: 5px solid red;
+        z-index: 2;
+        }
+        .i3{
+            position: absolute;
+            height: 50px;
+            border-radius: 50px;
+            top: 2%;
+            left: 55%;
+            border: 5px solid red;
+            z-index: 2;
+            }
+            
+                .h1{
+                    position: absolute;
+                   
+                    width: 11.6%;
+                
+                    top: 4.7%;
+                    left: 28.6%;
+                    border: 2px solid red;
+                    }
+                    .h2{
+                        position: absolute;
+                   
+                    width: 11.6%;
+                
+                    top: 4.7%;
+                    left: 43.6%;
+                    border: 2px solid red;
+                        }
+                        .h3{
+                            position: absolute;
+                   
+                    width: 11.6%;
+                
+                    top: 4.7%;
+                    left: 58.6%;
+                    border: 2px solid red;
+                            }
+
+                            .btn_submit{
+                                margin-top: 10px;
+                                margin-left: 40%;
+                            padding: 15px;
+width: 20%;
+background-color: rgb(205, 238, 205);
+border-radius: 10px;
+font-size: 15px;
+                            }
+                            .btn_submit:hover{
+
+                                background-color: rgb(39, 236, 39);
+                            }
+
+
+
+                            .pro{
+                                position: absolute;
+                   
+                               font-size: 20px;
+                            
+                                top: 8%;
+                                left: 23%;
+                            }
+                            .edu{
+                                position: absolute;
+                   
+                               font-size: 20px;
+                            
+                                top: 8%;
+                                left: 39.4%;
+                            }
+                            .exp{
+                                position: absolute;
+                   
+                               font-size: 20px;
+                            
+                                top: 8%;
+                                left: 54.4%;
+                            }
+                            .ski{
+                                position: absolute;
+                   
+                               font-size: 20px;
+                            
+                                top: 8%;
+                                left: 70.5%;
+                            }
+                            .green{
+
+                                border: 5px solid green;
+                            }
+                            .green_line{
+
+                                border: 3.5px solid green;
+
+                            }
+                            .c1{
+                                height: 30px;
+                                position: absolute;
+                                top: 1.5%;
+                                left: 33.6%;
+                            }
+                            .c2{
+                                height: 30px;
+                                position: absolute;
+                                top: 1.5%;
+                                left: 48.6%;
+                            }
+                            .c3{
+                                height: 30px;
+                                position: absolute;
+                                top: 1.5%;
+                                left: 63.6%;
+                            }
+                            .red{
+
+                                color: red;
+                            }
+                            .top_pro{
+                                font-size: 25px;
+                                color: rgba(1, 16, 55, 0.804);
+                                text-align: center;
+                            }
+                            .design2{
+
+                                display:flex;
+                                background-color: rgb(22, 133, 230);
+                                
+                                height: auto;
+                                width: 800px;
+                                border-radius: 10px;
+                                padding: 5px;
+                                }
+                                .l{
+
+                                    margin-left: 2%;
+                                }
+                                .l{
+
+                                    margin-left: 10%;
+                                }

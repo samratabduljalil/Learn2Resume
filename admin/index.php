@@ -17,6 +17,9 @@
 <ul>
     <li><a href="">profile</a></li>
     <li><a href="">Add Course</a></li>
+    <li><a href="">Add Question</a></li>
+    <li><a href="">Add video</a></li>
+    <li><a href="">All course Data</a></li>
     <li><a href="">Delete course</a></li>
     <li><a href="">All Courses</a></li>
     <li><a href="addtemplate.html">Add Template</a></li>
