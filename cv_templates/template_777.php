@@ -12,12 +12,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 
 </head>
+<?php
+
+session_start();
+
+   
+
+?>
+
 <body>
     <div id="template_ar2" >
         <div class="parent">
             <div class="left_panel">
                 <div class="profile_pic">
-                    <img id="avatar" src="icons/simon_riley.png">
+                    <img id="avatar" src="/user2/<?php echo $_SESSION['img'] ?>">
                 </div>
 
                 <div class="info">
@@ -32,7 +40,7 @@
                             <img id="icon" src="icons/phone.png" alt="">
                             <div class="sub_sec">
                                 <strong id="phone">Phone</strong>
-                                <strong id="phn_num">302947029</strong>
+                                <strong id="phn_num"><?php echo $_SESSION['phone'] ?></strong>
                             </div>
                         </div>
 
@@ -40,8 +48,8 @@
                         <div class="the_sec">
                             <img id="icon" src="icons/mail.png" alt="">
                             <div class="sub_sec">
-                                <strong id="mail">Mail</strong>
-                                <strong id="mail_acc">ar@gmail.com</strong>
+                                <strong id="mail">Email</strong>
+                                <strong id="mail_acc"><?php echo $_SESSION['email'] ?></strong>
                             </div>
                         </div>
 
@@ -50,7 +58,7 @@
                             <img id="icon" src="icons/home.png" alt="">
                             <div class="sub_sec">
                                 <strong id="addr">Address</strong>
-                                <strong id="address">narail</strong>
+                                <strong id="address"><?php echo $_SESSION['address'] ?></strong>
                             </div>
                         </div>
                     </div>
@@ -69,8 +77,8 @@
                         <div class="the_sec">
                             <img id="phone" src="icons/school.png" alt="">
                             <div class="sub_sec">
-                                <strong id="qualification">B.Sc in Computer Science and Engineering</strong>
-                                <strong id="uni_name">United International University</strong>
+                                <strong id="qualification"><?php echo $_SESSION['edu1'] ?></strong>
+                                <strong id="uni_name"><?php echo $_SESSION['deg1'] ?></strong>
                             </div>
                         </div>
 
@@ -78,8 +86,8 @@
                         <div class="the_sec">
                             <img id="phone" src="icons/school.png" alt="">
                             <div class="sub_sec">
-                                <strong id="qualification">M.Sc in Computer Science and Engineering</strong>
-                                <strong id="uni_name">Uganda University</strong>
+                            <strong id="qualification"><?php echo $_SESSION['edu2'] ?></strong>
+                                <strong id="uni_name"><?php echo $_SESSION['deg2'] ?></strong>
                             </div>
                         </div>
 
@@ -95,10 +103,9 @@
                 <div class="vertical_line"></div>
 
                 <div class="bio">
-                    <div class="name">Abdur Rahman</div>
+                    <div class="name"><?php echo $_SESSION['name'] ?></div>
                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                        Numquam perspiciatis rerum quia! Fugit, labore harum.
+                    <?php echo $_SESSION['about'] ?>
                     </p>
                 </div>
 
@@ -114,15 +121,13 @@
                     <div class="contentExp">
                         <div class="experience">
                             <div class="dates">
-                                <strong id="exp_date">20XX - 20YY</strong>
+                                <strong id="exp_date"><?php echo $_SESSION['y1'] ?></strong>
                             </div>
                             <div class="exps">
                                 <div class="expX">
-                                    <strong id="company_name">Here Goes The Company Name</strong>
-                                    <strong id="position">[Position]</strong>
-                                    <p id="exp_details">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, amet.
-                                    </p>
+                                    <strong id="company_name"><?php echo $_SESSION['og1'] ?></strong>
+                                    <strong id="position"><?php echo $_SESSION['p1'] ?></strong>
+                                   
                                 </div>
                             </div>
                         </div>
@@ -130,16 +135,13 @@
 
                     <div class="contentExp">
                         <div class="experience">
-                            <div class="dates">
-                                <strong id="exp_date">20XX - 20YY</strong>
+                        <div class="dates">
+                                <strong id="exp_date"><?php echo $_SESSION['y2'] ?></strong>
                             </div>
                             <div class="exps">
                                 <div class="expX">
-                                    <strong id="company_name">Here Goes The Company Name</strong>
-                                    <strong id="position">[Position]</strong>
-                                    <p id="exp_details">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, amet.
-                                    </p>
+                                    <strong id="company_name"><?php echo $_SESSION['og2'] ?></strong>
+                                    <strong id="position"><?php echo $_SESSION['p2'] ?></strong>
                                 </div>
                             </div>
                         </div>
@@ -157,27 +159,27 @@
                         <!-- here goes the destruction------------- -->
                         <div class="skill_container">
                             <div class="skill_1">
-                                <strong id="skl">&#9957; Skill_X</strong>
+                                <strong id="skl">&#9957; <?php echo $_SESSION['s1'] ?></strong>
                             </div>
 
                             <div class="skill_1">
-                                <strong id="skl">&#9957; Skill_X</strong>
+                                <strong id="skl">&#9957; <?php echo $_SESSION['s2'] ?></strong>
                             </div>
 
                             <div class="skill_1">
-                                <strong id="skl">&#9957; Skill_X</strong>
+                                <strong id="skl">&#9957; <?php echo $_SESSION['s3'] ?></strong>
                             </div>
 
                             <div class="skill_1">
-                                <strong id="skl">&#9957; Skill_X</strong>
+                                <strong id="skl">&#9957; <?php echo $_SESSION['s4'] ?></strong>
                             </div>
 
                             <div class="skill_1">
-                                <strong id="skl">&#9957; Skill_X</strong>
+                                <strong id="skl">&#9957; <?php echo $_SESSION['s5'] ?></strong>
                             </div>
 
                             <div class="skill_1">
-                                <strong id="skl">&#9957; Skill_X</strong>
+                                <strong id="skl">&#9957; <?php echo $_SESSION['s6'] ?></strong>
                             </div>
                         </div>
                         
@@ -195,8 +197,9 @@
     </div>
 
     <br><br>
-
-    <input type="button" value="Convert PDF" onclick="convertHTMLtoPDF()">
+    <a href="\user2\index.php"><input class="con1" type="button" value="Back" ></a>
+    <input class="con" type="button" value="Convert PDF" onclick="convertHTMLtoPDF()">
+   
 
 </body>
     <script type="text/javascript" src="convert_to_pdf.js"></script>

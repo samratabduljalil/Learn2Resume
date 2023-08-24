@@ -48,7 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $_SESSION['y1']=$user['c_year_1'];
             $_SESSION['og2']=$user['c_name_2'];
             $_SESSION['p2']=$user['c_position_2'];
-            $_SESSION['y2']=$_POST['c_year_2'];
+            $_SESSION['y2']=$user['c_year_2'];
 
 
             $_SESSION['s1']=$user['skills_1'];

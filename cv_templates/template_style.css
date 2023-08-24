@@ -9,18 +9,7 @@ body {
 
 
 
-.qr{
- display: flex;
- justify-content: center;
- align-items: center;
 
-
-}
-.qr_img{
-    justify-content: center;
-    align-items: center;
- height: 70px;
-}
 
 .parent {
     background-color: rgb(180, 193, 168);
@@ -112,7 +101,7 @@ body {
 
 #qualification {
     font-weight: normal;
-    font-size: 10px;
+    font-size: 13px;
     margin-top: 20px;
     height: 35px;
 }
