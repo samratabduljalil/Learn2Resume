@@ -24,7 +24,7 @@
 
 <div class="card">
 
-<a href="\cv_templates\t7.php"><img src="img/002.png" alt="" class="img-t"></a>
+<a href="\cv_templates\template_777.php"><img src="img/002.png" alt="" class="img-t"></a>
 </div>
 
 

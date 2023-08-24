@@ -1,5 +1,5 @@
 function convertHTMLtoPDF() {
-    let pdfjs = document.querySelector('#template_ar');
+    let pdfjs = document.querySelector('#template_ar2');
     const { jsPDF } = window.jspdf;
 
     let pdf_height = 1500; // in milimeter (mm)

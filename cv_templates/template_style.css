@@ -5,6 +5,23 @@ body {
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(16, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
 }
 
+
+
+
+
+.qr{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+
+}
+.qr_img{
+    justify-content: center;
+    align-items: center;
+ height: 70px;
+}
+
 .parent {
     background-color: rgb(180, 193, 168);
     height: 925px;
