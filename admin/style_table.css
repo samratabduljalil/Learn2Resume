@@ -1,0 +1,42 @@
+.con{
+    display: flex;
+    background-color: aqua;
+    justify-content: center;
+    font-size: 35px;
+    
+    
+    }
+
+.design10{
+background-color: azure;
+
+
+
+}
+
+.un{
+
+   
+
+
+
+}
+td, th{
+    border: 1px solid rgb(2, 0, 0);
+ padding: 5px;
+ width: 300px;
+}
+tr{
+
+    border: 1px solid red;
+}
+table{
+
+    border: 1px solid red;
+    
+}
+h1{
+    text-align: center;
+    font-size: 36px;
+    color: rgb(0, 0, 0);
+}
