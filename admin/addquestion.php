@@ -17,6 +17,12 @@
     <div class="design2">
     <form action="add_Q.php" method="post" enctype="multipart/form-data" >
         <p class="top_pro">ADD Question</p>
+
+        <?php if(isset($_SESSION['done'])){
+        if($_SESSION['done']==True) {?>
+            <p class="top_pro1">Sucessfully added</p>
+            <?php $_SESSION['done']=False ;
+    }}?>
         
         <textarea name="q1" id="" cols="30" rows="10" class="text_area" required placeholder="Question 1"></textarea>
         <input type="text" name="op11" id="" class="text_box1" placeholder="option 1" >

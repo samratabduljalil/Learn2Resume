@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E-Certificate</title>
+  <title>result</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -54,8 +54,17 @@
     }
 
     .date {
-      font-size: 18px;
-      color: #888;
+      font-size: 36px;
+      color: green;
+         
+   font-weight: 600;
+      margin-bottom: 30px;
+    }
+    .date1 {
+      font-size: 36px;
+         
+   font-weight: 600;
+      color: red;
       margin-bottom: 30px;
     }
 
@@ -80,23 +89,103 @@
       font-size: 18px;
       color: #555;
     }
+    .cer{
+        position: absolute;
+padding:7px;
+background-color: rgb(160, 243, 160);
+margin-top: 40%;
+margin-right: 30%;
+
+    }
+    .cer:hover{
+ 
+        background-color: rgb(34, 255, 34);
+    }
   </style>
 </head>
 <body>
+
+
+
+
+
+
+
+
+
+
+
+<?php
+    include('connection.php');
+    session_start();
+    $mark=0;
+    // Check connection
+    if ($connection->connect_error) {
+        die("Connection failed: " . $connection->connect_error);
+    }
+$a=1;
+
+    // Fetch product data from the database
+    $sql = "SELECT * FROM question where course_code='{$_GET['id']}'";
+    $result = $connection->query($sql);
+
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+           $po='p'.$a;
+if($row['answer']==$_POST[$po]){
+
+    $mark=$mark+1;
+}
+
+
+             $a=$a+1;
+        }
+    } else {
+        echo "No products found.";
+    }
+
+    // Close the database connection
+    $connection->close();
+    ?>
+
+
+
+
+
+
+
+
+
+
   <div class="certificate">
-    <img class="logo" src="quality (2).png" alt="Logo">
-    <h1 class="title">Certificate of Achievement</h1>
+   
+    
     <p class="subtitle">This is to certify that</p>
-    <p class="name">John Doe</p>
-    <p class="event">Has successfully completed the Web Design Course</p>
-    <p class="date">Date: August 23, 2023</p>
-    <div class="signature">
-      <img src="ukrainian.png" alt="Signature">
-      <div>
+    <p class="name"><?php echo $_SESSION['name'] ;?></p>
+    <p class="event">get marks in the web design exam</p>
+    <p class="name"><?php echo $mark ?></p>
+    <?php if($mark >=3){ ?>
+<p class="date">Pass</p>
+
+ <?php   }else{ ?>
+
+ <p class="date1">Fail</p>
+<?php } ?>
+    
         <p class="organizer">Team ABC</p>
         <p class="role">Event Organizer</p>
       </div>
     </div>
   </div>
+
+
+  <?php if($mark >=3){ ?>
+   <a href="http://"><button class="cer" >GET Your certificate</button></a> 
+
+ <?php   }?>
+
+
+
+
 </body>
 </html>

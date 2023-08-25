@@ -2,7 +2,7 @@
 
 include('connection.php');
 
-
+session_start();
 
 
 
@@ -13,7 +13,7 @@ $query="INSERT INTO `question`( `question`, `answer`,  `course_code`, `op1`, `op
 
 
 if (mysqli_query($connection, $query)) {
-    header("location: login.php");
+  
  } else {
     echo "Error inserting data: " . mysqli_error($connection);
 }
@@ -24,7 +24,7 @@ $query="INSERT INTO `question`( `question`, `answer`,  `course_code`, `op1`, `op
 
 
 if (mysqli_query($connection, $query)) {
-    header("location: login.php");
+   
  } else {
     echo "Error inserting data: " . mysqli_error($connection);
 }
@@ -38,11 +38,11 @@ $query="INSERT INTO `question`( `question`, `answer`,  `course_code`, `op1`, `op
 
 
 if (mysqli_query($connection, $query)) {
-    header("location: login.php");
+ 
  } else {
     echo "Error inserting data: " . mysqli_error($connection);
 }
-5
+
 
 $query="INSERT INTO `question`( `question`, `answer`,  `course_code`, `op1`, `op2`, `op3`, `op4`) VALUES ('{$_POST['q5']}','{$_POST['ans5']}','{$_POST['C_code']}','{$_POST['op51']}','{$_POST['op52']}','{$_POST['op53']}','{$_POST['op54']}')";
 
@@ -50,7 +50,7 @@ $query="INSERT INTO `question`( `question`, `answer`,  `course_code`, `op1`, `op
 
 
 if (mysqli_query($connection, $query)) {
-    header("location: login.php");
+   
  } else {
     echo "Error inserting data: " . mysqli_error($connection);
 }
@@ -62,7 +62,9 @@ $query="INSERT INTO `question`( `question`, `answer`,  `course_code`, `op1`, `op
 
 
 if (mysqli_query($connection, $query)) {
-    header("location: login.php");
+    $_SESSION['done']=True;
+    header("location: addquestion.php");
+
  } else {
     echo "Error inserting data: " . mysqli_error($connection);
 }

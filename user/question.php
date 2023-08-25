@@ -52,19 +52,65 @@
   </style>
 </head>
 <body>
+  <form action="result.php?id=<?php echo $_GET['id'] ?>" method="post">
   <div class="question-paper">
-    <div class="question">
-      <p class="question-text">1. What is the capital of France?</p>
-      <label><input type="radio" name="q1" value="a"> a) Paris</label>
-      <label><input type="radio" name="q1" value="b"> b) London</label>
-      <label><input type="radio" name="q1" value="c"> c) Berlin</label>
-      <label><input type="radio" name="q1" value="d"> d) Madrid</label>
-    </div>
 
+
+
+  <?php
+    include('connection.php');
+
+    // Check connection
+    if ($connection->connect_error) {
+        die("Connection failed: " . $connection->connect_error);
+    }
+$a=1;
+    // Fetch product data from the database
+    $sql = "SELECT * FROM question where course_code='{$_GET['id']}'";
+    $result = $connection->query($sql);
+
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            ?>
+           
+           <div class="question">
+      <p class="question-text"><?php echo $a ?>.<?php echo $row['question'] ?></p>
+      <label><input type="radio" name="p<?php echo $a ?>" value="1"> a) <?php echo $row['op1'] ?></label>
+      <label><input type="radio" name="p<?php echo $a ?>" value="2"> b) <?php echo $row['op2'] ?></label>
+      <label><input type="radio" name="p<?php echo $a ?>" value="3"> c) <?php echo $row['op3'] ?></label>
+      <label><input type="radio" name="p<?php echo $a ?>" value="4"> d) <?php echo $row['op4'] ?></label>
+    </div>
+          
+
+            <?php
+             $a=$a+1;
+        }
+    } else {
+        echo "No products found.";
+    }
+
+    // Close the database connection
+    $connection->close();
+    ?>
+
+
+
+
+
+   
+
+
+
+
+
+
+
+    
     <!-- Add more questions similarly -->
   </div>
 
 
-  <button class="btn">submit</button>
+  <button class="btn" type="submit">submit</button>
+  </form>
 </body>
 </html>
