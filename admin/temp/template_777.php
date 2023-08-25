@@ -259,7 +259,8 @@ $row = $result->fetch_assoc();
                         
                     </div>
                     <div class="qr">
-                        <img src="\cv_templates\qr_code\qrcode.png" alt="" class="qr_img">
+                        <?php $r=$_GET['temp2']."".$_GET['id']; ?>
+                        <img src="\cv_templates\qr_code\<?php echo $r.".png" ?>" alt="" class="qr_img">
                     </div>
                 </div>
                 
@@ -273,7 +274,7 @@ $row = $result->fetch_assoc();
     <br><br>
     <a href="\user2\index.php"><input class="con1" type="button" value="Back" ></a>
     <input class="con" type="button" value="Convert PDF" onclick="convertHTMLtoPDF()">
-   
+    <a href="\cv_templates\qr_code.php?id=<?php echo $_GET['id']?>&&temp=<?php echo $_GET['temp']?>&&temp2=<?php echo $_GET['temp2']?>"><input class="con1" type="button" value="create Qr code" ></a>
 
 </body>
     <script type="text/javascript" src="convert_to_pdf.js"></script>

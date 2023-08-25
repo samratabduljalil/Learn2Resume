@@ -44,7 +44,7 @@ session_start();
 
 <div class="card">
 
-<a href="\admin/<?php echo $row['link']?>?id=<?php echo $_SESSION['id']?>&&temp=\admin/<?php echo $row['link']?>"><img src="\admin/<?php echo $row['image']?>" alt="" class="img-t"></a>
+<a href="\admin/temp/<?php echo $row['link']?>?id=<?php echo $_SESSION['id']?>&&temp=/admin/temp/<?php echo $row['link']?>&&temp2=<?php echo $row['link']?>"><img src="\admin/temp/<?php echo $row['image']?>" alt="" class="img-t"></a>
 </div>
    
     
