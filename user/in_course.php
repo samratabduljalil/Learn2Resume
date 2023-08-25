@@ -39,38 +39,48 @@
              </div> 
              <div class="contain_page">
              <div class="container_page">
-                <div class="card_page">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ehAGlT9DJZ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                
-                
-                
-                </div>  
-                
-                <div class="card_page">
-                
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/tDvC5H1WvoU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                
-                
-                </div>  
-                <div class="card_page">
-                
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/fspOZmp9akk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                
-                </div>  
-                
-                <div class="card_page">
-                
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/J9yZ1WiMe2Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                
+
+
+
+             <?php
+    include('connection.php');
+$code=$_GET['id'] ;
+    // Check connection
+    if ($connection->connect_error) {
+        die("Connection failed: " . $connection->connect_error);
+    }
+
+    // Fetch product data from the database
+    $sql = "SELECT * FROM course_video where course_id = '{$code}' and R_p=0";
+    $result = $connection->query($sql);
+
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            ?>
+           
+           <div class="card_page">
+           <?php echo $row['video_link']    ;?>
                 
                 </div>  
+              
+
+            <?php
+        }
+    } else {
+        echo "No products found.";
+    }
+
+    // Close the database connection
+    $connection->close();
+    ?>
+
+
                 
-                <div class="card_page">
+            
                 
+               
                 
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/KpfJ-glIwR8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                
-                </div>  
+               
                 
                
                 
@@ -111,52 +121,38 @@
 
     <div class="contain_page">
         <div class="container_page">
-            <div class="card_page">
-            
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/G3e-cpL7ofc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            
-            
-            </div>  
-            
-            <div class="card_page">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLfqMhTWNBTe3H6c9OGXb5_6wcc1Mca52n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            
-            
-            
-            </div>  
-            <div class="card_page">
-            
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/gjdBWv0zGb8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            
-            </div>  
-            
-            <div class="card_page">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/srBwRDiC3Pg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            
-            
-            
-            </div>  
-            
-            <div class="card_page">
-            
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/kUJPZbUPqro" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            
-            
-            </div>  
-            
-            <div class="card_page">
-            
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/zJSY8tbf_ys" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            
-            
-            </div>  
-            
-            <div class="card_page">
-            
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/CpgNVyUxUV0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            
-            
-            </div>  
+        <?php
+    include('connection.php');
+$code=$_GET['id'] ;
+    // Check connection
+    if ($connection->connect_error) {
+        die("Connection failed: " . $connection->connect_error);
+    }
+
+    // Fetch product data from the database
+    $sql = "SELECT * FROM course_video where course_id = '{$code}' and R_p=1";
+    $result = $connection->query($sql);
+
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            ?>
+           
+           <div class="card_page">
+           <?php echo $row['video_link']    ;?>
+                
+                </div>  
+              
+
+            <?php
+        }
+    } else {
+        echo "No products found.";
+    }
+
+    // Close the database connection
+    $connection->close();
+    ?>
+             
            
             </div>
             
