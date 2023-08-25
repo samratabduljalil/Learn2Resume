@@ -18,18 +18,13 @@
     <form action="add_v.php" method="post" enctype="multipart/form-data" >
         <p class="top_pro">ADD New Video</p>
         
-    <input type="text" name="name" id="" class="text_box1" placeholder="Enter Course code" >
-    <input type="text" name="" id="" class="text_box1" placeholder="Enter Your Course video Link" >
-    <select id="sign" name="sign" class="sign_text">
+    <input type="text" name="course_code" id="" class="text_box1" placeholder="Enter Course code" >
+    <input type="text" name="link" id="" class="text_box1" placeholder="Enter Your Course video Link" >
+    <select id="sign" name="sign" class="text_box1">
         <option value="0" class="sign_text">Road Map Video</option>
         <option value="1" class="sign_text">Playlist Video</option>
-
-
-    
-
-
-
-            <button class="btn_submit" type="submit">Add course</button>
+</select>
+        <button class="btn_submit" type="submit">Add video</button>
 
     </form>
 </div></div>

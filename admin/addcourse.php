@@ -33,8 +33,8 @@
         <input type="text" name="course_name" id="" class="text_box1" placeholder="Enter Course name" >
     <input type="text" name="course_code" id="" class="text_box1" placeholder="Enter Your Course code" >
         <?php }?>
-
-             <a href="profile1.html"><button class="btn_submit" type="submit">Add course</button></a>
+        
+            <button class="btn_submit" type="submit">Add course</button>
 
     </form>
 </div></div>

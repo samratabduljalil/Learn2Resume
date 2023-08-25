@@ -202,7 +202,7 @@ $code=$_GET['id'] ;
 
 
 
-
+        <a href="question.php?id=<?php echo $_GET['id'] ?>"><button class="dam_button">Take a Exam and Get certified</button></a>
 
 </body>
 

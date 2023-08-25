@@ -48,7 +48,7 @@
         while ($row = $result->fetch_assoc()) {
             ?>
            
-         <a href='in_course.php?id=" .<?php echo $row['course_code'] ?>. "' class="card" > 
+         <a href='in_course.php?id=<?php echo $row['course_code'] ?>' class="card" > 
             <h1 class="cardtext"><span class="t1"><?php echo $row['Name'] ?></span></h1>
 
           <div class="in_card"><p>Click Here to Start Learning</p></div>

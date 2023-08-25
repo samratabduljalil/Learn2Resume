@@ -57,7 +57,25 @@
    
    }
    
-   
+   .dam_button{
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 45%;
+    background-color: rgb(188, 248, 188);
+transition: .45s;
+
+
+   }
+   .dam_button:hover{
+    padding: 12px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: rgb(92, 251, 92);
+
+
+
+   }
    
    .card_page{
        background-color:white;

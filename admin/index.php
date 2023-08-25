@@ -10,18 +10,17 @@
     <section class="sidebar">
 
 <div class="user_card">
-    <div class="top_flex">
-    <img src="/img/01.jpg" alt="" class="user_profile_photo"></div>
+   
    <p class="user_name">Samrat Abdul Jalil</p>
 
 <ul>
     <li><a href="">profile</a></li>
     <li><a href="addcourse.php">Add Course</a></li>
     <li><a href="">Add Question</a></li>
-    <li><a href="">Add video</a></li>
+    <li><a href="addvideo.php">Add video</a></li>
     <li><a href="">All course Data</a></li>
     <li><a href="">Delete course</a></li>
-    <li><a href="">All Courses</a></li>
+    <li><a href="coursetable.php">All Courses</a></li>
     <li><a href="addtemplate.html">Add Template</a></li>
     <li><a href="./index.php">Home</a></li>
     <li><a href="/logout.php">Log Out</a></li>
