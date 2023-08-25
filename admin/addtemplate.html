@@ -3,20 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pro.css">
     <link rel="stylesheet" href="style.css">
-    <title>add template</title>
+    <title>edit Profile</title>
 </head>
+<?php session_start()?>
 <body>
+
+
+
     
-<div class="add_flex">
-    <form action="add.php" method="post" enctype="multipart/form-data">
-        <p class="chose">Choose template</p><br>
-<input type="file" name="" id="" class="btn_add"  >
-
-<button type="submit" class="btn_add">Add template</button>
-
+<div class="con">
+    <div class="design2">
+    <form action="add_v.php" method="post" enctype="multipart/form-data" >
+        <p class="top_pro">Upload New template</p>
+        <label for="">Add Html File:</label>
+    <input type="file" name="" id="" >
+    <label for="">Add CSS File:</label>
+    <input type="file" name="" id="text_box1"><br> <br> 
+   <br> <label for="">Add template photo </label>
+    <input type="file" name="" id="text_box1">
+    
+        <button class="btn_submit" type="submit">upload files</button>
 
     </form>
-</div>
+</div></div>
+
 </body>
 </html>
