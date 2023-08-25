@@ -93,14 +93,28 @@
         position: absolute;
 padding:7px;
 background-color: rgb(160, 243, 160);
-margin-top: 40%;
-margin-right: 30%;
+top:85%;
+left:45%;
+
+
+    }
+    .cer1{
+        position: absolute;
+padding:7px;
+background-color: rgb(160, 243, 160);
+top:85%;
+left:35%;
+
 
     }
     .cer:hover{
  
         background-color: rgb(34, 255, 34);
     }
+    .cer1:hover{
+ 
+ background-color: rgb(34, 255, 34);
+}
   </style>
 </head>
 <body>
@@ -119,6 +133,7 @@ margin-right: 30%;
     include('connection.php');
     session_start();
     $mark=0;
+    $row;
     // Check connection
     if ($connection->connect_error) {
         die("Connection failed: " . $connection->connect_error);
@@ -160,9 +175,9 @@ if($row['answer']==$_POST[$po]){
   <div class="certificate">
    
     
-    <p class="subtitle">This is to certify that</p>
+    <p class="subtitle"></p>
     <p class="name"><?php echo $_SESSION['name'] ;?></p>
-    <p class="event">get marks in the web design exam</p>
+    <p class="event">Your obtain marks is</p>
     <p class="name"><?php echo $mark ?></p>
     <?php if($mark >=3){ ?>
 <p class="date">Pass</p>
@@ -172,20 +187,21 @@ if($row['answer']==$_POST[$po]){
  <p class="date1">Fail</p>
 <?php } ?>
     
-        <p class="organizer">Team ABC</p>
-        <p class="role">Event Organizer</p>
+        
+        <p class="role">Now You Can download your certificate</p>
       </div>
     </div>
   </div>
 
 
   <?php if($mark >=3){ ?>
-   <a href="http://"><button class="cer" >GET Your certificate</button></a> 
+   <a href="certificate.php?id=<?php echo $_GET['id'] ?>"><button class="cer" >GET Your certificate</button></a> 
 
  <?php   }?>
 
 
 
+ <a href="\user2\index.php"><button class="cer1" >back To dashboard</button></a> 
 
 </body>
 </html>
