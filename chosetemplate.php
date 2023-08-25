@@ -28,7 +28,7 @@
 
 <?php
     include('connection.php');
-
+session_start();
     // Check connection
     if ($connection->connect_error) {
         die("Connection failed: " . $connection->connect_error);
@@ -44,7 +44,7 @@
 
 <div class="card">
 
-<a href="\admin/<?php echo $row['link']?>"><img src="\admin/<?php echo $row['image']?>" alt="" class="img-t"></a>
+<a href="\admin/<?php echo $row['link']?>?id=<?php echo $_SESSION['id']?>&&temp=\admin/<?php echo $row['link']?>"><img src="\admin/<?php echo $row['image']?>" alt="" class="img-t"></a>
 </div>
    
     

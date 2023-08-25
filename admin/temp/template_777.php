@@ -8,7 +8,11 @@
 
 <style>
 
+.nu{
+font-size:12px;
 
+
+}
 .qr{
 
 display: flex;
@@ -66,6 +70,20 @@ transition: .45s;
 
 session_start();
 
+include('connection.php');
+
+// Check connection
+if ($connection->connect_error) {
+    die("Connection failed: " . $connection->connect_error);
+}
+
+// Fetch product data from the database
+$sql = "SELECT * FROM cv_user where UserID = '{$_GET['id']}'";
+$result = $connection->query($sql);
+
+if ($result->num_rows > 0) {
+$row = $result->fetch_assoc(); 
+       
    
 
 ?>
@@ -79,7 +97,7 @@ session_start();
         <div class="parent">
             <div class="left_panel">
                 <div class="profile_pic">
-                    <img id="avatar" src="/user2/<?php echo $_SESSION['img'] ?>">
+                    <img id="avatar" src="/user2/<?php echo $row['img'] ?>">
                 </div>
 
                 <div class="info">
@@ -94,7 +112,7 @@ session_start();
                             <img id="icon" src="icons/phone.png" alt="">
                             <div class="sub_sec">
                                 <strong id="phone">Phone</strong>
-                                <strong id="phn_num"><?php echo $_SESSION['phone'] ?></strong>
+                                <strong id="phn_num"><?php echo $row['phone'] ?></strong>
                             </div>
                         </div>
 
@@ -103,7 +121,7 @@ session_start();
                             <img id="icon" src="icons/mail.png" alt="">
                             <div class="sub_sec">
                                 <strong id="mail">Email</strong>
-                                <strong id="mail_acc"><?php echo $_SESSION['email'] ?></strong>
+                                <strong id="mail_acc"><?php echo $row['email'] ?></strong>
                             </div>
                         </div>
 
@@ -112,7 +130,7 @@ session_start();
                             <img id="icon" src="icons/home.png" alt="">
                             <div class="sub_sec">
                                 <strong id="addr">Address</strong>
-                                <strong id="address"><?php echo $_SESSION['address'] ?></strong>
+                                <strong id="address"><?php echo $row['address'] ?></strong>
                             </div>
                         </div>
                     </div>
@@ -131,8 +149,9 @@ session_start();
                         <div class="the_sec">
                             <img id="phone" src="icons/school.png" alt="">
                             <div class="sub_sec">
-                                <strong id="qualification"><?php echo $_SESSION['edu1'] ?></strong>
-                                <strong id="uni_name"><?php echo $_SESSION['deg1'] ?></strong>
+                                <strong id="qualification"><?php echo $row['edu_1'] ?></strong>
+                                <strong id="uni_name"><?php echo $row['degree_1'] ?></strong>
+                                <strong class="nu"><?php echo $row['cgpa_1'] ?></strong>
                             </div>
                         </div>
 
@@ -140,8 +159,9 @@ session_start();
                         <div class="the_sec">
                             <img id="phone" src="icons/school.png" alt="">
                             <div class="sub_sec">
-                            <strong id="qualification"><?php echo $_SESSION['edu2'] ?></strong>
-                                <strong id="uni_name"><?php echo $_SESSION['deg2'] ?></strong>
+                            <strong id="qualification"><?php echo $row['edu_2'] ?></strong>
+                                <strong id="uni_name"><?php echo $row['degree_2'] ?></strong>
+                                <strong class="nu"><?php echo $row['cgpa_1'] ?></strong>
                             </div>
                         </div>
 
@@ -157,9 +177,9 @@ session_start();
                 <div class="vertical_line"></div>
 
                 <div class="bio">
-                    <div class="name"><?php echo $_SESSION['name'] ?></div>
+                    <div class="name"><?php echo $row['name'] ?></div>
                     <p>
-                    <?php echo $_SESSION['about'] ?>
+                    <?php echo $row['about'] ?>
                     </p>
                 </div>
 
@@ -175,12 +195,12 @@ session_start();
                     <div class="contentExp">
                         <div class="experience">
                             <div class="dates">
-                                <strong id="exp_date"><?php echo $_SESSION['y1'] ?></strong>
+                                <strong id="exp_date"><?php echo $row['c_year_1'] ?></strong>
                             </div>
                             <div class="exps">
                                 <div class="expX">
-                                    <strong id="company_name"><?php echo $_SESSION['og1'] ?></strong>
-                                    <strong id="position"><?php echo $_SESSION['p1'] ?></strong>
+                                    <strong id="company_name"><?php echo $row['c_name_1'] ?></strong>
+                                    <strong id="position"><?php echo $row['c_position_1'] ?></strong>
                                    
                                 </div>
                             </div>
@@ -190,12 +210,12 @@ session_start();
                     <div class="contentExp">
                         <div class="experience">
                         <div class="dates">
-                                <strong id="exp_date"><?php echo $_SESSION['y2'] ?></strong>
+                        <strong id="exp_date"><?php echo $row['c_year_2'] ?></strong>
                             </div>
                             <div class="exps">
                                 <div class="expX">
-                                    <strong id="company_name"><?php echo $_SESSION['og2'] ?></strong>
-                                    <strong id="position"><?php echo $_SESSION['p2'] ?></strong>
+                                    <strong id="company_name"><?php echo $row['c_name_2'] ?></strong>
+                                    <strong id="position"><?php echo $row['c_position_2'] ?></strong>
                                 </div>
                             </div>
                         </div>
@@ -213,27 +233,27 @@ session_start();
                         <!-- here goes the destruction------------- -->
                         <div class="skill_container">
                             <div class="skill_1">
-                                <strong id="skl">&#9957; <?php echo $_SESSION['s1'] ?></strong>
+                                <strong id="skl">&#9957; <?php echo $row['skills_1'] ?></strong>
                             </div>
 
                             <div class="skill_1">
-                                <strong id="skl">&#9957; <?php echo $_SESSION['s2'] ?></strong>
+                                <strong id="skl">&#9957; <?php echo $row['skills_2'] ?></strong>
                             </div>
 
                             <div class="skill_1">
-                                <strong id="skl">&#9957; <?php echo $_SESSION['s3'] ?></strong>
+                                <strong id="skl">&#9957; <?php echo $row['skills_3'] ?></strong>
                             </div>
 
                             <div class="skill_1">
-                                <strong id="skl">&#9957; <?php echo $_SESSION['s4'] ?></strong>
+                                <strong id="skl">&#9957; <?php echo $row['skills_4'] ?></strong>
                             </div>
 
                             <div class="skill_1">
-                                <strong id="skl">&#9957; <?php echo $_SESSION['s5'] ?></strong>
+                                <strong id="skl">&#9957; <?php echo $row['skills_5'] ?></strong>
                             </div>
 
                             <div class="skill_1">
-                                <strong id="skl">&#9957; <?php echo $_SESSION['s6'] ?></strong>
+                                <strong id="skl">&#9957; <?php echo $row['skills_6'] ?></strong>
                             </div>
                         </div>
                         
@@ -249,7 +269,7 @@ session_start();
 
         </div>
     </div>
-
+<?php }?>
     <br><br>
     <a href="\user2\index.php"><input class="con1" type="button" value="Back" ></a>
     <input class="con" type="button" value="Convert PDF" onclick="convertHTMLtoPDF()">
