@@ -15,12 +15,56 @@
 <body>
    
 
+
+
   
 
 
 <h1 class="text-center text-warning">Choose CV tamplate</h1>
     <div class="container">
 <div class="contain">
+
+
+
+<?php
+    include('connection.php');
+
+    // Check connection
+    if ($connection->connect_error) {
+        die("Connection failed: " . $connection->connect_error);
+    }
+
+    // Fetch product data from the database
+    $sql = "SELECT * FROM cv_template";
+    $result = $connection->query($sql);
+
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            ?>
+
+<div class="card">
+
+<a href="\admin/<?php echo $row['link']?>"><img src="\admin/<?php echo $row['image']?>" alt="" class="img-t"></a>
+</div>
+   
+    
+    
+    <?php
+        }
+    } else {
+        echo "No products found.";
+    }
+
+    // Close the database connection
+    $connection->close();
+    ?>
+    
+
+
+
+
+
+
 
 <div class="card">
 

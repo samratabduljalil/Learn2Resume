@@ -21,7 +21,7 @@
     <li><a href="">All course Data</a></li>
     <li><a href="">Delete course</a></li>
     <li><a href="coursetable.php">All Courses</a></li>
-    <li><a href="addtemplate.html">Add Template</a></li>
+    <li><a href="addtemplate.php">Add Template</a></li>
     <li><a href="./index.php">Home</a></li>
     <li><a href="/logout.php">Log Out</a></li>
 

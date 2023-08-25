@@ -70,6 +70,10 @@ session_start();
 
 ?>
 
+
+
+
+
 <body>
     <div id="template_ar2" >
         <div class="parent">
@@ -235,7 +239,7 @@ session_start();
                         
                     </div>
                     <div class="qr">
-                        <img src="qr_code\qrcode.png" alt="" class="qr_img">
+                        <img src="\cv_templates\qr_code\qrcode.png" alt="" class="qr_img">
                     </div>
                 </div>
                 

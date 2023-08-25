@@ -15,14 +15,14 @@
     
 <div class="con">
     <div class="design2">
-    <form action="add_v.php" method="post" enctype="multipart/form-data" >
+    <form action="add_temp.php" method="post" enctype="multipart/form-data" >
         <p class="top_pro">Upload New template</p>
         <label for="">Add Html File:</label>
-    <input type="file" name="" id="" >
+    <input type="file" name="html" id="" >
     <label for="">Add CSS File:</label>
-    <input type="file" name="" id="text_box1"><br> <br> 
+    <input type="file" name="css" id="text_box1"><br> <br> 
    <br> <label for="">Add template photo </label>
-    <input type="file" name="" id="text_box1">
+    <input type="file" name="img" id="text_box1">
     
         <button class="btn_submit" type="submit">upload files</button>
 
