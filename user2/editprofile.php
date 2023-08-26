@@ -7,7 +7,18 @@
     <link rel="stylesheet" href="style.css">
     <title>edit Profile</title>
 </head>
-<?php session_start()?>
+<?php 
+session_start();
+include('connection.php');
+    
+    $query = "SELECT * FROM cv_user  WHERE UserID = '{$_SESSION['id']}'";
+    $result = mysqli_query($connection, $query);
+
+    if ($result && mysqli_num_rows($result) > 0) {
+     
+        $user = mysqli_fetch_assoc($result);
+        
+        ?>
 <body>
 
 
@@ -17,52 +28,52 @@
     <div class="design2">
     <form action="edit.php" method="post" enctype="multipart/form-data" >
         <p class="top_pro">Edit Your Personal Details</p>
-        <textarea name="" id="about" cols="30" rows="10" class="text_area" required ><?php echo $_SESSION['about'] ?></textarea>
-    <input type="text" name="name" id="" class="text_box1" placeholder="Enter Your name" value="<?php echo $_SESSION['name'] ?>">
-    <input type="text" name="" id="" class="text_box1" placeholder="Enter Your Phone Number" value="<?php echo $_SESSION['phone'] ?>">
-    <input type="email" name="" id="" class="text_box1" placeholder="Enter Your Email" value="<?php echo $_SESSION['email'] ?>">
-    <input type="text" name="" id="" class="text_box1" placeholder="Enter Your Address" value="<?php echo $_SESSION['address'] ?>">
+        <textarea name="" id="about" cols="30" rows="10" class="text_area" required ><?php echo $user['about'] ?></textarea>
+    <input type="text" name="name" id="" class="text_box1" placeholder="Enter Your name" value="<?php echo $user['name'] ?>">
+    <input type="text" name="phone" id="" class="text_box1" placeholder="Enter Your Phone Number" value="<?php echo $user['phone'] ?>">
+    <input type="email" name="email" id="" class="text_box1" placeholder="Enter Your Email" value="<?php echo $user['email'] ?>">
+    <input type="text" name="address" id="" class="text_box1" placeholder="Enter Your Address" value="<?php echo $user['address'] ?>">
 
     <p class="top_pro">Edit Your Personal Details</p>
 
-    <input type="text" name="" id="" class="text_box1" placeholder='Instution Name* ' value="<?php echo $_SESSION['edu1'] ?>">
+    <input type="text" name="edu1" id="" class="text_box1" placeholder='Instution Name* ' value="<?php echo $user['edu_1'] ?>">
     
 
-    <input type="text" name="" id="" class="text_box1" placeholder="Instution Name" value="<?php echo $_SESSION['edu2'] ?>" >
-    <input type="text" name="" id="" class="text_box1" placeholder="Degree*" value="<?php echo $_SESSION['deg1'] ?>">
+    <input type="text" name="edu2" id="" class="text_box1" placeholder="Instution Name" value="<?php echo $user['edu_2'] ?>" >
+    <input type="text" name="deg1" id="" class="text_box1" placeholder="Degree*" value="<?php echo $user['degree_1'] ?>">
      
-       <input type="text" name="" id="" class="text_box1" placeholder="Degree" value="<?php echo $_SESSION['deg2'] ?>">
-       <input type="text" name="" id="" class="text_box1" placeholder="Obtain CGPA/GPA*" value="<?php echo $_SESSION['cgpa1'] ?>">
+       <input type="text" name="deg2" id="" class="text_box1" placeholder="Degree" value="<?php echo $user['degree_2'] ?>">
+       <input type="text" name="cgpa1" id="" class="text_box1" placeholder="Obtain CGPA/GPA*" value="<?php echo $user['cgpa_1'] ?>">
           
-          <input type="text" name="" id="" class="text_box1" placeholder="Obtain CGPA/GPA" value="<?php echo $_SESSION['cgpa2'] ?>" >
+          <input type="text" name="cgpa2" id="" class="text_box1" placeholder="Obtain CGPA/GPA" value="<?php echo $user['cgpa_2'] ?>" >
 
 
 
           <p class="top_pro">Works Exprience</p>
-          <input type="text" name="" id="" class="text_box1" placeholder="Organigetion  Name*" value="<?php echo $_SESSION['og1'] ?>">
+          <input type="text" name="og1" id="" class="text_box1" placeholder="Organigetion  Name*" value="<?php echo $user['c_name_1'] ?>">
       
   
-          <input type="text" name="" id="" class="text_box1" placeholder="Organigetion  Name" value="<?php echo $_SESSION['og2'] ?>">
-          <input type="text" name="" id="" class="text_box1" placeholder="Position*" value="<?php echo $_SESSION['p1'] ?>">
+          <input type="text" name="og2" id="" class="text_box1" placeholder="Organigetion  Name" value="<?php echo $user['c_name_2'] ?>">
+          <input type="text" name="p1" id="" class="text_box1" placeholder="Position*" value="<?php echo $user['c_position_1'] ?>">
            
-             <input type="text" name="" id="" class="text_box1" placeholder="Position" value="<?php echo $_SESSION['p2'] ?>" >
-             <input type="text" name="" id="" class="text_box1" placeholder="Working Year*" value="<?php echo $_SESSION['y1'] ?>">
+             <input type="text" name="p2" id="" class="text_box1" placeholder="Position" value="<?php echo $user['c_position_2'] ?>" >
+             <input type="text" name="y1" id="" class="text_box1" placeholder="Working Year*" value="<?php echo $user['c_year_1'] ?>">
                 
-                <input type="text" name="" id="" class="text_box1" placeholder="Working Year" value="<?php echo $_SESSION['y2'] ?>" >
+                <input type="text" name="y2" id="" class="text_box1" placeholder="Working Year" value="<?php echo $user['c_year_2'] ?>" >
 
 
                 <p class="top_pro">Enter Your Top six Skills</p>
 
-                <input type="text" name="" id="" class="text_box1" placeholder="Skills one" value="<?php echo $_SESSION['s1'] ?>" >
+                <input type="text" name="s1" id="" class="text_box1" placeholder="Skills one" value="<?php echo $user['skills_1'] ?>" >
             
         
-                <input type="text" name="" id="" class="text_box1" placeholder="Skills one" value="<?php echo $_SESSION['s2'] ?>">
-                <input type="text" name="" id="" class="text_box1" placeholder="Skills one" value="<?php echo $_SESSION['s3'] ?>">
+                <input type="text" name="s2" id="" class="text_box1" placeholder="Skills one" value="<?php echo $user['skills_2'] ?>">
+                <input type="text" name="s3" id="" class="text_box1" placeholder="Skills one" value="<?php echo $user['skills_3'] ?>">
                  
-                   <input type="text" name="" id="" class="text_box1" placeholder="Skills one" value="<?php echo $_SESSION['s4'] ?>">
-                   <input type="text" name="" id="" class="text_box1" placeholder="Skills one" value="<?php echo $_SESSION['s5'] ?>">
+                   <input type="text" name="s4" id="" class="text_box1" placeholder="Skills one" value="<?php echo $user['skills_4'] ?>">
+                   <input type="text" name="s5" id="" class="text_box1" placeholder="Skills one" value="<?php echo $user['skills_5'] ?>">
                       
-                      <input type="text" name="" id="" class="text_box1" placeholder="Skills one" value="<?php echo $_SESSION['s6'] ?>">
+                      <input type="text" name="s6" id="" class="text_box1" placeholder="Skills one" value="<?php echo $user['skills_6'] ?>">
 
                       <p class="top_pro">Edit Your Image</p>
                       <label for="image" class="l">Profile Photo:</label>
@@ -78,6 +89,6 @@
 
     </form>
 </div></div>
-
+<?php } ?>
 </body>
 </html>

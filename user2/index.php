@@ -8,13 +8,30 @@
 </head>
 <body>
 <?php session_start()?>
-<?php  if($_SESSION['position'] != Null) { ?>
+<?php  
+
+
+include('connection.php');
+
+if($_SESSION['position'] != Null) { 
+    
+
+    $query = "SELECT * FROM cv_user  WHERE UserID = '{$_SESSION['id']}'";
+$result = mysqli_query($connection, $query);
+
+if ($result && mysqli_num_rows($result) > 0) {
+ 
+    $user = mysqli_fetch_assoc($result);
+    
+    
+    
+    ?>
     <section class="sidebar">
 
 <div class="user_card">
     <div class="top_flex">
   </div>
-   <p class="user_name"> <?php echo $_SESSION['name'] ?></p>
+   <p class="user_name"> <?php echo $user['name'] ?></p>
 
 <ul>
   
@@ -33,18 +50,18 @@
 
  <div class="cover_photo">
 
-<img src="<?php echo $_SESSION['image_co'] ?>" alt="cover image" class="cover_size">
+<img src="<?php echo $user['image_co'] ?>" alt="cover image" class="cover_size">
 
  </div>
  <div class="profile_photo">
 
-  <img src="<?php echo $_SESSION['img'] ?>" alt="" class="profile_size">
+  <img src="<?php echo $user['img'] ?>" alt="" class="profile_size">
   
  </div>
 
  <div class="newsfeed">
     <div class="main_pro">
-        <p><span class="pro_name"><?php echo $_SESSION['name'] ?> </span><br><span class="pro_occupation"><?php echo $_SESSION['position'] ?></span></p>
+        <p><span class="pro_name"><?php echo $user['name'] ?> </span><br><span class="pro_occupation"><?php echo $user['position'] ?></span></p>
     </div>
 
 <div class="work">
@@ -53,12 +70,12 @@
 
     <img src="\img\certificate (3).png" alt="" class="uni1_img">
     <div class="list_edu">
-    <p class="uni1"><?php echo $_SESSION['edu1'] ?>  <br>
-    <?php echo $_SESSION['deg1'] ?> <br>
-    <?php echo $_SESSION['cgpa2'] ?></p>
-   <p class="uni1"><?php echo $_SESSION['edu2'] ?>  <br>
-   <?php echo $_SESSION['deg2'] ?><br>
-   <?php echo $_SESSION['cgpa1'] ?></p>
+    <p class="uni1"><?php echo $user['edu_1'] ?>  <br>
+    <?php echo $user['degree_1'] ?> <br>
+    <?php echo $user['cgpa_2'] ?></p>
+   <p class="uni1"><?php echo $user['edu_2'] ?>  <br>
+   <?php echo $user['degree_2'] ?><br>
+   <?php echo $user['cgpa_2'] ?></p>
 </div>
     <img src="\img\certificate (3).png" alt="" class="uni2_img">
 
@@ -77,10 +94,10 @@
     <img src="\img\working-time.png" alt="" class="ex1_img">
     <img src="\img\working-time.png" alt="" class="ex2_img">
     <div class="ex_">
-    <p class="uni1"><?php echo $_SESSION['og1'] ?><br>
-    <?php echo $_SESSION['y1'] ?></p><br>
-       <p class="uni1"><?php echo $_SESSION['og2'] ?><br>
-       <?php echo $_SESSION['y2'] ?></p>
+    <p class="uni1"><?php echo $user['c_name_1'] ?><br>
+    <?php echo $user['c_year_1'] ?></p><br>
+       <p class="uni1"><?php echo $user['c_name_2'] ?><br>
+       <?php echo $user['c_year_2'] ?></p>
     </div>
 </div>
 
@@ -92,21 +109,21 @@
     <img src="\img\competence.png" alt="" class="ski_img">
     <p class="ski_title">Skills</p>
     <div class="ski_skills">
-    <?php if($_SESSION['s1'] != Null){ ?>
-<button class="ski_btn"><?php echo $_SESSION['s1'] ?></button> 
-<?php } if($_SESSION['s2'] != Null) { ?>
+    <?php if($user['skills_1'] != Null){ ?>
+<button class="ski_btn"><?php echo $user['skills_1'] ?></button> 
+<?php } if($user['skills_2'] != Null) { ?>
 
-<button class="ski_btn"><?php echo $_SESSION['s2'] ?></button> 
-<?php } if($_SESSION['s3'] != Null){ ?>
-<button class="ski_btn"><?php echo $_SESSION['s3'] ?></button>
+<button class="ski_btn"><?php echo $user['skills_2'] ?></button> 
+<?php } if($user['skills_3'] != Null){ ?>
+<button class="ski_btn"><?php echo $user['skills_3'] ?></button>
 
-<?php } if($_SESSION['s4'] != Null){ ?>
-<button class="ski_btn"><?php echo $_SESSION['s4'] ?></button>
+<?php } if($user['skills_4'] != Null){ ?>
+<button class="ski_btn"><?php echo $user['skills_4'] ?></button>
 
-<?php } if($_SESSION['s5'] != Null){?>
-<button class="ski_btn"><?php echo $_SESSION['s5'] ?></button>
-<?php } if($_SESSION['s6'] != Null){?>
-<button class="ski_btn"><?php echo $_SESSION['s6'] ?></button>
+<?php } if($user['skills_5'] != Null){?>
+<button class="ski_btn"><?php echo $user['skills_5'] ?></button>
+<?php } if($user['skills_6'] != Null){?>
+<button class="ski_btn"><?php echo $user['skills_6'] ?></button>
 <?php } ?>
 </div>
 
@@ -122,9 +139,9 @@
 
     <p class="pr_title">Personal details</p>
     
-<p class="pr1"><?php echo $_SESSION['email'] ?></p>
-<p class="pr2"><?php echo $_SESSION['phone'] ?></p>
-<p class="pr3"><?php echo $_SESSION['address'] ?></p>
+<p class="pr1"><?php echo $user['email'] ?></p>
+<p class="pr2"><?php echo $user['phone'] ?></p>
+<p class="pr3"><?php echo $user['address'] ?></p>
 
 
 
@@ -135,7 +152,7 @@
 
  </div>
  
- <?php }else{ 
+ <?php }}else{ 
 
     header("location: \user2\profile.php");
 

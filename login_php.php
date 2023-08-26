@@ -63,7 +63,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             $_SESSION['user']=TRUE;
             
-          
+        $query = "UPDATE `cv_user` SET `active`=1 WHERE UserID = '{$user['UserID']}'";
+            $result = mysqli_query($connection, $query);
 
 
             header("location: \user2\index.php");
