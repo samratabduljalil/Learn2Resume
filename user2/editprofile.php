@@ -28,11 +28,12 @@ include('connection.php');
     <div class="design2">
     <form action="edit.php" method="post" enctype="multipart/form-data" >
         <p class="top_pro">Edit Your Personal Details</p>
-        <textarea name="" id="about" cols="30" rows="10" class="text_area" required ><?php echo $user['about'] ?></textarea>
+        <textarea name="about" id="" cols="30" rows="10" class="text_area" required ><?php echo $user['about'] ?></textarea>
     <input type="text" name="name" id="" class="text_box1" placeholder="Enter Your name" value="<?php echo $user['name'] ?>">
     <input type="text" name="phone" id="" class="text_box1" placeholder="Enter Your Phone Number" value="<?php echo $user['phone'] ?>">
     <input type="email" name="email" id="" class="text_box1" placeholder="Enter Your Email" value="<?php echo $user['email'] ?>">
     <input type="text" name="address" id="" class="text_box1" placeholder="Enter Your Address" value="<?php echo $user['address'] ?>">
+    <input type="text" name="position" id="" class="text_box1" placeholder="Enter Your Occupation" value="<?php echo $user['position'] ?>">
 
     <p class="top_pro">Edit Your Personal Details</p>
 

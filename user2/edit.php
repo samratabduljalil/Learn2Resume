@@ -13,9 +13,9 @@ $targetFile1;
 $targetFile2;
 
 // Check if the form was submitted
-if ( $_FILES['co_img']!=NULL) {
+if ( !$_FILES['co_img']['name']==NULL) {
     $uploadDirectory = 'upload/'.rand(); // Directory where images will be stored
-
+    echo "cow12.".$_FILES['co_img']['name'];
     // Validate the uploaded file
     $allowedExtensions = array('jpg', 'jpeg', 'png', 'gif');
    
@@ -48,9 +48,9 @@ if ( $_FILES['co_img']!=NULL) {
     $query="UPDATE `cv_user` SET `phone`='{$_POST['phone']}',`position`='{$_POST['position']}',`edu_1`='{$_POST['edu1']}',`edu_2`='{$_POST['edu2']}',`degree_1`='{$_POST['deg1']}',`degree_2`='{$_POST['deg2']}',`cgpa_1`='{$_POST['cgpa1']}',`cgpa_2`='{$_POST['cgpa2']}',`c_name_1`='{$_POST['og1']}',`c_name_2`='{$_POST['og2']}',`c_position_1`='{$_POST['p1']}',`c_position_2`='{$_POST['p2']}',`c_year_1`='{$_POST['y1']}',`c_year_2`='{$_POST['y2']}',`skills_1`='{$_POST['s1']}',`skills_2`='{$_POST['s2']}',`skills_3`='{$_POST['s3']}',`skills_4`='{$_POST['s4']}',`skills_5`='{$_POST['s5']}',`skills_6`='{$_POST['s6']}',`about`='{$_POST['about']}',`address`='{$_POST['address']}',`image_co`='{$targetFile1}' WHERE UserID = {$_SESSION['id']}";
     $result = mysqli_query($connection, $query);
 }
-if ($_FILES['pro_img']!=NULL) {
+if ( !$_FILES['pro_img']['name']==NULL) {
     $uploadDirectory = 'upload/'.rand(); // Directory where images will be stored
-
+    echo "cow2 .";
     // Validate the uploaded file
     $allowedExtensions = array('jpg', 'jpeg', 'png', 'gif');
   
@@ -87,5 +87,5 @@ if ($_FILES['pro_img']!=NULL) {
 $query="UPDATE `cv_user` SET `phone`='{$_POST['phone']}',`position`='{$_POST['position']}',`edu_1`='{$_POST['edu1']}',`edu_2`='{$_POST['edu2']}',`degree_1`='{$_POST['deg1']}',`degree_2`='{$_POST['deg2']}',`cgpa_1`='{$_POST['cgpa1']}',`cgpa_2`='{$_POST['cgpa2']}',`c_name_1`='{$_POST['og1']}',`c_name_2`='{$_POST['og2']}',`c_position_1`='{$_POST['p1']}',`c_position_2`='{$_POST['p2']}',`c_year_1`='{$_POST['y1']}',`c_year_2`='{$_POST['y2']}',`skills_1`='{$_POST['s1']}',`skills_2`='{$_POST['s2']}',`skills_3`='{$_POST['s3']}',`skills_4`='{$_POST['s4']}',`skills_5`='{$_POST['s5']}',`skills_6`='{$_POST['s6']}',`about`='{$_POST['about']}',`address`='{$_POST['address']}' WHERE UserID = {$_SESSION['id']}";
 
 $result = mysqli_query($connection, $query);
-
+header("location: index.php");
 ?>
