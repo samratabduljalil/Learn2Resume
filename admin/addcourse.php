@@ -20,24 +20,26 @@
         <?php if(isset($_SESSION['done'])){
         if($_SESSION['done']==True) {?>
             <p class="top_pro1">sucessfully added</p>
-            <input type="text" name="course_name" id="" class="text_box1" placeholder="Enter Course name" >
-    <input type="text" name="course_code" id="" class="text_box1" placeholder="Enter Your Course code" >
+            <input type="text" name="course_name" id="" class="text_box1" placeholder="Enter Course name" required>
+    <input type="text" name="course_code" id="" class="text_box1" placeholder="Enter Your Course code" required>
 
         <?php $_SESSION['done']=False ;
     }else{?>
-    <input type="text" name="course_name" id="" class="text_box1" placeholder="Enter Course name" >
-    <input type="text" name="course_code" id="" class="text_box1" placeholder="Enter Your Course code" >
+    <input type="text" name="course_name" id="" class="text_box1" placeholder="Enter Course name" required>
+    <input type="text" name="course_code" id="" class="text_box1" placeholder="Enter Your Course code" required>
    
 
     <?php }}else{?>
-        <input type="text" name="course_name" id="" class="text_box1" placeholder="Enter Course name" >
-    <input type="text" name="course_code" id="" class="text_box1" placeholder="Enter Your Course code" >
+        <input type="text" name="course_name" id="" class="text_box1" placeholder="Enter Course name" required>
+    <input type="text" name="course_code" id="" class="text_box1" placeholder="Enter Your Course code" required>
         <?php }?>
         
             <button class="btn_submit" type="submit">Add course</button>
-
+            
     </form>
-</div></div>
-
+   
+</div>
+</div>
+<a href="index.php"><button  >Back</button></a>
 </body>
 </html>

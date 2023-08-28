@@ -14,16 +14,16 @@
    <p class="user_name"><?php session_start(); echo $_SESSION['name'] ?></p>
 
 <ul>
-    <li><a href="">profile</a></li>
+   
     <li><a href="addcourse.php">Add Course</a></li>
     <li><a href="addquestion.php">Add Question</a></li>
     <li><a href="addvideo.php">Add video</a></li>
-    <li><a href="">All course Data</a></li>
+    <li><a href="coursetable.php">All course Data</a></li>
     <li><a href="">Delete course</a></li>
     <li><a href="coursetable.php">All Courses</a></li>
     <li><a href="addtemplate.php">Add Template</a></li>
     <li><a href="./index.php">Home</a></li>
-    <li><a href="/logout.php">Log Out</a></li>
+    <li><a href="logout.php">Log Out</a></li>
 
 </ul>
 </div>

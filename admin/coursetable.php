@@ -5,6 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style_table.css">
     <title>edit Profile</title>
+
+<style>
+
+.btn{
+padding:5px;
+background-color: rgb(167, 246, 167);
+justify-content: center;
+margin-left: 400px;
+border-radius: 4px ;
+
+}
+.btn:hover{
+padding:5px;
+background-color: rgb(27, 249, 27);
+
+
+}
+
+
+</style>
+
 </head>
 <?php session_start()?>
 <body>
@@ -51,13 +72,13 @@
     // Close the database connection
     $connection->close();
     ?>
-    
+   
 
 
 
 
     </table>
-
+    <a href="index.php"><button class="btn">BACK to Dashboard</button></a>
 </div></div>
 </body>
 </html>
