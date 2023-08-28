@@ -3,7 +3,7 @@ require 'vendor/autoload.php';
 
 use Endroid\QrCode\QrCode;
 $qr=$_GET['temp']."?id=".$_GET['id']."&&temp=".$_GET['temp']."&&temp2=".$_GET['temp2'];
-$r=$_GET['temp2']."".$_GET['id'];
+$r=$_GET['temp2']."".$_GET['id'].rand();
 // Create a new instance of QrCode
 $qrCode = new QrCode('http://cvit-cvgenerator.test'.$qr);
 $uploadDirectory= "qr_code/" ;

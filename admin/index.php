@@ -18,8 +18,6 @@
     <li><a href="addcourse.php">Add Course</a></li>
     <li><a href="addquestion.php">Add Question</a></li>
     <li><a href="addvideo.php">Add video</a></li>
-    <li><a href="coursetable.php">All course Data</a></li>
-    <li><a href="">Delete course</a></li>
     <li><a href="coursetable.php">All Courses</a></li>
     <li><a href="addtemplate.php">Add Template</a></li>
     <li><a href="./index.php">Home</a></li>
@@ -162,7 +160,7 @@
             $certificate=$certificate+1;
         }
     } else {
-        echo "No products found.";
+        
     }
 
     // Close the database connection

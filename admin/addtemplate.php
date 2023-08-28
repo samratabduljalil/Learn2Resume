@@ -16,6 +16,13 @@
 <div class="con">
     <div class="design2">
     <form action="add_temp.php" method="post" enctype="multipart/form-data" >
+
+
+    <?php if(isset($_SESSION['done'])){
+        if($_SESSION['done']==True) {?>
+            <p class="top_pro1">Sucessfully added</p>
+            <?php $_SESSION['done']=False ;
+    }}?>
         <p class="top_pro">Upload New template</p>
         <label for="">Add Html File:</label>
     <input type="file" name="html" id="" >
@@ -28,6 +35,6 @@
 
     </form>
 </div></div>
-
+<a href="index.php"><button class="btn_submit" >Back</button></a>
 </body>
 </html>

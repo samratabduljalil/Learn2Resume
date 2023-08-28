@@ -55,9 +55,8 @@ if (mysqli_query($connection, $query)) {
     echo "Error inserting data: " . mysqli_error($connection);
  }
 
+ $_SESSION['done']=True;
 
- $_SESSION['image_co']=$targetFile2;
- $_SESSION['img']=$targetFile1;
 ?>
 
 

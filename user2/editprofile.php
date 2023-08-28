@@ -27,6 +27,11 @@ include('connection.php');
 <div class="con">
     <div class="design2">
     <form action="edit.php" method="post" enctype="multipart/form-data" >
+    <?php if(isset($_SESSION['done'])){
+        if($_SESSION['done']==True) {?>
+            <p class="top_pro1">Sucessfully added</p>
+            <?php $_SESSION['done']=False ;
+    }}?>
         <p class="top_pro">Edit Your Personal Details</p>
         <textarea name="about" id="" cols="30" rows="10" class="text_area" required ><?php echo $user['about'] ?></textarea>
     <input type="text" name="name" id="" class="text_box1" placeholder="Enter Your name" value="<?php echo $user['name'] ?>">
@@ -87,9 +92,14 @@ include('connection.php');
 
 
              <a href="profile1.html"><button class="btn_submit" type="submit">Update</button></a>
-
+            
     </form>
-</div></div>
+    
+</div>
+
+
+</div>
 <?php } ?>
+<a href="index.php"><button class="btn_submit" >Back</button></a>
 </body>
 </html>

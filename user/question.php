@@ -59,7 +59,7 @@
 
   <?php
     include('connection.php');
-
+$f=0;
     // Check connection
     if ($connection->connect_error) {
         die("Connection failed: " . $connection->connect_error);
@@ -86,7 +86,8 @@ $a=1;
              $a=$a+1;
         }
     } else {
-        echo "No products found.";
+        echo "Question is not available .";
+        $f=1;
     }
 
     // Close the database connection
@@ -108,9 +109,16 @@ $a=1;
     
     <!-- Add more questions similarly -->
   </div>
+<?php if($f==1){
+  $f=0;
+?> 
 
-
-  <button class="btn" type="submit">submit</button>
+  
+  <?php
+}else{?>
+ <button class="btn" type="submit">submit</button>
+ <?php }?>
   </form>
+  <a href="\user2\index.php"><button class="btn" >Back </button></a>
 </body>
 </html>
