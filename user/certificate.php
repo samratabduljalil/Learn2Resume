@@ -170,8 +170,8 @@ if ($result->num_rows > 0) {
 
 
 $sql1 = "SELECT * FROM `certificate` where course_code='{$_GET['id']}' and student_id='{$_SESSION['id']}'";
-$result1 = $connection->query($sql);
-if (!$result1->num_rows > 0) {
+$result1 = $connection->query($sql1);
+if ($result1->num_rows == 0) {
 
  $sql = "INSERT INTO `certificate`( `course_code`, `course_name`, `student_id`) VALUES ('{$row['course_code']}','{$row['Name']}','{$_SESSION['id']}')";
  $result = $connection->query($sql);
