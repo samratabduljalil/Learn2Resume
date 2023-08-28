@@ -16,6 +16,11 @@
 <div class="con">
     <div class="design2">
     <form action="add_v.php" method="post" enctype="multipart/form-data" >
+    <?php if(isset($_SESSION['done'])){
+        if($_SESSION['done']==True) {?>
+            <p class="top_pro1">Sucessfully added</p>
+            <?php $_SESSION['done']=False ;
+    }}?>
         <p class="top_pro">ADD New Video</p>
         
     <input type="text" name="course_code" id="" class="text_box1" placeholder="Enter Course code" >

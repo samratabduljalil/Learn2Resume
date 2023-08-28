@@ -27,9 +27,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['html']) && isset($_F
         mkdir($uploadDirectory, 0777, true);
     }
 
-    $targetFile1 =  basename($_FILES['img']['name']);
-    $targetFile2 =  basename($_FILES['html']['name']);
-    $targetFile3 =  basename($_FILES['css']['name']);
+    $targetFile1 = $uploadDirectory.rand().basename($_FILES['img']['name']);
+    $targetFile2 =  $uploadDirectory.rand().basename($_FILES['html']['name']);
+    $targetFile3 =  $uploadDirectory.rand().basename($_FILES['css']['name']);
 
 
     // Move the uploaded file to the upload directory
@@ -50,7 +50,7 @@ $query="INSERT INTO `cv_template`( `link`, `image`, `css`) VALUES ('{$targetFile
 
 
 if (mysqli_query($connection, $query)) {
-    header("location: index.php");
+    header("location:addtemplate.php");
  } else {
     echo "Error inserting data: " . mysqli_error($connection);
  }

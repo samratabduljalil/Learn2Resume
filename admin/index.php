@@ -65,7 +65,7 @@
 </div>
 <div class="card">
 <div class="img_flex">
-    <img src="\admin\cv (1).png" alt="" class="card_img">
+    <img src="\admin\verified-user.png" alt="" class="card_img">
 </div>
     <h3>Active User</h3>
 

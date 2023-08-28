@@ -7,7 +7,7 @@ session_start();
 
 
 
-$query="INSERT INTO `question`( `question`, `answer`,  `course_code`, `op1`, `op2`, `op3`, `op4`) VALUES ('{$_POST['q1']}','{$_POST['ans2']}','{$_POST['C_code']}','{$_POST['op21']}','{$_POST['op22']}','{$_POST['op23']}','{$_POST['op24']}')";
+$query="INSERT INTO `question`( `question`, `answer`,  `course_code`, `op1`, `op2`, `op3`, `op4`) VALUES ('{$_POST['q2']}','{$_POST['ans2']}','{$_POST['C_code']}','{$_POST['op21']}','{$_POST['op22']}','{$_POST['op23']}','{$_POST['op24']}')";
 
 
 

@@ -44,7 +44,7 @@ session_start();
 
 <div class="card">
 
-<a href="\admin/temp/<?php echo $row['link']?>?id=<?php echo $_SESSION['id']?>&&temp=/admin/temp/<?php echo $row['link']?>&&temp2=<?php echo $row['link']?>"><img src="\admin/temp/<?php echo $row['image']?>" alt="" class="img-t"></a>
+<a href="\admin/<?php echo $row['link']?>?id=<?php echo $_SESSION['id']?>&&temp=/admin/<?php echo $row['link']?>&&temp2=<?php echo $row['link']?>&&css=\admin/<?php echo $row['css']?>"><img src="\admin/<?php echo $row['image']?>" alt="" class="img-t"></a>
 </div>
    
     
@@ -66,22 +66,10 @@ session_start();
 
 
 
-<div class="card">
-
-<a href="\cv_templates\template_777.php"><img src="img/002.png" alt="" class="img-t"></a>
-</div>
 
 
-<div class="card">
 
 
-    
-</div>
-<div class="card">
-
-
-    
-</div>
 
 
 </div>
@@ -90,7 +78,7 @@ session_start();
 
     </div>
 
-    <a href="\user\index.php"><button class="back_b">Back</button></a>
+    <a href="\user2\index.php"><button class="back_b">Back</button></a>
 
 
 

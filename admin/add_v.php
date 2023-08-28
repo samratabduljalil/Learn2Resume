@@ -13,7 +13,8 @@ $query = "INSERT INTO course_video(course_id,video_link,R_p) VALUES ('{$code}', 
 
 
 if (mysqli_query($connection, $query)) {
-    header("location: login.php");
+    $_SESSION['done']=True;
+    header("location: addvideo.php");
  } else {
     echo "Error inserting data: " . mysqli_error($connection);
 }
