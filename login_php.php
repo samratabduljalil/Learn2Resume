@@ -66,12 +66,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $query = "UPDATE `cv_user` SET `active`=1 WHERE UserID = '{$user['UserID']}'";
             $result = mysqli_query($connection, $query);
 
-
+            $_SESSION['non']=true;
             header("location: \user2\index.php");
+
            }
     } else {
         echo "User not found";
         header("location: login.php");
+
     }
 }
 ?>

@@ -26,6 +26,18 @@
 <form action="login_php.php" method="post">
 
 
+<?php if(isset($_SESSION['non'])){
+        if($_SESSION['non']==TRUE) {?>
+            
+            <?php
+            header("location: \user2\index.php");
+            
+            
+    }}?>
+        
+
+
+
 <input type="email" name="email" id="email" class="sign_text" placeholder="Enter Your Email">
 
 <input type="password" name="password" id="password" class="sign_text" placeholder="Enter Your Password">

@@ -42,16 +42,16 @@ $_SESSION['y2']=$_POST['y2'];
 
 <p class="top_pro">Enter Your Top six Skills</p>
 
-        <input type="text" name="s1" id="" class="text_box1" placeholder="Skills one" >
+        <input type="text" name="s1" id="" class="text_box1" placeholder="Skills" >
     
 
-        <input type="text" name="s2" id="" class="text_box1" placeholder="Skills one" >
-        <input type="text" name="s3" id="" class="text_box1" placeholder="Skills one" >
+        <input type="text" name="s2" id="" class="text_box1" placeholder="Skills" >
+        <input type="text" name="s3" id="" class="text_box1" placeholder="Skills" >
          
-           <input type="text" name="s4" id="" class="text_box1" placeholder="Skills one" >
-           <input type="text" name="s5" id="" class="text_box1" placeholder="Skills one" >
+           <input type="text" name="s4" id="" class="text_box1" placeholder="Skills" >
+           <input type="text" name="s5" id="" class="text_box1" placeholder="Skills" >
               
-              <input type="text" name="s6" id="" class="text_box1" placeholder="Skills one" >
+              <input type="text" name="s6" id="" class="text_box1" placeholder="Skills" >
 
              <button class="btn_submit" type="submit">save and next</button>
 
