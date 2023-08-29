@@ -37,7 +37,7 @@ if ($result && mysqli_num_rows($result) > 0) {
   
     <li><a href="\chosetemplate.php">Create Cv</a></li>
     <li><a href="editprofile.php">Edit Profile</a></li>
-   
+    <li><a href="my_cer.php">My Certificate</a></li>
     <li><a href="\user\allcourses.php">All Courses</a></li>
     <li><a href="\index.php">Home</a></li>
     <li><a href="\logout.php">Logout</a></li>

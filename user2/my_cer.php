@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style22.css">
     <title>User Dashboard</title>
 </head>
 <body>
@@ -26,7 +26,7 @@
 </div>
 <div class="user_card2">
 
-<h1>All Course</h1>
+<h1>MY Certificate</h1>
 <section class="container">
     <div class="course">
 
@@ -41,17 +41,17 @@
     }
 
     // Fetch product data from the database
-    $sql = "SELECT * FROM course";
+    $sql = "SELECT * FROM `certificate` WHERE `student_id`='{$_SESSION['id']}'";
     $result = $connection->query($sql);
 
     if ($result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
             ?>
            
-         <a href='in_course.php?id=<?php echo $row['course_code'] ?>' class="card" > 
-            <h1 class="cardtext"><span class="t1"><?php echo $row['Name'] ?></span></h1>
+         <a href='\user\certificate.php?id=<?php echo $row['course_code'] ?>' class="card" > 
+            <h1 class="cardtext"><span class="t1"><?php echo $row['course_name'] ?></span></h1>
 
-          <div class="in_card"><p>Click Here to Start Learning</p></div>
+          <div class="in_card"><p>Click Here to Get Your Certificate</p></div>
 
 
 
