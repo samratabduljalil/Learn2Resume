@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $password = $_POST['password'];
     $table = $_POST["sign"];
     
-    $query = "SELECT * FROM {$table}  WHERE email = '$email' LIMIT 1";
+    $query = "SELECT * FROM {$table}  WHERE email = '{$email}' and `password` = '{$password}' LIMIT 1";
     $result = mysqli_query($connection, $query);
 
     if ($result && mysqli_num_rows($result) > 0) {
@@ -71,6 +71,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
            }
     } else {
         echo "User not found";
+        header("location: login.php");
     }
 }
 ?>

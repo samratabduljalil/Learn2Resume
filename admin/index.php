@@ -34,7 +34,7 @@
     <div class="img_flex">
         <img src="\admin\man.png" alt="" class="card_img">
     </div>
-<h3>user cout</h3>
+<h3>Number of User</h3>
 
 <?php
     include('connection.php');
@@ -65,9 +65,9 @@
 </div>
 <div class="card">
 <div class="img_flex">
-    <img src="\admin\verified-user.png" alt="" class="card_img">
+    <img src="\admin\cv (1).png" alt="" class="card_img">
 </div>
-    <h3>Active User</h3>
+    <h3>CV Template</h3>
 
     <?php
     include('connection.php');
@@ -78,12 +78,12 @@
     }
 
     // Fetch product data from the database
-    $sql = "SELECT * FROM cv_user";
+    $sql = "SELECT * FROM cv_template";
     $result = $connection->query($sql);
 
     if ($result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
-          if($row['active']==1)
+          
             $active=$active+1;
         }
     } else {

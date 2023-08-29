@@ -28,6 +28,28 @@
     margin-left: 45%;
 
 }
+.btn1{
+  padding: 12px;
+  position: absolute;
+   top:925px;
+   left:25%;
+    background-color: rgb(92, 251, 92);
+    
+
+}
+
+.btn1:hover{
+  
+    background-color: green;
+    
+
+}
+.btn:hover{
+  
+  background-color: green;
+  
+
+}
     .question {
       margin-bottom: 20px;
     }
@@ -119,6 +141,6 @@ $a=1;
  <button class="btn" type="submit">submit</button>
  <?php }?>
   </form>
-  <a href="\user2\index.php"><button class="btn" >Back </button></a>
+  <a href="\user2\index.php"><button class="btn1" >Back </button></a>
 </body>
 </html>
