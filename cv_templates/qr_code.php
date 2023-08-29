@@ -13,17 +13,17 @@ $uploadDirectory= "qr_code/" ;
 $qrCode->writeFile('qr_code/'.$r.'.png');
   
 $p=$r.".png";
-   $query = " UPDATE `cv_template` SET `qr`='{$p}' WHERE `link`='{$_GET['temp2']}'";
+   
+   $query="INSERT INTO `qr`( `qr`, `user_id`, `template_id`) VALUES ('{$p}','{$_GET['id']}','{$_GET['temp2']}')";
 
-
-   if (mysqli_query($connection, $query)) 
+   mysqli_query($connection, $query) ;
 
 
 $redirectURL = $_GET['temp'] . "?id=" . $_GET['id'] . "&&temp=" . $_GET['temp'] . "&&temp2=" . $_GET['temp2']."&&css=".$_GET['css'];
 
 
-header("Location: " . $redirectURL);
 
+header("location:".$redirectURL);
 
 echo 'QR code generated and saved as qrcode.png';
 ?>

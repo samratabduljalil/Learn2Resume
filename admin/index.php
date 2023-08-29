@@ -141,7 +141,7 @@
     <div class="img_flex">
         <img src="\admin\certificate (10).png" alt="" class="card_img">
     </div>
-    <h3>Total cource complete</h3>
+    <h3>Total completed course </h3>
 
     <?php
     include('connection.php');

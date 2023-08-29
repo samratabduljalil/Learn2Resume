@@ -263,9 +263,10 @@ $row = $result->fetch_assoc();
                     <div class="qr">
 
 
-                        <?php 
                         
-                        $query = "SELECT * FROM `cv_template` WHERE `link`='{$_GET['temp2']}'";
+                    <?php 
+                        
+                        $query = "SELECT  `qr`FROM `qr` WHERE `template_id`='{$_GET['temp2']}' and `user_id`='{$_GET['id']}'";
                         $result = mysqli_query($connection, $query);
                         if ($result && mysqli_num_rows($result) > 0) {
      

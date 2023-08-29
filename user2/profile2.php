@@ -40,10 +40,10 @@ $_SESSION['cgpa2']=$_POST['cgpa2'];
     <div class="design">
     <form action="\user2\profile3.php" method="post">
         <p class="top_pro">Works Exprience</p>
-        <input type="text" name="og1" id="" class="text_box1" placeholder="Organigetion  Name*" required>
+        <input type="text" name="og1" id="" class="text_box1" placeholder="Organization  Name*" required>
     
 
-        <input type="text" name="og2" id="" class="text_box1" placeholder="Organigetion  Name" >
+        <input type="text" name="og2" id="" class="text_box1" placeholder="Organization  Name" >
         <input type="text" name="p1" id="" class="text_box1" placeholder="Position*" required>
          
            <input type="text" name="p2" id="" class="text_box1" placeholder="Position" >

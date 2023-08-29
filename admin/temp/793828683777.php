@@ -3,17 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV 2</title>
+    <title>CV 3</title>
+
     <link rel="stylesheet" href="style.css">
- 
     <link rel="stylesheet" href="<?php echo $_GET['css'] ?>">
 
 <style>
 
 .nu{
-font-size:12px;
-
-
+font-size:#
 }
 .qr{
 
@@ -263,7 +261,8 @@ $row = $result->fetch_assoc();
                     <div class="qr">
 
 
-                        <?php 
+                       
+                    <?php 
                         
                         $query = "SELECT  `qr`FROM `qr` WHERE `template_id`='{$_GET['temp2']}' and `user_id`='{$_GET['id']}'";
                         $result = mysqli_query($connection, $query);
