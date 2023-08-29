@@ -201,7 +201,7 @@ if($row['answer']==$_POST[$po]){
 
 
 
- <a href="\user2\index.php"><button class="cer1" >back To dashboard</button></a> 
+ <a href="/user/question.php?id=<?php echo $_GET['id'] ?>"><button class="cer1" >Retry</button></a> 
 
 </body>
 </html>

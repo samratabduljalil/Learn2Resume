@@ -12,8 +12,8 @@
     <nav>
       <ul>
         <li><a href="#Home">Home</a></li>
-        <li><a href="#Service">service</a></li>
-        <li><a href="download.php">Contact Us</a></li>
+        <li><a href="#Service">Service</a></li>
+        
         <?php if(isset($_SESSION['name'] )) { ?>
         <li><a href="\user2\index.php"><?php echo $_SESSION['name'] ?></a></li>
         <?php }else{
