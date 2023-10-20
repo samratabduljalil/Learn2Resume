@@ -37,6 +37,20 @@ height: 420px;
 width: 100%;
 
   }
+  #Live_search{
+    border-radius: 50px;
+    height: 40px;
+    width: 250px;
+    padding: 5px;
+    border: 1px solid black;
+font-size: larger;
+text-align: center;
+
+  }
+  #Live_search::active{
+   background-color: antiquewhite;
+   border: 1px solid rgb(86, 58, 58);
+  }
 
   .course_container{
 
