@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(16,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  }
+  nav {
+    margin-left: 0px;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    padding-right: 40px;
+  
+    width: 100%;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  nav ul li a {
+    font-size: 25px;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+  }
+  nav ul li a:hover {
+    text-decoration: none;
+    color: #243b55;
+    font-size: 26px;
+  }
+  #car {
+margin-top:1%;
+margin-left: 10%;
+margin-right: 10%;
+  }
+  .imgcar{
+height: 420px;
+width: 100%;
+
+  }
+
+  .course_container{
+
+
+
+  }
+  .course_contain{
+
+
+    
+  }
+  .course_card{
+
+
+    
+  }
