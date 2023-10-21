@@ -1,7 +1,6 @@
 body {
     margin: 0;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(16,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  background-color: aliceblue;
   }
   nav {
     margin-left: 0px;
@@ -67,3 +66,114 @@ text-align: center;
 
     
   }
+ 
+
+
+.container{
+   
+    display: flex;
+    
+    
+}
+
+
+.card{
+    background-color: transparent;
+    border-radius: 10px;
+    height: 320px;
+    width: 270px;
+   
+    color: white;
+   
+    text-decoration: none;
+   
+    border: 2px solid ;
+    border-color: chocolate;
+   
+   
+   
+}
+.card:hover{
+    height: 330px;
+    width: 280px;
+   
+    cursor: pointer;
+    transition: .35s;
+    background-color: rgb(66, 63, 63);
+
+text-decoration: none;
+    color:black;
+
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px) brightness(1.2);
+    border-radius: 10px;
+    
+
+}
+.card:hover > .in_card{
+        margin: 10px;
+        
+        
+        
+        
+}
+
+
+
+.cardtext{
+    display: grid;
+    font-size: 30px;
+    width: 250px;
+    height: 180px;
+   justify-content: center;
+   align-items: center;
+   margin-left: 5px;
+color: chocolate;
+text-decoration: none;
+
+   
+   
+   }
+   .cardtext:hover{
+    color: black;
+ 
+ 
+    
+    
+    }
+
+
+    .course{
+        justify-content: center;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    margin-bottom: 30px;
+   
+    margin-top: 25px;
+    
+    
+    }
+    .in_card{
+        display: flex;
+        justify-content: center;
+        background-color: chocolate;
+        
+        
+        
+        
+        }
+        .in_card:hover{
+        
+            margin: 10px;
+        
+        }
+        .course_title{
+
+text-align: center;
+
+        }
+        a{
+
+          text-decoration: none;
+        }

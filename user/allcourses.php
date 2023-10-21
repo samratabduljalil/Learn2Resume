@@ -61,7 +61,7 @@
             <?php
         }
     } else {
-        echo "No products found.";
+        echo "No course  found.";
     }
 
     // Close the database connection
