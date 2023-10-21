@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+  background-color: aliceblue;
+  }
+  nav {
+    margin-left: 0px;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    padding-right: 40px;
+  
+    width: 100%;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  nav ul li a {
+    font-size: 25px;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+  }
+  nav ul li a:hover {
+    text-decoration: none;
+    color: #243b55;
+    font-size: 26px;
+  }
+  .checkout{
+
+display: flex;
+
+justify-content: center;
+align-items: center;
+
+  }
+ .card{
+height: 20%;
+width: 60%;
+background-color: red;
+
+ }
+ h2{
+margin-left: 10%;
+
+
+ }
+.td{
+
+  margin-left: 10%;
+ }

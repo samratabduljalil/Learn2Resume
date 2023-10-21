@@ -20,7 +20,7 @@
       <ul>
         <li><a href="#Home">Home</a></li>
         <li><a href="#Service">Service</a></li>
-        <li><a href="#Home">Course</a></li>
+        <li><a href="\Cvit-CVgenerator\course\index.html">Course</a></li>
         <li><a href="#Home">Create Cv</a></li>
         <?php if(isset($_SESSION['name'] )) { ?>
         <li><a href="\user2\index.php"><?php echo $_SESSION['name'] ?></a></li>
@@ -47,13 +47,13 @@
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="d-block  imgcar" src="\img\02.jpg" alt="First slide">
+                <img class="d-block  imgcar" src=".\img\02.jpg" alt="First slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block  imgcar" src="\img\01.jpg" alt="Second slide">
+                <img class="d-block  imgcar" src=".\img\01.jpg" alt="Second slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block  imgcar" src="\img\001.jpg" alt="Third slide">
+                <img class="d-block  imgcar" src=".\img\001.jpg" alt="Third slide">
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
