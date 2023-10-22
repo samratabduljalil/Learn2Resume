@@ -98,3 +98,26 @@ background-color: red;
 border-radius: 7px;
 transition: .45s;
 }
+.sucess{
+color: rgb(25, 140, 25);
+text-align: center;
+
+justify-content: center;
+justify-items: center;
+}
+.redirect{
+  color: rgb(25, 140, 25);
+  text-align: center;
+  
+  justify-content: center;
+  justify-items: center;
+  }
+  .flex{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
