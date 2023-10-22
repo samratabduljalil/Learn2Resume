@@ -22,16 +22,18 @@
             <p class="top_pro1">sucessfully added</p>
             <input type="text" name="course_name" id="" class="text_box1" placeholder="Enter Course name" required>
     <input type="text" name="course_code" id="" class="text_box1" placeholder="Enter Your Course code" required>
+    <input type="file" name="img" id="img" >
 
         <?php $_SESSION['done']=False ;
     }else{?>
     <input type="text" name="course_name" id="" class="text_box1" placeholder="Enter Course name" required>
     <input type="text" name="course_code" id="" class="text_box1" placeholder="Enter Your Course code" required>
-   
+    <input type="file" name="img" id="img" >
 
     <?php }}else{?>
         <input type="text" name="course_name" id="" class="text_box1" placeholder="Enter Course name" required>
     <input type="text" name="course_code" id="" class="text_box1" placeholder="Enter Your Course code" required>
+    <input type="file" name="img" id="img" >
         <?php }?>
         
             <button class="btn_submit" type="submit">Add course</button>
