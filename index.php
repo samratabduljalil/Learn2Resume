@@ -19,7 +19,7 @@
     <nav>
       <ul>
         <li><a href="#Home">Home</a></li>
-        <li><a href="#Service">Service</a></li>
+        <li><a href="\payment\sslapi.php?total=100">Service</a></li>
         <li><a href="\Cvit-CVgenerator\course\index.html">Course</a></li>
         <li><a href="#Home">Create Cv</a></li>
         <?php if(isset($_SESSION['name'] )) { ?>

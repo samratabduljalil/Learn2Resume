@@ -1,11 +1,13 @@
 <?php
+
+
 $post_data = array();
-$post_data['store_id'] = "testbox";
-$post_data['store_passwd'] = "qwerty";
-$post_data['total_amount'] = "103";
+$post_data['store_id'] = "abc6535a78e3e415";
+$post_data['store_passwd'] = "abc6535a78e3e415@ssl";
+$post_data['total_amount'] = $_GET["total"];
 $post_data['currency'] = "BDT";
 $post_data['tran_id'] = "SSLCZ_TEST_".uniqid();
-$post_data['success_url'] = "http://localhost/new_sslcz_gw/success.php";
+$post_data['success_url'] = "http://127.0.0.1:5500/Cvit-CVgenerator/payment/sucess.html";
 $post_data['fail_url'] = "http://localhost/new_sslcz_gw/fail.php";
 $post_data['cancel_url'] = "http://localhost/new_sslcz_gw/cancel.php";
 # $post_data['multi_card_name'] = "mastercard,visacard,amexcard";  # DISABLE TO DISPLAY ALL AVAILABLE
@@ -55,7 +57,7 @@ $post_data['discount_amount'] = "5";
 $post_data['convenience_fee'] = "3";
 
 # REQUEST SEND TO SSLCOMMERZ
-$direct_api_url = "https://sandbox.sslcommerz.com/gwprocess/v4/api.php";
+$direct_api_url = "https://sandbox.sslcommerz.com/gwprocess/v3/api.php";
 
 $handle = curl_init();
 curl_setopt($handle, CURLOPT_URL, $direct_api_url );

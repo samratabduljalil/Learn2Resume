@@ -38,7 +38,7 @@ align-items: center;
  .card{
 height: 55%;
 width: 40%;
-background-color: green;
+
 
  }
  .con{
@@ -49,7 +49,7 @@ display: flex;
  .card2{
   height: 50%;
   width: 50%;
-  background-color: red;
+
   
   
    }
@@ -64,25 +64,44 @@ margin-left: 55%;
 
 }
 .cancel{
-  margin-top: 15%;
  
-padding: 5%;
+ position: absolute;
+ top: 80%;
+ left: 15%;
+padding: 1.5%;
 background-color: red;
 border-radius: 7px;
 transition: .45s;
+font-size: large;
 }
+.cancel:hover{
+ 
+
+ background-color: rgb(219, 35, 35);
+ border-radius: 4px;
+ transition: .45s;
+ }
+ .cancel:active{
+ 
+  padding: .7%;
+  background-color: rgb(225, 99, 99);
+  
+  }
 .check{
-  margin-top: 15%;
-padding: 5%;
+  font-size: large;
+  position: absolute;
+  top: 80%;
+  left: 70%;
+padding: 1.5%;
 border-radius: 7px;
 background-color: green;
 transition: .45s;
 }
 .check:active{
-  margin-top: 15%;
-padding: 4%;
+
+padding: .7%;
 border-radius: 7px;
-background-color: rgb(123, 240, 123);
+background-color: rgb(16, 236, 16);
 
 }
 .check:hover{
@@ -90,14 +109,7 @@ background-color: rgb(123, 240, 123);
 border-radius: 4px;
 background-color: rgb(19, 203, 19);
 }
-.cancel{
 
- 
-padding: 5%;
-background-color: red;
-border-radius: 7px;
-transition: .45s;
-}
 .sucess{
 color: rgb(25, 140, 25);
 text-align: center;
