@@ -5,7 +5,7 @@ include('connection.php');
 // SQL query to fetch data from the database
 $sql = "SELECT * FROM course";
 
-$result = $conn->query($sql);
+$result = $connection->query($sql);
 
 if ($result->num_rows > 0) {
     $data = array();
@@ -13,18 +13,17 @@ if ($result->num_rows > 0) {
         $data[] = $row;
     }
     // Close the database connection
-    $conn->close();
+    $connection->close();
 
     // Set the response content type to JSON
-    header('Content-Type: application/json');
+   // header('Content-Type: application/json');
 
     // Return the data as JSON
     echo json_encode($data);
 } else {
-    echo json_encode("No data found");
+    echo "json_encode(ms: No data found)";
 }
 ?>
 
 
 
-?>

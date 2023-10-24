@@ -85,24 +85,10 @@
 
   <h1 class="course_title">All Course</h1>
 <div class="container">
-    <div class="course">
+    <div class="course" id="allCourse">
 
 
 
-    <div id="allCourse">
-           
-        
-      <a href='in_course.php' class="card" > 
-        <img src="\img\business-2717063_640.jpg" alt="" class="img_course">
-        <h1 class="cardtext"><span class="t1">Data Science</span></h1>
-  
-      <div class="in_card"><p>Click Here to Start Learning</p></div>
-  
-  
-  
-  
-    </a>
-  </div>
       </div>
 
 
@@ -110,33 +96,39 @@
     </div>
 
     
-        <div id="dataDisplay"></div>
+      
     
-        <script>
-            // Function to fetch and display JSON data
-            function fetchData() {
-                fetch("fetcheAllData_api.php")
-                    .then(response => {
-                        if (!response.ok) {
-                            throw new Error("Network response was not ok");
-                        }
-                        return response.json();
-                    })
-                    .then(data => displayData(data))
-                    .catch(error => {
-                        console.error("Error fetching data:", error);
-                    });
-            }
-    
-            // Function to display JSON data
-            function displayData(data) {
-                var dataDisplay = document.getElementById("dataDisplay");
-                dataDisplay.innerHTML = JSON.stringify(data, null, 2);
-            }
-    
-            // Automatically fetch data when the page loads
-            fetchData();
-        </script>
+    <script>
+      // Function to fetch and display JSON data
+      function fetchData() {
+          var xhr = new XMLHttpRequest();
+          xhr.open("GET", "fetcheAllData_api.php", true);
+  
+          xhr.onreadystatechange = function () {
+              if (xhr.readyState === 4 && xhr.status === 200) {
+                  var jsonArray = JSON.parse(xhr.responseText);
+                  displayData(jsonArray);
+              }
+          };
+  
+          xhr.send();
+      }
+  
+      function displayData(data) {
+          var dataDisplay = document.getElementById("allCourse");
+          var html = ''; // Build HTML content as a string
+  
+          for (let index = 0; index < data.length; index++) {
+              html += "<a href='in_course.php' class='card'><img src='img/business-2717063_640.jpg' class='img_course'><h1 class='cardtext'><span class='t1'>" + data[index].Name + "</span></h1><div class='in_card'><p>Click Here to Start Learning</p></div></a>";
+          }
+  
+          dataDisplay.innerHTML = html; // Update HTML content at once
+      }
+  
+      // Automatically fetch data when the page loads
+      fetchData();
+  </script>
+  
     
     
 
