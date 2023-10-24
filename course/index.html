@@ -116,16 +116,16 @@
   
       function displayData(data) {
           var dataDisplay = document.getElementById("allCourse");
-          var html = ''; // Build HTML content as a string
+          var html = ''; 
   
           for (let index = 0; index < data.length; index++) {
               html += "<a href='in_course.php' class='card'><img src='img/business-2717063_640.jpg' class='img_course'><h1 class='cardtext'><span class='t1'>" + data[index].Name + "</span></h1><div class='in_card'><p>Click Here to Start Learning</p></div></a>";
           }
   
-          dataDisplay.innerHTML = html; // Update HTML content at once
+          dataDisplay.innerHTML = html; 
       }
   
-      // Automatically fetch data when the page loads
+      
       fetchData();
   </script>
   
