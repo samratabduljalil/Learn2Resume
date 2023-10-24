@@ -1,7 +1,7 @@
 <?php
 
 include('connection.php');
-header('Content-Type: application/json');
+
 // SQL query to fetch data from the database
 $sql = "SELECT * FROM course";
 
@@ -16,7 +16,7 @@ if ($result->num_rows > 0) {
     $conn->close();
 
     // Set the response content type to JSON
-  
+    header('Content-Type: application/json');
 
     // Return the data as JSON
     echo json_encode($data);
