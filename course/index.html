@@ -40,13 +40,13 @@
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="d-block  imgcar" src="\Cvit-CVgenerator\img\02.jpg" alt="First slide">
+                <img class="d-block  imgcar" src="\img\02.jpg" alt="First slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block  imgcar" src="\Cvit-CVgenerator\img\01.jpg" alt="Second slide">
+                <img class="d-block  imgcar" src="\img\01.jpg" alt="Second slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block  imgcar" src="\Cvit-CVgenerator\img\001.jpg" alt="Third slide">
+                <img class="d-block  imgcar" src="\img\001.jpg" alt="Third slide">
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -102,86 +102,38 @@
   
   
     </a>
-    <a href='in_course.php' class="card" > 
-      <img src="\img\business-2717063_640.jpg" alt="" class="img_course">
-      <h1 class="cardtext"><span class="t1">Data Science</span></h1>
-
-    <div class="in_card"><p>Click Here to Start Learning</p></div>
-
-
-
-
-  </a>
-  <a href='in_course.php' class="card" > 
-    <img src="\img\business-2717063_640.jpg" alt="" class="img_course">
-    <h1 class="cardtext"><span class="t1">Data Science</span></h1>
-
-  <div class="in_card"><p>Click Here to Start Learning</p></div>
-
-
-
-
-</a>
-
-       
-    <a href='in_course.php' class="card" > 
-      <img src="\img\business-2717063_640.jpg" alt="" class="img_course">
-      <h1 class="cardtext"><span class="t1">Data Science</span></h1>
-
-    <div class="in_card"><p>Click Here to Start Learning</p></div>
-
-
-
-
-  </a>
-  <a href='in_course.php' class="card" > 
-    <img src="\img\business-2717063_640.jpg" alt="" class="img_course">
-    <h1 class="cardtext"><span class="t1">Data Science</span></h1>
-
-  <div class="in_card"><p>Click Here to Start Learning</p></div>
-
-
-
-
-</a>
-<a href='in_course.php' class="card" > 
-  <img src="\img\business-2717063_640.jpg" alt="" class="img_course">
-  <h1 class="cardtext"><span class="t1">Data Science</span></h1>
-
-<div class="in_card"><p>Click Here to Start Learning</p></div>
-
-
-
-
-</a>
-  <a href='in_course.php' class="card" > 
-    <img src="\img\business-2717063_640.jpg" alt="">
-    <h1 class="cardtext"><span class="t1">Data Science</span></h1>
-
-  <div class="in_card"><p>Click Here to Start Learning</p></div>
-
-
-
-
-</a>
-<a href='in_course.php' class="card" > 
-  <img src="\img\web-3963945_640.jpg" alt="">
-  <h1 class="cardtext"><span class="t1">Data Science</span></h1>
-
-<div class="in_card"><p>Click Here to Start Learning</p></div>
-
-
-
-
-</a>
-
+  
       </div>
 
 
 
     </div>
 
+    <script>
+      // Function to fetch and display JSON data
+      function fetchData() {
+          var xhr = new XMLHttpRequest();
+          xhr.open("GET", "fetcheAllData_api.php", true);
 
+          xhr.onreadystatechange = function () {
+              if (xhr.readyState === 4 && xhr.status === 200) {
+                  var data = JSON.parse(xhr.responseText);
+                  displayData(data);
+              }
+          };
+
+          xhr.send();
+      }
+
+      // Function to display JSON data
+      function displayData(data) {
+          var dataDisplay = document.getElementById("dataDisplay");
+          dataDisplay.innerHTML = JSON.stringify(data, null, 2);
+      }
+
+      // Automatically fetch data when the page loads
+      fetchData();
+  </script>
 
 
 </body>
