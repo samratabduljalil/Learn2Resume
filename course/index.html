@@ -40,13 +40,13 @@
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="d-block  imgcar" src="\img\02.jpg" alt="First slide">
+                <img class="d-block  imgcar" src="\Cvit-CVgenerator\img\02.jpg" alt="First slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block  imgcar" src="\img\01.jpg" alt="Second slide">
+                <img class="d-block  imgcar" src=".\img\01.jpg" alt="Second slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block  imgcar" src="\img\001.jpg" alt="Third slide">
+                <img class="d-block  imgcar" src=".\img\001.jpg" alt="Third slide">
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -119,7 +119,7 @@
           var html = ''; 
   
           for (let index = 0; index < data.length; index++) {
-              html += "<a href='in_course.php' class='card'><img src='img/business-2717063_640.jpg' class='img_course'><h1 class='cardtext'><span class='t1'>" + data[index].Name + "</span></h1><div class='in_card'><p>Click Here to Start Learning</p></div></a>";
+              html += "<a href='in_course.php' class='card'><img src='/Cvit-CVgenerator/img/business-2717063_640.jpg' class='img_course'><h1 class='cardtext'><span class='t1'>" + data[index].Name + "</span></h1><div class='in_card'><p>Click Here to Start Learning</p></div></a>";
           }
   
           dataDisplay.innerHTML = html; 
