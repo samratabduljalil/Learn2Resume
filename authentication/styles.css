@@ -292,7 +292,29 @@ color: yellow;
 font-size: 35px;
 
 }
+.otp{
+position: absolute;
+top: 30%;
+left: 12%;
 
+}
+.verify{
+  position: absolute;
+  top: 45%;
+  left: 35%;
+  
+  }
+  .resend{
+    position: absolute;
+    top: 65%;
+    left: 35%;
+    
+    }
+    .text_resend{
+      position: absolute;
+      top: 55%;
+      left: 2%;
+    }
 
 @keyframes glowing-border {
   0% {
