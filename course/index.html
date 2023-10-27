@@ -14,9 +14,11 @@
 <body>
     <nav>
         <ul>
+           <form  >
             <input type="search" name="" id="Live_search" placeholder="Search Course">
+          </form>
           <li><a href="#Home">Home</a></li>
-          <li><a href="#Service">Service</a></li>
+          <li><a href="index.html">course</a></li>
           
           <?php if(isset($_SESSION['name'] )) { ?>
           <li><a href="\user2\index.php"><?php echo $_SESSION['name'] ?></a></li>
@@ -30,7 +32,7 @@
         </ul>
       </nav>
 
-
+      <div id="search-results">
       <section id="car">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -89,12 +91,12 @@
 
 
 
-      </div>
+      </div></div>
 
 
 
-    </div>
-
+    
+   </div>
     
       
     
@@ -127,6 +129,38 @@
   
       
       fetchData();
+
+
+
+
+//searching
+document.getElementById("Live_search").addEventListener("input", function() {
+        var query = this.value;
+        if (query.length >= 3) {
+            var formData = new FormData();
+            formData.append("query", query);
+
+            fetch("search_data.php", {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                var resultsHtml = "<h1 class='course_title'>Search Result</h1><div class='container'><div class='course'>";
+                data.forEach(result => {
+                    resultsHtml += "<a href='in_course.php' class='card'><img src='/Cvit-CVgenerator/img/business-2717063_640.jpg' class='img_course'><h1 class='cardtext'><span class='t1'>" + result['ID'] + "</span></h1><div class='in_card'><p>Click Here to Start Learning</p></div></a>";
+                });
+               resultsHtml += "</div></div>";
+                document.getElementById("search-results").innerHTML = resultsHtml;
+            })
+            .catch(error => console.error(error));
+        } else {
+            document.getElementById("search-results").innerHTML = "";
+        }
+    });
+
+
+
   </script>
   
     

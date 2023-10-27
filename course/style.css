@@ -6,7 +6,7 @@ body {
     margin-left: 0px;
     display: flex;
     background-color: white;
-    justify-content: center;
+    justify-content: end;
     padding-right: 40px;
   
     width: 100%;
@@ -39,11 +39,14 @@ width: 100%;
   #Live_search{
     border-radius: 50px;
     height: 40px;
-    width: 250px;
+    width: 30%;
     padding: 5px;
     border: 1px solid black;
 font-size: larger;
 text-align: center;
+position: absolute;
+top: 1%;
+left: 33%;
 
   }
   #Live_search:active{
