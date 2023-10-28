@@ -26,6 +26,10 @@
     <h2 class="text_resend">Resend your OTP after one minute</h2>
    
     </form>
+
+
+
+    
     </div>
     </div>
     </div>
