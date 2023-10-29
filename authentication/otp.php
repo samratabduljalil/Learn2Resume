@@ -17,7 +17,7 @@
     
    
     
-    <input type="email" name="email" id="email" class="otp sign_text" placeholder="Enter Your OTP">
+    <input type="number" name="OTP2" id="OTP2" class="otp sign_text" placeholder="Enter Your OTP">
     
    
    <br>
@@ -26,20 +26,7 @@
     <h2 class="text_resend">Resend your OTP after one minute</h2>
    
     </form>
-<?php
 
-
-$email = $_POST['email'];
-$password = $_POST['password'];
-$table = $_POST["sign"];
-
-
-session_start();
-$_SESSION['email']=$_POST['email'];;
-$_SESSION['password']=$_POST['password'];
-$_SESSION['sign']=$_POST["sign"];
-
-?>
 
 
     

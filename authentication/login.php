@@ -23,7 +23,7 @@
     <div class="sign_contain">
         <div class="sign_card">
             <h1>LogIn</h1>
-<form action="login_php.php" method="post">
+<form action="send_otp.php" method="post">
 
 
 <?php if(isset($_SESSION['non'])){
@@ -52,7 +52,11 @@
 </div>
 </div>
 </div>
+<?php
 
+
+
+?>
 
 
 </body>

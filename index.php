@@ -26,7 +26,7 @@
         <li><a href="\user2\index.php"><?php echo $_SESSION['name'] ?></a></li>
         <?php }else{
                   ?>
-         <li><a href="signup.php">SignUp/Login</a></li>
+         <li><a href="authentication\signup.php">SignUp/Login</a></li>
          <?php }?>
 
 
