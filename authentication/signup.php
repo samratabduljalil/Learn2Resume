@@ -34,13 +34,17 @@
   <option value="cv_user" class="sign_text">User</option>
  
 </select><br>
-<button type="submit" class="btn_signup" name="check" value='sign'>SignUp</button>
+<button type="submit" class="btn_signup" >SignUp</button>
 <h1>already have account?<a href="login.php" class="log_link">Log in</a></h1>
 </form>
 </div>
 </div>
 </div>
+<?php
+ session_start();
 
+ $_SESSION['check']="sign";
+ ?>
 
 
 </body>

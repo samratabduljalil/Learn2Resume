@@ -5,7 +5,7 @@ session_start();
 
 
 if(((int)$_POST['OTP2']) === $_SESSION['otp']){
-    
+    if($_SESSION['check']==='login'){
 
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -81,9 +81,37 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     }
 }
+
+    }else{
+        $name = $_SESSION["name"];
+        $email = $_SESSION['email'];
+        $password = $_SESSION['password'];
+        
+        $table = $_SESSION["sign"];
+        
+        $query = "INSERT INTO {$table}( name, email, password) VALUES ('{$name}', '{$email}', '{$password}')";
+        
+        
+        if (mysqli_query($connection, $query)) {
+            header("location: login.php");
+         } else {
+            echo "Error inserting data: " . mysqli_error($connection);
+        }
+        
+
+
+
+
+
+
+
+    }
+
+
 }else{
 
-    echo "Error";
+$_SESSION['exist']=false;
+    header("location: otp.php");
 }
 
 

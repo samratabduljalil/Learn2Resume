@@ -1,6 +1,6 @@
 <?php
  session_start();
- $_SESSION['email']=$_POST['email'];;
+ $_SESSION['email']=$_POST['email'];
 $otp = mt_rand(100000, 999999);
 $to = $_SESSION['email']; // Replace with the recipient's email address
 $subject = "Your OTP from Learn2Resume";
@@ -12,7 +12,7 @@ $headers = "From: your_email@gmail.com"; // Replace with your email address
 if (mail($to, $subject, $message, $headers)) {
    
     
-    $_SESSION['check']=$_POST['check'];
+   
     $_SESSION['name']=$_POST['name'];
    
     $_SESSION['password']=$_POST['password'];

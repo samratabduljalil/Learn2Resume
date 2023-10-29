@@ -20,7 +20,7 @@
     <input type="number" name="OTP2" id="OTP2" class="otp sign_text" maxlength="6" placeholder="Enter 6-digit OTP">
     <?php
 
-    echo $_SESSION['check'];
+    
     ?>
    
    <br>
