@@ -211,14 +211,14 @@ footer {
 .btn_signup {
   height: 35px;
   width: 95px;
-  background-color: transparent;
+  background-color: greenyellow;
   border-radius: 8px;
   align-items: center;
   text-align: center;
   border: 2px solid black;
 }
 .btn_signup:hover {
-  background-color: rgb(149, 218, 84);
+  background-color: rgb(56, 111, 5);
 
   border: 2px solid green;
 }

@@ -40,7 +40,7 @@ if ($result && mysqli_num_rows($result) > 0) {
     <li><a href="my_cer.php">My Certificate</a></li>
     <li><a href="\user\allcourses.php">All Courses</a></li>
     <li><a href="\index.php">Home</a></li>
-    <li><a href="\logout.php">Logout</a></li>
+    <li><a href="\Cvit-CVgenerator\logout.php">Logout</a></li>
 
 </ul>
 </div>

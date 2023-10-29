@@ -72,7 +72,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $result = mysqli_query($connection, $query);
 
             $_SESSION['non']=true;
-            header("location: \user2\index.php");
+            header("location: /Cvit-CVgenerator/user2/index.php");
 
            }
     } else {
