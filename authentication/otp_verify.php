@@ -5,7 +5,7 @@ session_start();
 
 
 if(((int)$_POST['OTP2']) === $_SESSION['otp']){
-    echo $_SESSION['otp'];
+    
 
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {

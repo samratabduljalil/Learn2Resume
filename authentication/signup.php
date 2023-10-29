@@ -22,7 +22,7 @@
     <div class="sign_contain">
         <div class="sign_card">
             <h1>Signup</h1>
-<form action="sign_php.php" method="post">
+<form action="send_otp.php" method="post">
 
 <input type="text" name="name" id="name" class="sign_text" placeholder="Enter Your Name">
 
@@ -34,7 +34,7 @@
   <option value="cv_user" class="sign_text">User</option>
  
 </select><br>
-<button type="submit" class="btn_signup">SignUp</button>
+<button type="submit" class="btn_signup" name="check" value='sign'>SignUp</button>
 <h1>already have account?<a href="login.php" class="log_link">Log in</a></h1>
 </form>
 </div>

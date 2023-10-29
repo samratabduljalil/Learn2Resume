@@ -7,11 +7,13 @@ $subject = "Your OTP from Learn2Resume";
 $message = "Your Otp is " .$otp.". Please Login in Learn2Resume with this Otp ";
 $headers = "From: your_email@gmail.com"; // Replace with your email address
 
+
+
 if (mail($to, $subject, $message, $headers)) {
    
     
-    
-   
+    $_SESSION['check']=$_POST['check'];
+    $_SESSION['name']=$_POST['name'];
    
     $_SESSION['password']=$_POST['password'];
     $_SESSION['sign']=$_POST["sign"];

@@ -18,12 +18,14 @@
    
     
     <input type="number" name="OTP2" id="OTP2" class="otp sign_text" maxlength="6" placeholder="Enter 6-digit OTP">
-    
+    <?php
+
+    echo $_SESSION['check'];
+    ?>
    
    <br>
     <button type="submit" class="btn_signup verify" id="submitBtn" disabled>verify</button>
-    <button  class="btn_signup resend">Re Send</button>
-    <h2 class="text_resend">Resend your OTP after one minute</h2>
+  
    
     </form>
 
@@ -43,10 +45,11 @@ otpInput.addEventListener('input', function () {
   // Check if the input is exactly 6 digits
   if (/^\d{6}$/.test(inputValue)) {
     submitBtn.removeAttribute('disabled');
-   
-    submitBtn.classList.add('btn_signup verify')
+   submitBtn.style.backgroundColor= 'greenyellow';
+    
   } else {
     submitBtn.setAttribute('disabled', 'disabled');
+    submitBtn.style.backgroundColor= 'greenyellow';
   }
 });
 
