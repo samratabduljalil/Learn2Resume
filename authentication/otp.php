@@ -26,7 +26,20 @@
     <h2 class="text_resend">Resend your OTP after one minute</h2>
    
     </form>
+<?php
 
+
+$email = $_POST['email'];
+$password = $_POST['password'];
+$table = $_POST["sign"];
+
+
+session_start();
+$_SESSION['email']=$_POST['email'];;
+$_SESSION['password']=$_POST['password'];
+$_SESSION['sign']=$_POST["sign"];
+
+?>
 
 
     
