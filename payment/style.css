@@ -53,7 +53,12 @@ display: flex;
   
   
    }
+#hide{
 
+visibility: hidden;
+display: none;
+
+}
  h2{
 margin-left: 10%;
 

@@ -4,10 +4,10 @@
 $post_data = array();
 $post_data['store_id'] = "abc6535a78e3e415";
 $post_data['store_passwd'] = "abc6535a78e3e415@ssl";
-$post_data['total_amount'] = $_GET["total"];
+$post_data['total_amount'] = $_POST["total"];
 $post_data['currency'] = "BDT";
 $post_data['tran_id'] = "SSLCZ_TEST_".uniqid();
-$post_data['success_url'] = "http://127.0.0.1:5500/Cvit-CVgenerator/payment/sucess.html";
+$post_data['success_url'] = "http://www.samratabduljalil.com/Cvit-CVgenerator/payment/sucess.php";
 $post_data['fail_url'] = "http://localhost/new_sslcz_gw/fail.php";
 $post_data['cancel_url'] = "http://localhost/new_sslcz_gw/cancel.php";
 # $post_data['multi_card_name'] = "mastercard,visacard,amexcard";  # DISABLE TO DISPLAY ALL AVAILABLE
@@ -39,7 +39,7 @@ $post_data['ship_postcode'] = "1000";
 $post_data['ship_country'] = "Bangladesh";
 
 # OPTIONAL PARAMETERS
-$post_data['value_a'] = "ref001";
+$post_data['value_a'] = $_POST['course_id'];
 $post_data['value_b '] = "ref002";
 $post_data['value_c'] = "ref003";
 $post_data['value_d'] = "ref004";
