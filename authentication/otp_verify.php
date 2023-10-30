@@ -5,6 +5,9 @@ session_start();
 
 
 if(((int)$_POST['OTP2']) === $_SESSION['otp']){
+    $encryption_key =12345678912357846958657423654789; 
+
+        $iv = 1596324856795136; 
     if($_SESSION['check']==='login'){
 
 
@@ -14,13 +17,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $password = $_SESSION['password'];
     $table = $_SESSION["sign"];
     
-    $query = "SELECT * FROM {$table}  WHERE email = '{$email}' and `password` = '{$password}' LIMIT 1";
+
+    
+    $query = "SELECT * FROM {$table}  WHERE email = '{$email}'";
     $result = mysqli_query($connection, $query);
 
     if ($result && mysqli_num_rows($result) > 0) {
      
         $user = mysqli_fetch_assoc($result);
-        
+        $decrypted = openssl_decrypt($user['password'], 'aes-256-cbc', $encryption_key, 0, $iv);
+        if($decrypted ===  $password){
         
           
            if($table=='cv_admin'){
@@ -74,22 +80,28 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $_SESSION['non']=true;
             header("location: /Cvit-CVgenerator/user2/index.php");
 
-           }
+           }}
     } else {
         echo "User not found";
         header("location: login.php");
 
-    }
+    }}
 }
 
-    }else{
+     }else{
         $name = $_SESSION["name"];
         $email = $_SESSION['email'];
         $password = $_SESSION['password'];
         
         $table = $_SESSION["sign"];
         
-        $query = "INSERT INTO {$table}( name, email, password) VALUES ('{$name}', '{$email}', '{$password}')";
+        
+        
+        $encrypted = openssl_encrypt($password, 'aes-256-cbc', $encryption_key, 0, $iv);
+
+
+
+        $query = "INSERT INTO {$table}( name, email, password) VALUES ('{$name}', '{$email}', '{$encrypted}')";
         
         
         if (mysqli_query($connection, $query)) {
@@ -104,10 +116,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
 
-
-    }
-
-
+    
 }else{
 
 $_SESSION['exist']=false;
