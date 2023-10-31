@@ -14,17 +14,17 @@
 <p class="exp">Exprience</p>
 <p class="ski">Skills</p>
 
-    <img src="\img\id-card.png" alt="" class="i1">
-    <img src="\img\test.png" alt="" class="i2">
-    <img src="\img\experience.png" alt="" class="i3">
-    <img src="\img\self-development.png" alt="" class="i4">
+    <img src="/Cvit-CVgenerator\img\id-card.png" alt="" class="i1">
+    <img src="/Cvit-CVgenerator\img\test.png" alt="" class="i2">
+    <img src="/Cvit-CVgenerator\img\experience.png" alt="" class="i3">
+    <img src="/Cvit-CVgenerator\img\self-development.png" alt="" class="i4">
     <hr class="h1">
     <hr class="h2">
     <hr class="h3">
     
 <div class="con">
     <div class="design">
-    <form action="\user2\profile1.php" method="post">
+    <form action="/Cvit-CVgenerator\user2\profile1.php" method="post">
         <p class="top_pro">Enter Your Personal Details</p>
         <textarea name="about" id="" cols="30" rows="10" class="text_area" required placeholder="Write About You (in 50 word)"></textarea>
    

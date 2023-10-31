@@ -42,6 +42,7 @@
 
     // Fetch product data from the database
     $sql = "SELECT * FROM `certificate` WHERE `student_id`='{$_SESSION['id']}'";
+  
     $result = $connection->query($sql);
 
     if ($result->num_rows > 0) {

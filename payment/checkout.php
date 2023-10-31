@@ -27,7 +27,18 @@
         </ul>
       </nav>
 
+<?php
+include('connection.php');
+ $sql="SELECT * FROM `course` WHERE ID='{$_GET['id']}'";
+ $result = $connection->query($sql);
 
+if ($result->num_rows > 0) {
+    
+    while ($row = $result->fetch_assoc()) {
+      
+   
+
+?>
 
 
 
@@ -41,23 +52,29 @@
 
 </div>
 <div class="card">
-  <h2 class="space">Data Science</h2>
-  <h2 class="space">Data Science</h2>
-  <h2 class="space">Data Science</h2>
+  <h2 class="space"><?php echo $row['Name'] ?></h2>
+  <h2 class="space"><?php echo $row['course_code'] ?></h2>
+  <h2 class="space"><?php echo $row['fee'] ?></h2>
   <hr>
   <div class="con">
   <div class="card2">
 <h2>Tax</h2>
 <hr>
+<?php $total=($row['fee']*.02)+$row['fee'] ?>
 <h2>Total</h2>
   </div>
   <div class="card2">
     <h2 class="space">2%</h2>
     <form action="sslapi.php" method="post">
     <hr>
-    <h2 class="space" >2000bdt</h2>
-<input type="text" name="total" id="hide" value="200">
-<input type="text" name="course_id" id="hide" value="7">
+    <h2 class="space" ><?php echo $total ?>bdt</h2>
+<input type="text" name="total" id="hide" value="<?php echo $total ?>">
+<input type="text" name="course_id" id="hide" value="<?php echo $_GET['id'] ?>">
+<?php 
+      }
+    
+    $connection->close();
+  }?>
   </div>
 </div>
   </div>

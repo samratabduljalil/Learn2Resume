@@ -121,7 +121,7 @@
           var html = ''; 
   
           for (let index = 0; index < data.length; index++) {
-              html += "<a href='in_course.php' class='card'><img src='/Cvit-CVgenerator/img/business-2717063_640.jpg' class='img_course'><h1 class='cardtext'><span class='t1'>" + data[index].Name + "</span></h1><div class='in_card'><p>Click Here to Start Learning</p></div></a>";
+              html += "<a href='/Cvit-CVgenerator/payment/checkout.php?id="+data[index].ID+"'class='card'><img src='/Cvit-CVgenerator/img/business-2717063_640.jpg' class='img_course'><h1 class='cardtext'><span class='t1'>" + data[index].Name + "</span></h1><div class='in_card'><h3>ENROLL </h3></div></a>";
           }
   
           dataDisplay.innerHTML = html; 

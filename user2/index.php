@@ -154,7 +154,7 @@ if ($result && mysqli_num_rows($result) > 0) {
  
  <?php }}else{ 
 
-    header("location: \user2\profile.php");
+    header("location: \Cvit-CVgenerator\user2\profile.php");
 
 
      } ?></div>

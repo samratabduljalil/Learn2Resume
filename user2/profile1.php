@@ -18,23 +18,23 @@ $_SESSION['position']=$_POST['position'];
 
 ?>
 <body>
-    <img src="\img\check-button.png" alt="" class="c1">
+    <img src="/Cvit-CVgenerator\img\check-button.png" alt="" class="c1">
 <p class="pro">Personal Details</p>
 <p class="edu">Education</p>
 <p class="exp">Exprience</p>
 <p class="ski">Skills</p>
 
-    <img src="\img\id-card.png" alt="" class="i1">
-    <img src="\img\test.png" alt="" class="i2 green">
-    <img src="\img\experience.png" alt="" class="i3">
-    <img src="\img\self-development.png" alt="" class="i4">
+    <img src="/Cvit-CVgenerator\img\id-card.png" alt="" class="i1">
+    <img src="/Cvit-CVgenerator\img\test.png" alt="" class="i2 green">
+    <img src="/Cvit-CVgenerator\img\experience.png" alt="" class="i3">
+    <img src="/Cvit-CVgenerator\img\self-development.png" alt="" class="i4">
     <hr class="h1 green_line">
     <hr class="h2">
     <hr class="h3">
     
 <div class="con">
     <div class="design">
-    <form action="\user2\profile2.php" method="post">
+    <form action="/Cvit-CVgenerator\user2\profile2.php" method="post">
         <p class="top_pro">Enter Your Educational Details</p>
     <input type="text" name="edu1" id="" class="text_box1" placeholder='Instution Name* ' required>
     

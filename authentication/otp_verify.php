@@ -30,7 +30,8 @@ if(((int)$_POST['OTP2']) === $_SESSION['otp']){
            header("location: \admin\index.php");
            }else{
             $_SESSION['name']=$user['name'];
-            $_SESSION['email']=$decrypted = openssl_decrypt($user['email'], 'aes-256-cbc', $encryption_key_email, 0, $iv_email);;
+            $de_email = openssl_decrypt($user['email'], 'aes-256-cbc', $encryption_key_email, 0, $iv_email);
+            $_SESSION['email'] = $de_email;
             $_SESSION['img']=$user['img'];
             $_SESSION['id']=$user['UserID'];
             $_SESSION['image_co']=$user['image_co'];
@@ -60,7 +61,7 @@ if(((int)$_POST['OTP2']) === $_SESSION['otp']){
         $query = "UPDATE `cv_user` SET `active`=1 WHERE UserID = '{$user['UserID']}'";
             $result = mysqli_query($connection, $query);
             $_SESSION['non']=true;
-            header("location: \user2/index.php");
+            header("location: \Cvit-CVgenerator\user2\index.php");
         }}else{echo "error;";
         
         echo "decript".$decrypted;
