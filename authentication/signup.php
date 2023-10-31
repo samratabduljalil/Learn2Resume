@@ -30,7 +30,7 @@
 
 <input type="password" name="password" id="password" class="sign_text" placeholder="Enter Your Password">
 <select id="sign" name="sign" class="sign_text">
-  
+  <option value="cv_admin" class="sign_text" >Admin</option>
   <option value="cv_user" class="sign_text">User</option>
  
 </select><br>

@@ -38,8 +38,9 @@ if ($result && mysqli_num_rows($result) > 0) {
     <li><a href="\chosetemplate.php">Create Cv</a></li>
     <li><a href="editprofile.php">Edit Profile</a></li>
     <li><a href="my_cer.php">My Certificate</a></li>
-    <li><a href="\user\allcourses.php">All Courses</a></li>
-    <li><a href="\index.php">Home</a></li>
+    <li><a href="my_course.php">My course</a></li>
+    <li><a href="\Cvit-CVgenerator\course\index.php">All Courses</a></li>
+    <li><a href="\Cvit-CVgenerator\index.php">Home</a></li>
     <li><a href="\Cvit-CVgenerator\logout.php">Logout</a></li>
 
 </ul>
@@ -65,10 +66,10 @@ if ($result && mysqli_num_rows($result) > 0) {
     </div>
 
 <div class="work">
-    <img src="\img\graduated.png" alt="" class="ski_img">
+    <img src="\Cvit-CVgenerator\img\graduated.png" alt="" class="ski_img">
     <p class="work_title">Education</p>
 
-    <img src="\img\certificate (3).png" alt="" class="uni1_img">
+    <img src="\Cvit-CVgenerator\img\certificate (3).png" alt="" class="uni1_img">
     <div class="list_edu">
     <p class="uni1"><?php echo $user['edu_1'] ?>  <br>
     <?php echo $user['degree_1'] ?> <br>
@@ -77,7 +78,7 @@ if ($result && mysqli_num_rows($result) > 0) {
    <?php echo $user['degree_2'] ?><br>
    <?php echo $user['cgpa_2'] ?></p>
 </div>
-    <img src="\img\certificate (3).png" alt="" class="uni2_img">
+    <img src="\Cvit-CVgenerator\img\certificate (3).png" alt="" class="uni2_img">
 
 
 
@@ -88,11 +89,11 @@ if ($result && mysqli_num_rows($result) > 0) {
 
 
 <div class="education">
-    <img src="\img\experience (1).png" alt="" class="ski_img">
+    <img src="\Cvit-CVgenerator\img\experience (1).png" alt="" class="ski_img">
     <p class="edu_title">Exprience</p>
 
-    <img src="\img\working-time.png" alt="" class="ex1_img">
-    <img src="\img\working-time.png" alt="" class="ex2_img">
+    <img src="\Cvit-CVgenerator\img\working-time.png" alt="" class="ex1_img">
+    <img src="\Cvit-CVgenerator\img\working-time.png" alt="" class="ex2_img">
     <div class="ex_">
     <p class="uni1"><?php echo $user['c_name_1'] ?><br>
     <?php echo $user['c_year_1'] ?></p><br>
@@ -106,7 +107,7 @@ if ($result && mysqli_num_rows($result) > 0) {
 
 
 <div class="skills">
-    <img src="\img\competence.png" alt="" class="ski_img">
+    <img src="\Cvit-CVgenerator\img\competence.png" alt="" class="ski_img">
     <p class="ski_title">Skills</p>
     <div class="ski_skills">
     <?php if($user['skills_1'] != Null){ ?>
@@ -132,10 +133,10 @@ if ($result && mysqli_num_rows($result) > 0) {
 
 
 <div class="personal">
-    <img src="\img\personal-information (2).png" alt="" class="ski_img">
-<img src="\img\message.png" alt="" class="pr_i1">
-<img src="\img\phone.png" alt="" class="pr_i2">
-<img src="\img\location.png" alt="" class="pr_i3">
+    <img src="\Cvit-CVgenerator\img\personal-information (2).png" alt="" class="ski_img">
+<img src="\Cvit-CVgenerator\img\message.png" alt="" class="pr_i1">
+<img src="\Cvit-CVgenerator\img\phone.png" alt="" class="pr_i2">
+<img src="\Cvit-CVgenerator\img\location.png" alt="" class="pr_i3">
 
     <p class="pr_title">Personal details</p>
     

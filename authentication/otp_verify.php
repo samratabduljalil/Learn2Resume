@@ -27,7 +27,7 @@ if(((int)$_POST['OTP2']) === $_SESSION['otp']){
             $_SESSION['image']=$user['image'];
             $_SESSION['id']=$user['id_user'];
             $_SESSION['admin']=TRUE;
-           header("location: \admin\index.php");
+           header("location: \Cvit-CVgenerator\admin\index.php");
            }else{
             $_SESSION['name']=$user['name'];
          

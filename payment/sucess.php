@@ -19,10 +19,15 @@ session_start();
 $payment=$_POST['amount'];
 $course_id=$_POST['value_a'];
 $currentDate = date("Y-m-d");
-$user_id=$_SESSION['id'];
+$user_id = $_POST['value_a'];
 $query="INSERT INTO `payment_course`(`course_id`, `user_id`, `payment_money`, `Current_d`) VALUES ('{$course_id}','{$user_id}','{$payment}','{$currentDate}')";
 
 if (mysqli_query($connection, $query)) {
+
+
+
+
+  
   sleep(5);
   header("location: login.php");
 

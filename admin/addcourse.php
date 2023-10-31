@@ -47,7 +47,7 @@
             // Get form data
             const course_name = document.getElementById("course_name").value;
             const course_code = document.getElementById("course_code").value;
-            const coursefee = document.getElementById("coursefee").value;
+            const coursefee = document.getElementById("course_fee").value;
             const img = document.getElementById("img").value;
 
             // Create an object with the form data

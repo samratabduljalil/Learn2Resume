@@ -41,7 +41,7 @@ background-color: rgb(27, 249, 27);
     <div class="design10">
 
 
-    <table class="un"><th>ID</th><th>Course Name</th><th>Course Course</th>
+    <table class="un"><th>ID</th><th>Course Name</th><th>Course Course</th><th>Course Fee</th>
     
     <?php
     include('connection.php');
@@ -60,7 +60,7 @@ background-color: rgb(27, 249, 27);
             ?>
 
 
-    <tr><td><?php echo $row['ID']?></td><td><?php echo $row['Name']?></td><td><?php echo $row['course_code']?></td></tr>
+    <tr><td><?php echo $row['ID']?></td><td><?php echo $row['Name']?></td><td><?php echo $row['course_code']?></td><td><?php echo $row['fee']?></td></tr>
     
     
     <?php

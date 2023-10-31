@@ -18,6 +18,7 @@
   <li><a href="\chosetemplate.php">Create Cv</a></li>
   <li><a href="editprofile.php">Edit Profile</a></li>
   <li><a href="my_cer.php">My Certificate</a></li>
+  <li><a href="my_course.php">My course</a></li>
   <li><a href="\user\allcourses.php">All Courses</a></li>
   <li><a href="\index.php">Home</a></li>
   <li><a href="\logout.php">Logout</a></li>
@@ -41,18 +42,24 @@
     }
 
     // Fetch product data from the database
-    $sql = "SELECT * FROM `certificate` WHERE `student_id`='{$_SESSION['id']}'";
+    $sql = "SELECT * FROM `payment_course` WHERE `user_id`='{$_SESSION['id']}'";
   
     $result = $connection->query($sql);
 
     if ($result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
+            $sql2 = "SELECT * FROM `course` WHERE `ID`='{$row['course_id']}'";
+            $result2 = $connection->query($sql2);
+
+            if ($result2->num_rows > 0) {
+                while ($row2 = $result2->fetch_assoc()) {
+
             ?>
            
-         <a href='\user\certificate.php?id=<?php echo $row['course_code'] ?>' class="card" > 
-            <h1 class="cardtext"><span class="t1"><?php echo $row['course_name'] ?></span></h1>
+         <a href='\user\certificate.php?id=<?php echo $row2['course_code'] ?>' class="card" > 
+            <h1 class="cardtext"><span class="t1"><?php echo $row2['course_name'] ?></span></h1>
 
-          <div class="in_card"><p>Click Here to Get Your Certificate</p></div>
+          <div class="in_card"><p>Click Here to Get started</p></div>
 
 
 
@@ -60,7 +67,8 @@
         </a>
 
             <?php
-        }
+            }
+        }}
     } else {
         echo "You donot hav eany certification.";
     }

@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 
 $post_data = array();
 $post_data['store_id'] = "abc6535a78e3e415";
@@ -40,7 +40,7 @@ $post_data['ship_country'] = "Bangladesh";
 
 # OPTIONAL PARAMETERS
 $post_data['value_a'] = $_POST['course_id'];
-$post_data['value_b '] = "ref002";
+$post_data['value_b'] = $_SESSION['id'];
 $post_data['value_c'] = "ref003";
 $post_data['value_d'] = "ref004";
 

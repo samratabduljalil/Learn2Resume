@@ -32,7 +32,7 @@
 <div class="contain">
 <div class="card">
     <div class="img_flex">
-        <img src="\admin\man.png" alt="" class="card_img">
+        <img src="\Cvit-CVgenerator\admin\man.png" alt="" class="card_img">
     </div>
 <h3>Number of User</h3>
 
@@ -65,7 +65,7 @@
 </div>
 <div class="card">
 <div class="img_flex">
-    <img src="\admin\cv (1).png" alt="" class="card_img">
+    <img src="\Cvit-CVgenerator\admin\cv (1).png" alt="" class="card_img">
 </div>
     <h3>CV Template</h3>
 
@@ -100,7 +100,7 @@
 </div>
 <div class="card">
     <div class="img_flex">
-        <img src="\admin\classroom.png" alt="" class="card_img">
+        <img src="\Cvit-CVgenerator\admin\classroom.png" alt="" class="card_img">
     </div>
     <h3>Total courses</h3>
  
@@ -139,7 +139,7 @@
 </div>
 <div class="card">
     <div class="img_flex">
-        <img src="\admin\certificate (10).png" alt="" class="card_img">
+        <img src="\Cvit-CVgenerator\admin\certificate (10).png" alt="" class="card_img">
     </div>
     <h3>Total completed course </h3>
 

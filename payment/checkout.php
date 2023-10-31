@@ -84,7 +84,7 @@ if ($result->num_rows > 0) {
 
 <button type="submit" class="check">Checkout</button>
 </form>
-<button class="cancel">Cancel</button>
+<a href="\Cvit-CVgenerator\course\index.php"><button class="cancel">Cancel</button></a>
 
 
 

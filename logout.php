@@ -8,6 +8,6 @@ $query = "UPDATE `cv_user` SET `active`= 0 WHERE UserID = '{$_SESSION['id']}'";
 session_destroy();
 
 
-header("Location: index.php");
+header("Location: \Cvit-CVgenerator/index.php");
 
 ?>
