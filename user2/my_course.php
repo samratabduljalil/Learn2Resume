@@ -56,8 +56,8 @@
 
             ?>
            
-         <a href='\user\certificate.php?id=<?php echo $row2['course_code'] ?>' class="card" > 
-            <h1 class="cardtext"><span class="t1"><?php echo $row2['course_name'] ?></span></h1>
+         <a href='Cvit-CVgenerator/user/in_course.php?id=<?php echo $row2['course_code'] ?>' class="card" > 
+            <h1 class="cardtext"><span class="t1"><?php echo $row2['Name'] ?></span></h1>
 
           <div class="in_card"><p>Click Here to Get started</p></div>
 
