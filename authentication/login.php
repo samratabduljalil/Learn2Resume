@@ -26,7 +26,7 @@
 <form action="send_otp.php" method="post">
 
 
-<?php if(isset($_SESSION['non'])){
+<?php  session_start(); if(isset($_SESSION['non'])){
         if($_SESSION['non']==TRUE) {?>
             
             <?php
@@ -35,7 +35,14 @@
             
     }}?>
         
-
+        <?php if(isset($_SESSION['exist'])){
+        if($_SESSION['exist']==TRUE) {?>
+             <h1 class="red">Wrong OTP please Login again</h1>
+            <?php
+           $_SESSION['exist']=false;
+           
+            
+    }}?>
 
 
 <input type="email" name="email" id="email" class="sign_text" placeholder="Enter Your Email">
@@ -53,7 +60,7 @@
 </div>
 </div>
 <?php
- session_start();
+
 
  $_SESSION['check']="login";
  ?>
