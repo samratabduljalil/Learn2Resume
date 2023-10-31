@@ -1,0 +1,22 @@
+<p class="top_pro">ADD New Course</p>
+        <?php if(isset($_SESSION['done'])){
+        if($_SESSION['done']==True) {?>
+            <p class="top_pro1" id="message"></p>
+            <input type="text" name="course_name" id="" class="text_box1" placeholder="Enter Course name" required>
+    <input type="text" name="course_code" id="" class="text_box1" placeholder="Enter Your Course code" required>
+    <input type="text" name="course_fee" id="" class="text_box1" placeholder="Enter Your Course Fee" required>
+    <input type="file" name="img" id="img" >
+
+        <?php $_SESSION['done']=False ;
+    }else{?>
+    <input type="text" name="course_name" id="" class="text_box1" placeholder="Enter Course name" required>
+    <input type="text" name="course_code" id="" class="text_box1" placeholder="Enter Your Course code" required>
+    <input type="text" name="course_fee" id="" class="text_box1" placeholder="Enter Your Course Fee" required>
+    <input type="file" name="img" id="img" >
+
+    <?php }}else{?>
+        <input type="text" name="course_name" id="" class="text_box1" placeholder="Enter Course name" required>
+    <input type="text" name="course_code" id="" class="text_box1" placeholder="Enter Your Course code" required>
+    <input type="text" name="course_fee" id="" class="text_box1" placeholder="Enter Your Course Fee" required>
+    <input type="file" name="img" id="img" >
+        <?php }?>
