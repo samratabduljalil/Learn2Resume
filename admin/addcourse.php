@@ -22,7 +22,7 @@
             <input type="text" id="course_name" id="" class="text_box1" placeholder="Enter Course name" required>
     <input type="text" id="course_code" id="" class="text_box1" placeholder="Enter Your Course code" required>
     <input type="text" id="course_fee" id="" class="text_box1" placeholder="Enter Your Course Fee" required>
-    <input type="file" id="img"  >
+ 
 
    
         
@@ -55,7 +55,7 @@
                 course_name,
                 course_code,
                 coursefee,
-                img
+           
             };
 
             // Send the data to the server

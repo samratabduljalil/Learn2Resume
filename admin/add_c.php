@@ -11,7 +11,12 @@ $code = $data['course_code'];
 $fee = $data['coursefee'];
 $img = $data['img'];
 
-$sql = "INSERT INTO `course`( `Name`, `course_code`, `img`, `fee`) VALUES ('{$Name}','{$code}','{$img}','{$fee}')";
+
+
+
+
+
+$sql = "INSERT INTO `course`( `Name`, `course_code`, `fee`) VALUES ('{$Name}','{$code}','{$fee}')";
 
 if ($connection->query($sql) === TRUE) {
     $response = ['message' => 'Course Added successfully.'];
