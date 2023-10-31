@@ -30,8 +30,8 @@ if(((int)$_POST['OTP2']) === $_SESSION['otp']){
            header("location: \admin\index.php");
            }else{
             $_SESSION['name']=$user['name'];
-            $de_email = openssl_decrypt($user['email'], 'aes-256-cbc', $encryption_key_email, 0, $iv_email);
-            $_SESSION['email'] = $de_email;
+         
+            $_SESSION['email'] = $_SESSION['email'];
             $_SESSION['img']=$user['img'];
             $_SESSION['id']=$user['UserID'];
             $_SESSION['image_co']=$user['image_co'];
