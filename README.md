@@ -2,9 +2,9 @@
 
 Learn2Resum is a comprehensive platform that serves as both a CV generator and an e-learning hub. This documentation outlines the technical aspects, features, and security measures implemented in the Learn2Resum project. Users can create CVs for free, enhance their skills through paid certification courses, and receive certificates upon course completion. A 24-hour customer support service via live chat is available to assist users.
 
-<h2>. Technology Stack </h2>
+<h2> Technology Stack </h2>
 
-The Learn2Resum project employs the following technologies:
+<h3>The Learn2Resum project employs the following technologies:</h3>
 
 - Programming Languages: PHP, JavaScript
 - Markup Languages: HTML, CSS
@@ -12,9 +12,9 @@ The Learn2Resum project employs the following technologies:
 - External APIs: Online Payment (SSL Sandbox), Live Chat (Twak.io)
 - Framework: Bootstrap
 
-. User Features
+<h2>User Features</h2>
 
-Learn2Resum offers the following features to users:
+<h3>Learn2Resum offers the following features to users:</h3>
 
 1. CV Creation: Users can generate their CVs.
 2. Course Purchase: Users can buy courses online.
@@ -26,9 +26,9 @@ Learn2Resum offers the following features to users:
 8. Profile Updates: Users can update their profile information.
 9. Certificate Downloads: Users can download their certificates.
 
-. Admin Features
+<h2> Admin Features</h2>
 
-Administrators have access to the following features:
+<h3>Administrators have access to the following features:</h3>
 
 1. User Monitoring: Administrators can track user statistics.
 2. Course Management: Administrators can add and remove courses.
@@ -37,14 +37,14 @@ Administrators have access to the following features:
 5. Video Course Content: Administrators can add course videos.
 6. Course Deletion: Administrators can delete courses.
 
-. Security Features
+<h2>Security Features</h2>
 
-Learn2Resum prioritizes security through the following measures:
+<h3>Learn2Resum prioritizes security through the following measures:</h3>
 
 1. Password and Email Encryption: User passwords and email addresses are securely encrypted.
 2. Two-Step Verification: Users are offered an additional layer of security with two-step verification.
 3. Unauthorized Access Prevention: Unauthenticated individuals cannot access the website via direct URL.
 4. Secure Payment System: The SSL Sandbox ensures the security of online payments.
 
-This software engineering documentation provides an overview of the Learn2Resum platform's technical, functional, and security aspects, ensuring transparency and a clear understanding of the system's capabilities and safeguards.
+
 
