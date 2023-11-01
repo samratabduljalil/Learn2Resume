@@ -2,7 +2,8 @@
 
 include('connection.php');
 
-
+session_start();
+if(isset($_SESSION['admin'])){
 $code = $_POST["course_code"];
 $link = $_POST['link'];
 $R_p=$_POST['sign'];
@@ -41,7 +42,7 @@ if (mysqli_query($connection, $query)) {
 
 
 
-
+}else{header("location: \Cvit-CVgenerator/authentication/login.php");}
 
 
 ?>

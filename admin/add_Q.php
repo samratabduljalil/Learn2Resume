@@ -3,6 +3,8 @@
 include('connection.php');
 
 session_start();
+if(isset($_SESSION['admin'])){
+
 
 
 
@@ -69,6 +71,6 @@ if (mysqli_query($connection, $query)) {
     echo "Error inserting data: " . mysqli_error($connection);
 }
 
-
+}else{header("location: \Cvit-CVgenerator/authentication/login.php");}
 
 ?>

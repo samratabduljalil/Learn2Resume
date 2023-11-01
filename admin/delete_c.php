@@ -2,22 +2,30 @@
 
 include('connection.php');
 session_start();
+if(isset($_SESSION['admin'])){
+$data = json_decode(file_get_contents("php://input"), true);
 
-$course_name = $_POST["course_name"];
-$course_code = $_POST['course_code'];
+// Insert the product into the database
 
-
-
-
-$query = "DELETE FROM `course` WHERE course_code = '{$course_code}'";
+$code = $data['course_code'];
 
 
-if (mysqli_query($connection, $query)) {
-    header("location: addcourse.php");
-    $_SESSION['done']=True;
- } else {
-    echo "Error inserting data: " . mysqli_error($connection);
+
+$sql = "DELETE FROM `course` WHERE course_code = '{$code}'";
+
+if ($connection->query($sql) === TRUE) {
+    $response = ['message' => 'Course Deleted successfully.'];
+  
+} else {
+    $response = ['message' => 'Error: ' . $connection->error];
 }
 
+// Close the database connection
+$connection->close();
 
+header("Content-Type: application/json");
+echo json_encode($response);
+
+
+}else{header("location: \Cvit-CVgenerator/authentication/login.php");}
 ?>

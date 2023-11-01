@@ -7,7 +7,13 @@
     <link rel="stylesheet" href="style.css">
     <title>edit Profile</title>
 </head>
-<?php session_start()?>
+<?php session_start();
+if(isset($_SESSION['admin'])){
+
+
+
+
+?>
 <body>
 
 
@@ -19,9 +25,9 @@
         <p class="top_pro">ADD New Course</p>
         
             <p class="top_pro1" id="message"></p>
-            <input type="text" id="course_name" id="" class="text_box1" placeholder="Enter Course name" required>
-    <input type="text" id="course_code" id="" class="text_box1" placeholder="Enter Your Course code" required>
-    <input type="text" id="course_fee" id="" class="text_box1" placeholder="Enter Your Course Fee" required>
+            <input type="text" id="course_name"  class="text_box1" placeholder="Enter Course name" required>
+    <input type="text" id="course_code" class="text_box1" placeholder="Enter Your Course code" required>
+    <input type="text" id="course_fee"  class="text_box1" placeholder="Enter Your Course Fee" required>
  
 
    
@@ -48,7 +54,7 @@
             const course_name = document.getElementById("course_name").value;
             const course_code = document.getElementById("course_code").value;
             const coursefee = document.getElementById("course_fee").value;
-            const img = document.getElementById("img").value;
+            
 
             // Create an object with the form data
             const data = {
@@ -76,7 +82,13 @@
         });
     </script>
 
+<?php
+}else{
+    header("location: \Cvit-CVgenerator/authentication/login.php");
+
+}
 
 
+?>
 </body>
 </html>

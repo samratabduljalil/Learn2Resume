@@ -5,7 +5,7 @@ $otp = mt_rand(100000, 999999);
 $to = $_SESSION['email']; // Replace with the recipient's email address
 $subject = "Your OTP from Learn2Resume";
 $message = "Your Otp is " .$otp.". Please Login in Learn2Resume with this Otp ";
-$headers = "From: your_email@gmail.com"; // Replace with your email address
+$headers = "From: info@learn2resume.com"; // Replace with your email address
 
 
 

@@ -27,7 +27,13 @@ background-color: rgb(27, 249, 27);
 </style>
 
 </head>
-<?php session_start()?>
+<?php session_start();
+if(isset($_SESSION['admin'])){
+
+
+
+
+?>
 <body>
 
 
@@ -41,7 +47,7 @@ background-color: rgb(27, 249, 27);
     <div class="design10">
 
 
-    <table class="un"><th>ID</th><th>Course Name</th><th>Course Course</th><th>Course Fee</th>
+    <table class="un"><th>ID</th><th>Course Name</th><th>Course Code</th><th>Course Fee</th>
     
     <?php
     include('connection.php');
@@ -80,5 +86,7 @@ background-color: rgb(27, 249, 27);
     </table>
     <a href="index.php"><button class="btn">BACK to Dashboard</button></a>
 </div></div>
+<?php
+}else{header("location: \Cvit-CVgenerator/authentication/login.php");}?>
 </body>
 </html>

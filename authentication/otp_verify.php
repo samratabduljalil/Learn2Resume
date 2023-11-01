@@ -23,6 +23,7 @@ if(((int)$_POST['OTP2']) === $_SESSION['otp']){
         $decrypted = openssl_decrypt($user['password'], 'aes-256-cbc', $encryption_key, 0, $iv);
         if($decrypted ===  $password){ 
            if($table=='cv_admin'){
+           
             $_SESSION['name']=$user['name'];
             $_SESSION['image']=$user['image'];
             $_SESSION['id']=$user['id_user'];

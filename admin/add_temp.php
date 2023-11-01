@@ -4,7 +4,7 @@
 
 
 session_start();
-
+if(isset($_SESSION['admin'])){
 
 
 
@@ -56,6 +56,7 @@ if (mysqli_query($connection, $query)) {
  }
 
  $_SESSION['done']=True;
+}else{header("location: \Cvit-CVgenerator/authentication/login.php");}
 
 ?>
 

@@ -7,7 +7,13 @@
     <link rel="stylesheet" href="style.css">
     <title>edit Profile</title>
 </head>
-<?php session_start()?>
+<?php session_start();
+if(isset($_SESSION['admin'])){
+
+
+
+
+?>
 <body>
 
 
@@ -104,5 +110,13 @@
     </form>
 </div></div>
 <a href="index.php" ><button class="btn_submit"  >Back</button></a>
+<?php
+}else{
+    header("location: \Cvit-CVgenerator/authentication/login.php");
+
+}
+
+
+?>
 </body>
 </html>
