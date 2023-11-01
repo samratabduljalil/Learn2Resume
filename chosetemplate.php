@@ -44,7 +44,7 @@ session_start();
 
 <div class="card">
 
-<a href="\admin/<?php echo $row['link']?>?id=<?php echo $_SESSION['id']?>&&temp=/admin/<?php echo $row['link']?>&&temp2=<?php echo $row['link']?>&&css=\admin/<?php echo $row['css']?>"><img src="\admin/<?php echo $row['image']?>" alt="" class="img-t"></a>
+<a href="\Cvit-CVgenerator\admin/<?php echo $row['link']?>?id=<?php echo $_SESSION['id']?>&&temp=\Cvit-CVgenerator/admin/<?php echo $row['link']?>&&temp2=<?php echo $row['link']?>&&css=\Cvit-CVgenerator\admin/<?php echo $row['css']?>"><img src="\Cvit-CVgenerator\admin/<?php echo $row['image']?>" alt="" class="img-t"></a>
 </div>
    
     

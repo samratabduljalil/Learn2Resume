@@ -97,10 +97,10 @@ $a=1;
            
            <div class="question">
       <p class="question-text"><?php echo $a ?>.<?php echo $row['question'] ?></p>
-      <label><input type="radio" name="p<?php echo $a ?>" value="1"> a) <?php echo $row['op1'] ?></label>
-      <label><input type="radio" name="p<?php echo $a ?>" value="2"> b) <?php echo $row['op2'] ?></label>
-      <label><input type="radio" name="p<?php echo $a ?>" value="3"> c) <?php echo $row['op3'] ?></label>
-      <label><input type="radio" name="p<?php echo $a ?>" value="4"> d) <?php echo $row['op4'] ?></label>
+      <label><input type="radio" name="p<?php echo $a ?>" value="1" required> a) <?php echo $row['op1'] ?></label>
+      <label><input type="radio" name="p<?php echo $a ?>" value="2" required> b) <?php echo $row['op2'] ?></label>
+      <label><input type="radio" name="p<?php echo $a ?>" value="3" required> c) <?php echo $row['op3'] ?></label>
+      <label><input type="radio" name="p<?php echo $a ?>" value="4" required> d) <?php echo $row['op4'] ?></label>
     </div>
           
 
@@ -141,6 +141,6 @@ $a=1;
  <button class="btn" type="submit">submit</button>
  <?php }?>
   </form>
-  <a href="\user2\index.php"><button class="btn1" >Back </button></a>
+  <a href="\Cvit-CVgenerator/user2\index.php"><button class="btn1" >Back </button></a>
 </body>
 </html>

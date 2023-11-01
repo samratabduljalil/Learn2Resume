@@ -6,7 +6,7 @@ if(((int)$_POST['OTP2']) === $_SESSION['otp']){
         $iv = 1596324856795136; 
 
         $encryption_key_email =12345678912000006958657423654789; 
-        $iv_email = 159632485670000; 
+        $iv_email = 1596324856700000; 
         
 
     if($_SESSION['check']==='login'){

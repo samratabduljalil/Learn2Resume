@@ -99,9 +99,7 @@ if (mysqli_query($connection, $query)) {
 
 
 
-  
-  sleep(5);
-  header("location: Cvit-CVgenerator/index.php");
+
 
 } else {
   echo "Error inserting data: " . mysqli_error($connection);

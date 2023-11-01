@@ -86,7 +86,9 @@ $result = $connection->query($sql);
 if ($result->num_rows > 0) {
 $row = $result->fetch_assoc(); 
        
-   
+$encryption_key_email =12345678912000006958657423654789; 
+$iv_email = 1596324856700000; 
+$decrypted = openssl_decrypt($row['email'], 'aes-256-cbc', $encryption_key_email, 0, $iv_email);
 
 ?>
 
@@ -97,7 +99,7 @@ $row = $result->fetch_assoc();
         <div class="parent">
             <div class="left_panel">
                 <div class="profile_pic">
-                    <img id="avatar" src="/user2/<?php echo $row['img'] ?>">
+                    <img id="avatar" src="\Cvit-CVgenerator/user2/<?php echo $row['img'] ?>">
                 </div>
 
                 <div class="info">
@@ -109,7 +111,7 @@ $row = $result->fetch_assoc();
                         
                         
                         <div class="the_sec">
-                            <img id="icon" src="icons/phone.png" alt="">
+                            <img id="icon" src="\Cvit-CVgenerator/cv_templates/icons/phone.png" alt="">
                             <div class="sub_sec">
                                 <strong id="phone">Phone</strong>
                                 <strong id="phn_num"><?php echo $row['phone'] ?></strong>
@@ -118,16 +120,16 @@ $row = $result->fetch_assoc();
 
                         
                         <div class="the_sec">
-                            <img id="icon" src="icons/mail.png" alt="">
+                            <img id="icon" src="\Cvit-CVgenerator/cv_templates/icons/mail.png" alt="">
                             <div class="sub_sec">
                                 <strong id="mail">Email</strong>
-                                <strong id="mail_acc"><?php echo $row['email'] ?></strong>
+                                <strong id="mail_acc"><?php echo $decrypted ?></strong>
                             </div>
                         </div>
 
                         
                         <div class="the_sec">
-                            <img id="icon" src="icons/home.png" alt="">
+                            <img id="icon" src="\Cvit-CVgenerator/cv_templates/icons/home.png" alt="">
                             <div class="sub_sec">
                                 <strong id="addr">Address</strong>
                                 <strong id="address"><?php echo $row['address'] ?></strong>
@@ -147,7 +149,7 @@ $row = $result->fetch_assoc();
                         
                         
                         <div class="the_sec">
-                            <img id="phone" src="icons/school.png" alt="">
+                            <img id="phone" src="\Cvit-CVgenerator/cv_templates/icons/school.png" alt="">
                             <div class="sub_sec">
                                 <strong id="qualification"><?php echo $row['edu_1'] ?></strong>
                                 <strong id="uni_name"><?php echo $row['degree_1'] ?></strong>
@@ -157,7 +159,7 @@ $row = $result->fetch_assoc();
 
                         
                         <div class="the_sec">
-                            <img id="phone" src="icons/school.png" alt="">
+                            <img id="phone" src="\Cvit-CVgenerator/cv_templates/icons/school.png" alt="">
                             <div class="sub_sec">
                             <strong id="qualification"><?php echo $row['edu_2'] ?></strong>
                                 <strong id="uni_name"><?php echo $row['degree_2'] ?></strong>
@@ -271,7 +273,7 @@ $row = $result->fetch_assoc();
                             $user = mysqli_fetch_assoc($result);
                         
                         ?>
-                        <img src="\cv_templates\qr_code/<?php echo $user['qr']?>" alt="" class="qr_img">
+                        <img src="\Cvit-CVgenerator\cv_templates\qr_code/<?php echo $user['qr']?>" alt="" class="qr_img">
 
                         <?php }?>
                     </div>
@@ -285,11 +287,11 @@ $row = $result->fetch_assoc();
     </div>
 <?php }?>
     <br><br>
-    <a href="\user2\index.php"><input class="con1" type="button" value="Back" ></a>
+    <a href="\Cvit-CVgenerator\user2\index.php"><input class="con1" type="button" value="Back" ></a>
     <input class="con" type="button" value="Convert PDF" onclick="convertHTMLtoPDF()">
    
    
-    <a href="\cv_templates\qr_code.php?id=<?php echo $_GET['id']?>&&temp=<?php echo $_GET['temp']?>&&temp2=<?php echo $_GET['temp2']?>&&css=<?php echo $_GET['css']?>"><input class="con1" type="button" value="create Qr code" ></a>
+    <a href="\Cvit-CVgenerator\cv_templates\qr_code.php?id=<?php echo $_GET['id']?>&&temp=<?php echo $_GET['temp']?>&&temp2=<?php echo $_GET['temp2']?>&&css=<?php echo $_GET['css']?>"><input class="con1" type="button" value="create Qr code" ></a>
 
 </body>
     <script type="text/javascript" src="convert_to_pdf.js"></script>

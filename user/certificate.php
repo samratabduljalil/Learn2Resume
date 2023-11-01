@@ -183,7 +183,7 @@ if ($result1->num_rows == 0) {
 
 
 <input class="cer" type="button" value="Convert PDF" onclick="convertHTMLtoPDF()">
-<a href="\user2\index.php"><button class="cer1" >back To dashboard</button></a> 
+<a href="\Cvit-CVgenerator/user2\index.php"><button class="cer1" >back To dashboard</button></a> 
 </body>
 <script type="text/javascript" src="convert_to_pdf.js"></script>
 </html>

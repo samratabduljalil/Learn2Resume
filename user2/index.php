@@ -22,7 +22,9 @@ $result = mysqli_query($connection, $query);
 if ($result && mysqli_num_rows($result) > 0) {
  
     $user = mysqli_fetch_assoc($result);
-    
+    $encryption_key_email =12345678912000006958657423654789; 
+    $iv_email = 1596324856700000; 
+    $decrypted = openssl_decrypt($user['email'], 'aes-256-cbc', $encryption_key_email, 0, $iv_email);
     
     
     ?>
@@ -35,7 +37,7 @@ if ($result && mysqli_num_rows($result) > 0) {
 
 <ul>
   
-    <li><a href="\chosetemplate.php">Create Cv</a></li>
+<li><a href="\Cvit-CVgenerator\chosetemplate.php">Create Cv</a></li>
     <li><a href="editprofile.php">Edit Profile</a></li>
     <li><a href="my_cer.php">My Certificate</a></li>
     <li><a href="my_course.php">My course</a></li>
@@ -140,7 +142,7 @@ if ($result && mysqli_num_rows($result) > 0) {
 
     <p class="pr_title">Personal details</p>
     
-<p class="pr1"><?php echo $user['email'] ?></p>
+<p class="pr1"><?php echo $decrypted  ?></p>
 <p class="pr2"><?php echo $user['phone'] ?></p>
 <p class="pr3"><?php echo $user['address'] ?></p>
 

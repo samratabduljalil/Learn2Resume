@@ -15,13 +15,13 @@
    <p class="user_name"> <?php echo $_SESSION['name'] ?></p>
 
 <ul>
-  <li><a href="\chosetemplate.php">Create Cv</a></li>
-  <li><a href="editprofile.php">Edit Profile</a></li>
-  <li><a href="my_cer.php">My Certificate</a></li>
-  <li><a href="my_course.php">My course</a></li>
-  <li><a href="\user\allcourses.php">All Courses</a></li>
-  <li><a href="\index.php">Home</a></li>
-  <li><a href="\logout.php">Logout</a></li>
+<li><a href="\Cvit-CVgenerator\chosetemplate.php">Create Cv</a></li>
+    <li><a href="editprofile.php">Edit Profile</a></li>
+    <li><a href="my_cer.php">My Certificate</a></li>
+    <li><a href="my_course.php">My course</a></li>
+    <li><a href="\Cvit-CVgenerator\course\index.php">All Courses</a></li>
+    <li><a href="\Cvit-CVgenerator\index.php">Home</a></li>
+    <li><a href="\Cvit-CVgenerator\logout.php">Logout</a></li>
 
 </ul>
 </div>
@@ -56,7 +56,7 @@
 
             ?>
            
-         <a href='Cvit-CVgenerator/user/in_course.php?id=<?php echo $row2['course_code'] ?>' class="card" > 
+         <a href='\Cvit-CVgenerator/user/in_course.php?id=<?php echo $row2['course_code'] ?>' class="card" > 
             <h1 class="cardtext"><span class="t1"><?php echo $row2['Name'] ?></span></h1>
 
           <div class="in_card"><p>Click Here to Get started</p></div>

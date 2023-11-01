@@ -3,8 +3,14 @@
 
 session_start();
 
+$email=$_POST['email'];
+
+$encryption_key_email =12345678912000006958657423654789; 
+$iv_email = 1596324856700000; 
 
 
+
+$encrypted_email = openssl_encrypt($email, 'aes-256-cbc', $encryption_key_email, 0, $iv_email);
 
 include('connection.php');
 
@@ -45,7 +51,7 @@ if ( !$_FILES['co_img']['name']==NULL) {
 
 
 
-    $query="UPDATE `cv_user` SET `phone`='{$_POST['phone']}',`position`='{$_POST['position']}',`edu_1`='{$_POST['edu1']}',`edu_2`='{$_POST['edu2']}',`degree_1`='{$_POST['deg1']}',`degree_2`='{$_POST['deg2']}',`cgpa_1`='{$_POST['cgpa1']}',`cgpa_2`='{$_POST['cgpa2']}',`c_name_1`='{$_POST['og1']}',`c_name_2`='{$_POST['og2']}',`c_position_1`='{$_POST['p1']}',`c_position_2`='{$_POST['p2']}',`c_year_1`='{$_POST['y1']}',`c_year_2`='{$_POST['y2']}',`skills_1`='{$_POST['s1']}',`skills_2`='{$_POST['s2']}',`skills_3`='{$_POST['s3']}',`skills_4`='{$_POST['s4']}',`skills_5`='{$_POST['s5']}',`skills_6`='{$_POST['s6']}',`about`='{$_POST['about']}',`address`='{$_POST['address']}',`image_co`='{$targetFile1}' WHERE UserID = {$_SESSION['id']}";
+    $query="UPDATE `cv_user` SET `phone`='{$_POST['phone']}',`position`='{$_POST['position']}',`edu_1`='{$_POST['edu1']}',`edu_2`='{$_POST['edu2']}',`degree_1`='{$_POST['deg1']}',`degree_2`='{$_POST['deg2']}',`cgpa_1`='{$_POST['cgpa1']}',`cgpa_2`='{$_POST['cgpa2']}',`c_name_1`='{$_POST['og1']}',`c_name_2`='{$_POST['og2']}',`c_position_1`='{$_POST['p1']}',`c_position_2`='{$_POST['p2']}',`c_year_1`='{$_POST['y1']}',`c_year_2`='{$_POST['y2']}',`skills_1`='{$_POST['s1']}',`skills_2`='{$_POST['s2']}',`skills_3`='{$_POST['s3']}',`skills_4`='{$_POST['s4']}',`skills_5`='{$_POST['s5']}',`skills_6`='{$_POST['s6']}',`about`='{$_POST['about']}',`address`='{$_POST['address']}',`image_co`='{$targetFile1}',`email`='{$encrypted_email}' WHERE UserID = {$_SESSION['id']}";
     $result = mysqli_query($connection, $query);
 }
 if ( !$_FILES['pro_img']['name']==NULL) {
@@ -80,11 +86,11 @@ if ( !$_FILES['pro_img']['name']==NULL) {
 
 
 
-    $query="UPDATE `cv_user` SET `phone`='{$_POST['phone']}',`position`='{$_POST['position']}',`edu_1`='{$_POST['edu1']}',`edu_2`='{$_POST['edu2']}',`degree_1`='{$_POST['deg1']}',`degree_2`='{$_POST['deg2']}',`cgpa_1`='{$_POST['cgpa1']}',`cgpa_2`='{$_POST['cgpa2']}',`c_name_1`='{$_POST['og1']}',`c_name_2`='{$_POST['og2']}',`c_position_1`='{$_POST['p1']}',`c_position_2`='{$_POST['p2']}',`c_year_1`='{$_POST['y1']}',`c_year_2`='{$_POST['y2']}',`skills_1`='{$_POST['s1']}',`skills_2`='{$_POST['s2']}',`skills_3`='{$_POST['s3']}',`skills_4`='{$_POST['s4']}',`skills_5`='{$_POST['s5']}',`skills_6`='{$_POST['s6']}',`img`='{$targetFile2}',`about`='{$_POST['about']}',`address`='{$_POST['address']}' WHERE UserID = {$_SESSION['id']}";
+    $query="UPDATE `cv_user` SET `phone`='{$_POST['phone']}',`position`='{$_POST['position']}',`edu_1`='{$_POST['edu1']}',`edu_2`='{$_POST['edu2']}',`degree_1`='{$_POST['deg1']}',`degree_2`='{$_POST['deg2']}',`cgpa_1`='{$_POST['cgpa1']}',`cgpa_2`='{$_POST['cgpa2']}',`c_name_1`='{$_POST['og1']}',`c_name_2`='{$_POST['og2']}',`c_position_1`='{$_POST['p1']}',`c_position_2`='{$_POST['p2']}',`c_year_1`='{$_POST['y1']}',`c_year_2`='{$_POST['y2']}',`skills_1`='{$_POST['s1']}',`skills_2`='{$_POST['s2']}',`skills_3`='{$_POST['s3']}',`skills_4`='{$_POST['s4']}',`skills_5`='{$_POST['s5']}',`skills_6`='{$_POST['s6']}',`img`='{$targetFile2}',`about`='{$_POST['about']}',`address`='{$_POST['address']}',`email`='{$encrypted_email}' WHERE UserID = {$_SESSION['id']}";
     $result = mysqli_query($connection, $query);
 
 }
-$query="UPDATE `cv_user` SET `phone`='{$_POST['phone']}',`position`='{$_POST['position']}',`edu_1`='{$_POST['edu1']}',`edu_2`='{$_POST['edu2']}',`degree_1`='{$_POST['deg1']}',`degree_2`='{$_POST['deg2']}',`cgpa_1`='{$_POST['cgpa1']}',`cgpa_2`='{$_POST['cgpa2']}',`c_name_1`='{$_POST['og1']}',`c_name_2`='{$_POST['og2']}',`c_position_1`='{$_POST['p1']}',`c_position_2`='{$_POST['p2']}',`c_year_1`='{$_POST['y1']}',`c_year_2`='{$_POST['y2']}',`skills_1`='{$_POST['s1']}',`skills_2`='{$_POST['s2']}',`skills_3`='{$_POST['s3']}',`skills_4`='{$_POST['s4']}',`skills_5`='{$_POST['s5']}',`skills_6`='{$_POST['s6']}',`about`='{$_POST['about']}',`address`='{$_POST['address']}' WHERE UserID = {$_SESSION['id']}";
+$query="UPDATE `cv_user` SET `phone`='{$_POST['phone']}',`position`='{$_POST['position']}',`edu_1`='{$_POST['edu1']}',`edu_2`='{$_POST['edu2']}',`degree_1`='{$_POST['deg1']}',`degree_2`='{$_POST['deg2']}',`cgpa_1`='{$_POST['cgpa1']}',`cgpa_2`='{$_POST['cgpa2']}',`c_name_1`='{$_POST['og1']}',`c_name_2`='{$_POST['og2']}',`c_position_1`='{$_POST['p1']}',`c_position_2`='{$_POST['p2']}',`c_year_1`='{$_POST['y1']}',`c_year_2`='{$_POST['y2']}',`skills_1`='{$_POST['s1']}',`skills_2`='{$_POST['s2']}',`skills_3`='{$_POST['s3']}',`skills_4`='{$_POST['s4']}',`skills_5`='{$_POST['s5']}',`skills_6`='{$_POST['s6']}',`about`='{$_POST['about']}',`address`='{$_POST['address']}',`email`='{$encrypted_email}' WHERE UserID = {$_SESSION['id']}";
 
 $result = mysqli_query($connection, $query);
 $_SESSION['done']=True;

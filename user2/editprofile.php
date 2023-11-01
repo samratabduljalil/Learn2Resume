@@ -17,7 +17,9 @@ include('connection.php');
     if ($result && mysqli_num_rows($result) > 0) {
      
         $user = mysqli_fetch_assoc($result);
-        
+        $encryption_key_email =12345678912000006958657423654789; 
+$iv_email = 1596324856700000; 
+$decrypted = openssl_decrypt($user['email'], 'aes-256-cbc', $encryption_key_email, 0, $iv_email);
         ?>
 <body>
 
@@ -36,7 +38,7 @@ include('connection.php');
         <textarea name="about" id="" cols="30" rows="10" class="text_area" required ><?php echo $user['about'] ?></textarea>
     <input type="text" name="name" id="" class="text_box1" placeholder="Enter Your name" value="<?php echo $user['name'] ?>">
     <input type="text" name="phone" id="" class="text_box1" placeholder="Enter Your Phone Number" value="<?php echo $user['phone'] ?>">
-    <input type="email" name="email" id="" class="text_box1" placeholder="Enter Your Email" value="<?php echo $user['email'] ?>">
+    <input type="email" name="email" id="" class="text_box1" placeholder="Enter Your Email" value="<?php echo $decrypted ?>">
     <input type="text" name="address" id="" class="text_box1" placeholder="Enter Your Address" value="<?php echo $user['address'] ?>">
     <input type="text" name="position" id="" class="text_box1" placeholder="Enter Your Occupation" value="<?php echo $user['position'] ?>">
 
