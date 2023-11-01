@@ -10,13 +10,10 @@
   <div class="flex">
 <h1 class="sucess">Your payment is successful</h1>
 <h3 class="redirect">You will be automatic redirected to your cours in a moment</h3>
+<a href="\Cvit-CVgenerator/user2/index.php"></a><button class="dash_btn">Go to Dashboard</button>
 </div>  
 
 
-
-
-</body>
-</html>
 <?php
 include('connection.php');
 $val_id=urlencode($_POST['val_id']);
@@ -73,10 +70,11 @@ if($code == 200 && !( curl_errno($handle)))
 	$gw_version = $result->gw_version;
 
 
-  $query="UPDATE `total` SET `total`='{$store_amount}' WHERE `id`=221";
+  $query="INSERT INTO `total`(`total`) VALUES ('{$store_amount}')";
 
   if (mysqli_query($connection, $query)) {
   
+	
 
   
   } else {
@@ -86,7 +84,7 @@ if($code == 200 && !( curl_errno($handle)))
 
 
   
-session_start();
+
 
 $payment=$_POST['amount'];
 $course_id=$_POST['value_a'];
@@ -96,9 +94,8 @@ $query="INSERT INTO `payment_course`(`course_id`, `user_id`, `payment_money`, `C
 
 if (mysqli_query($connection, $query)) {
 
-
-
-
+	//$redirectURL ="\Cvit-CVgenerator/user/in_course.php?id=".$course_id;
+	//header("location:".$redirectURL);
 
 
 } else {
@@ -111,3 +108,7 @@ if (mysqli_query($connection, $query)) {
 	echo "Failed to connect with SSLCOMMERZ";
 }
 ?>
+
+
+</body>
+</html>

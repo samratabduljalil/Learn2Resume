@@ -121,7 +121,7 @@
           var html = ''; 
   
           for (let index = 0; index < data.length; index++) {
-              html += "<a href='/Cvit-CVgenerator/payment/checkout.php?id="+data[index].ID+"'class='card'><img src='/Cvit-CVgenerator/img/business-2717063_640.jpg' class='img_course'><h1 class='cardtext'><span class='t1'>" + data[index].Name + "</span></h1><div class='in_card'><h3>ENROLL </h3></div></a>";
+              html += "<a href='/Cvit-CVgenerator/payment/checkout.php?id="+data[index].ID+"'class='card'><h1 class='cardtext'><span class='t1'>" + data[index].Name + "</span></h1><div class='in_card'><h3>ENROLL </h3></div></a>";
           }
   
           dataDisplay.innerHTML = html; 
@@ -136,7 +136,7 @@
 //searching
 document.getElementById("Live_search").addEventListener("input", function() {
         var query = this.value;
-        if (query.length >= 3) {
+        if (query.length >= 1) {
             var formData = new FormData();
             formData.append("query", query);
 
@@ -148,7 +148,7 @@ document.getElementById("Live_search").addEventListener("input", function() {
             .then(data => {
                 var resultsHtml = "<h1 class='course_title'>Search Result</h1><div class='container'><div class='course'>";
                 data.forEach(result => {
-                    resultsHtml += "<a href='in_course.php' class='card'><img src='/Cvit-CVgenerator/img/business-2717063_640.jpg' class='img_course'><h1 class='cardtext'><span class='t1'>" + result['ID'] + "</span></h1><div class='in_card'><p>Click Here to Start Learning</p></div></a>";
+                    resultsHtml += "<a href='in_course.php' class='card'><h1 class='cardtext'><span class='t1'>" + result['Name'] + "</span></h1><div class='in_card'><p>Click Here to Start Learning</p></div></a>";
                 });
                resultsHtml += "</div></div>";
                 document.getElementById("search-results").innerHTML = resultsHtml;

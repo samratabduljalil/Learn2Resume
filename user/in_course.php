@@ -67,7 +67,7 @@ $code=$_GET['id'] ;
             <?php
         }
     } else {
-        echo "No products found.";
+        echo "No video found.";
     }
 
     // Close the database connection
@@ -146,7 +146,7 @@ $code=$_GET['id'] ;
             <?php
         }
     } else {
-        echo "No products found.";
+        echo "No video found.";
     }
 
     // Close the database connection

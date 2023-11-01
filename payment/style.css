@@ -68,6 +68,20 @@ margin-left: 10%;
 margin-left: 55%;
 
 }
+
+.dash_btn{
+
+  padding: 3px;
+background-color: rgb(216, 246, 171);
+
+}
+.dash_btn{
+
+ border-radius: 1px;
+ padding: 4px;
+background-color: rgb(188, 233, 121);
+
+}
 .cancel{
  
  position: absolute;
