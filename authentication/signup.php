@@ -7,7 +7,14 @@
     <title>SignUp</title>
 </head>
 <body>
-
+<?php  session_start(); if(isset($_SESSION['non'])){
+        if($_SESSION['non']==TRUE) {?>
+            
+            <?php
+            header("location: \Cvit-CVgenerator/user2/index.php");
+            
+            
+    }}?>
     <nav>
         <ul>
           <li><a href="index.php#Home">Home</a></li>
