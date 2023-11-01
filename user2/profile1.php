@@ -6,8 +6,12 @@
     <link rel="stylesheet" href="pro.css">
     <title>Profile</title>
 </head>
-
 <?php session_start();
+if(isset($_SESSION['user'])){
+
+
+?>
+<?php 
 $_SESSION['phone']=$_POST['phone'];
 $_SESSION['about']=$_POST['about'];
 $_SESSION['address']=$_POST['address'];
@@ -65,5 +69,13 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!--End of Tawk.to Script-->
+<?php
+}else{
+    header("location: \Cvit-CVgenerator/authentication/login.php");
+
+}
+
+
+?>
 </body>
 </html>

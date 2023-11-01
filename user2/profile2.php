@@ -9,6 +9,10 @@
 <body>
 
 <?php session_start();
+if(isset($_SESSION['user'])){
+
+
+
 $_SESSION['edu1']=$_POST['edu1'];
 $_SESSION['deg1']=$_POST['deg1'];
 $_SESSION['cgpa1']=$_POST['cgpa1'];
@@ -68,5 +72,13 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!--End of Tawk.to Script-->
+<?php
+}else{
+    header("location: \Cvit-CVgenerator/authentication/login.php");
+
+}
+
+
+?>
 </body>
 </html>

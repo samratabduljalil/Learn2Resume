@@ -7,7 +7,13 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="<?php echo $_GET['css'] ?>">
+    <?php session_start();
+if(isset($_SESSION['user'])){
 
+
+
+
+?>
 <style>
 
 .nu{
@@ -299,4 +305,12 @@ $decrypted = openssl_decrypt($row['email'], 'aes-256-cbc', $encryption_key_email
 
 </body>
     <script type="text/javascript" src="convert_to_pdf.js"></script>
+    <?php
+}else{
+    header("location: \Cvit-CVgenerator/authentication/login.php");
+
+}
+
+
+?>
 </html>

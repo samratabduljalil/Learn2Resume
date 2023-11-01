@@ -1,5 +1,11 @@
 <?php
 session_start();
+if(isset($_SESSION['user'])){
+
+
+
+
+
 
 $post_data = array();
 $post_data['store_id'] = "abc6535a78e3e415";
@@ -94,4 +100,12 @@ if(isset($sslcz['GatewayPageURL']) && $sslcz['GatewayPageURL']!="" ) {
 } else {
 	echo "JSON Data parsing error!";
 }
+
+}else{
+    header("location: \Cvit-CVgenerator/authentication/login.php");
+
+}
+
+
+
 ?>

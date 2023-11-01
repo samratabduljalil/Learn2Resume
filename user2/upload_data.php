@@ -5,7 +5,7 @@
 
 session_start();
 
-
+if(isset($_SESSION['user'])){
 
 
 include('connection.php');
@@ -62,6 +62,10 @@ if (mysqli_query($connection, $query)) {
 
  $_SESSION['image_co']=$targetFile2;
  $_SESSION['img']=$targetFile1;
+}else{
+    header("location: \Cvit-CVgenerator/authentication/login.php");
+
+}
 ?>
 
 

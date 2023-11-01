@@ -6,6 +6,13 @@
     <link rel="stylesheet" href="style.css">
     <title>Successful</title>
 </head>
+<?php session_start();
+if(isset($_SESSION['user'])){
+
+
+
+
+?>
 <body>
   <div class="flex">
 <h1 class="sucess">Your payment is successful</h1>
@@ -122,5 +129,13 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!--End of Tawk.to Script-->
+<?php
+}else{
+    header("location: \Cvit-CVgenerator/authentication/login.php");
+
+}
+
+
+?>
 </body>
 </html>

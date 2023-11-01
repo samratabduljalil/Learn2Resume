@@ -28,7 +28,11 @@
 
 <?php
     include('connection.php');
-session_start();
+  session_start();
+    if(isset($_SESSION['user'])){
+    
+    
+   
     // Check connection
     if ($connection->connect_error) {
         die("Connection failed: " . $connection->connect_error);
@@ -94,7 +98,14 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!--End of Tawk.to Script-->
+<?php
+}else{
+    header("location: \Cvit-CVgenerator/authentication/login.php");
 
+}
+
+
+?>
 
 </body>
 </html>

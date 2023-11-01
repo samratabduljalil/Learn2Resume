@@ -21,7 +21,13 @@
     <link class="icon" rel="icon" href="icon.png" type="image">
     <title>course </title>
 </head>
+<?php session_start();
+if(isset($_SESSION['user'])){
 
+
+
+
+?>
 <body>
 
 
@@ -217,5 +223,12 @@ s0.parentNode.insertBefore(s1,s0);
 </script>
 <!--End of Tawk.to Script-->
 </body>
+<?php
+}else{
+    header("location: \Cvit-CVgenerator/authentication/login.php");
 
+}
+
+
+?>
 </html>

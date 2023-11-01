@@ -11,20 +11,21 @@
     <title>course</title>
 
 </head>
+
 <body>
     <nav>
         <ul>
            <form  >
             <input type="search" name="" id="Live_search" placeholder="Search Course">
           </form>
-          <li><a href="#Home">Home</a></li>
-          <li><a href="index.html">course</a></li>
+          <li><a href="\index.php">Home</a></li>
+          <li><a href="index.php">course</a></li>
           
           <?php if(isset($_SESSION['name'] )) { ?>
-          <li><a href="\user2\index.php"><?php echo $_SESSION['name'] ?></a></li>
+          <li><a href="\Cvit-CVgenerator/user2/index.php"><?php echo $_SESSION['name'] ?></a></li>
           <?php }else{
                     ?>
-           <li><a href="signup.php">SignUp/Login</a></li>
+           <li><a href="\Cvit-CVgenerator/authentication\signup.php">SignUp/Login</a></li>
            <?php }?>
   
   
@@ -42,13 +43,13 @@
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="d-block  imgcar" src="\Cvit-CVgenerator\img\02.jpg" alt="First slide">
+                <img class="d-block  imgcar" src="\Cvit-CVgenerator/img/analysis-1841158_1920.jpg" alt="First slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block  imgcar" src=".\img\01.jpg" alt="Second slide">
+                <img class="d-block  imgcar" src="\Cvit-CVgenerator/img/code-1076536_1920.jpg" alt="Second slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block  imgcar" src=".\img\001.jpg" alt="Third slide">
+                <img class="d-block  imgcar" src="\Cvit-CVgenerator/img/stock-market-6531146_1920.jpg" alt="Third slide">
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

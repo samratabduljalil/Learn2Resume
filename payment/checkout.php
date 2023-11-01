@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="style.css">
     <title>checkout</title>
 </head>
+<?php session_start();
+if(isset($_SESSION['user'])){
+
+
+
+
+?>
 <body>
     
     <nav>
@@ -100,6 +107,14 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!--End of Tawk.to Script-->
+<?php
+}else{
+    header("location: \Cvit-CVgenerator/authentication/login.php");
+
+}
+
+
+?>
 </body>
 </html>
 

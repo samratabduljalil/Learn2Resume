@@ -1,6 +1,7 @@
 <?php
 
 include('connection.php');
+session_start();
 
 // SQL query to fetch data from the database
 $sql = "SELECT * FROM course";
@@ -23,6 +24,7 @@ if ($result->num_rows > 0) {
 } else {
     echo "json_encode(ms: No data found)";
 }
+
 ?>
 
 

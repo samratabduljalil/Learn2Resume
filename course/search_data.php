@@ -1,5 +1,6 @@
 <?php
 include("connection.php");
+session_start();
 
 // Get the user's search query from the AJAX request
 if (isset($_POST['query'])) {
@@ -23,4 +24,5 @@ if (isset($_POST['query'])) {
 }
 
 $connection->close();
+
 ?>

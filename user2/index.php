@@ -7,7 +7,11 @@
     <title>User Dashboard 2</title>
 </head>
 <body>
-<?php session_start()?>
+<?php session_start();
+if(isset($_SESSION['user'])){
+
+
+?>
 <?php  
 
 
@@ -178,6 +182,13 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!--End of Tawk.to Script-->
+<?php
+}else{
+    header("location: \Cvit-CVgenerator/authentication/login.php");
 
+}
+
+
+?>
 </body>
 </html>

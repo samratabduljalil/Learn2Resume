@@ -21,10 +21,19 @@
         <li><a href="#Home">Home</a></li>
         <li><a href="\course\index.html">Service</a></li>
         <li><a href="\Cvit-CVgenerator\course\index.php">Course</a></li>
-        <li><a href="sen.php">Create Cv</a></li>
-        <?php if(isset($_SESSION['name'] )) { ?>
+        <li><a href="authentication\signup.php">Create Cv</a></li>
+        <?php if(isset($_SESSION['name'] )) { 
+          if(isset($_SESSION['user'] )) {
+          ?>
+
         <li><a href="user2\index.php"><?php echo $_SESSION['name'] ?></a></li>
         <?php }else{
+          ?>
+
+          <li><a href="admin\index.php"><?php echo $_SESSION['name'] ?></a></li>
+          <?php }
+        
+      }else{
                   ?>
          <li><a href="authentication\signup.php">SignUp/Login</a></li>
          <?php }?>
@@ -38,42 +47,14 @@
 
     <section>
 
-    <section id="car">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="d-block  imgcar" src=".\img\02.jpg" alt="First slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block  imgcar" src=".\img\01.jpg" alt="Second slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block  imgcar" src=".\img\001.jpg" alt="Third slide">
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-          </div>
-
-    </section>
+   
     <section id="Service">
       
       <div class="moto_service"><P>.Create Your CV</P></div>
-      <div class="moto_service"><samp> .</samp> <span id="element">Create your First CV with us<button class="Home_get">Create CV</button></span></div>
+      <div class="moto_service"><samp> .</samp> <span id="element">Create your First CV with us <a href="authentication\signup.php"><button class="Home_get">Create CV</button></a></span></div>
       <div class="line"></div>
       <div class="moto_service"><P>Improve Your CV</P></div>
-      <div class="moto_service"><samp> .</samp> <span id="element">Improve Your Skills with Our  Cources<button class="Home_get">Courses</button></span></div>
+      <div class="moto_service"><samp> .</samp> <span id="element">Improve Your Skills with Our  Courses<a href="\Cvit-CVgenerator\course\index.php"><button class="Home_get">Courses</button></a></span></div>
       
 
 

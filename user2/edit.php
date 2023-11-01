@@ -2,7 +2,7 @@
 
 
 session_start();
-
+if(isset($_SESSION['user'])){
 $email=$_POST['email'];
 
 $encryption_key_email =12345678912000006958657423654789; 
@@ -95,4 +95,8 @@ $query="UPDATE `cv_user` SET `phone`='{$_POST['phone']}',`position`='{$_POST['po
 $result = mysqli_query($connection, $query);
 $_SESSION['done']=True;
 header("location: editprofile.php");
+}else{
+    header("location: \Cvit-CVgenerator/authentication/login.php");
+
+}
 ?>

@@ -4,6 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>result</title>
+  <?php session_start();
+if(isset($_SESSION['user'])){
+
+
+
+
+?>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -215,5 +222,13 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!--End of Tawk.to Script-->
+<?php
+}else{
+    header("location: \Cvit-CVgenerator/authentication/login.php");
+
+}
+
+
+?>
 </body>
 </html>
