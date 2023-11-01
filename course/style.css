@@ -1,11 +1,16 @@
 body {
     margin: 0;
-  background-color: rgb(253, 245, 245);
+  background-color: coral;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(173, 216, 230, 0.6), rgba(0, 0, 128, 0.6));
+
+/* Add additional styles for a glassy effect */
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+border-radius: 10px;
   }
   nav {
     margin-left: 0px;
     display: flex;
-    background-color: white;
+    background-color: chocolate;
     justify-content: end;
     padding-right: 40px;
   
@@ -20,6 +25,7 @@ body {
     padding: 10px;
     text-decoration: none;
     color: black;
+    transition: .45s;
   }
   nav ul li a:hover {
     text-decoration: none;
