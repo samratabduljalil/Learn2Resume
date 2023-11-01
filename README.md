@@ -1,10 +1,10 @@
-# Learn2Resum 
+# Learn2Resume 
 
-Learn2Resum is a comprehensive platform that serves as both a CV generator and an e-learning hub. This documentation outlines the technical aspects, features, and security measures implemented in the Learn2Resum project. Users can create CVs for free, enhance their skills through paid certification courses, and receive certificates upon course completion. A 24-hour customer support service via live chat is available to assist users.
+Learn2Resume is a comprehensive platform that serves as both a CV generator and an e-learning hub. This documentation outlines the technical aspects, features, and security measures implemented in the Learn2Resume project. Users can create CVs for free, enhance their skills through paid certification courses, and receive certificates upon course completion. A 24-hour customer support service via live chat is available to assist users.
 
 <h2> Technology Stack </h2>
 
-<h3>The Learn2Resum project employs the following technologies:</h3>
+<h3>The Learn2Resume project employs the following technologies:</h3>
 
 - Programming Languages: PHP, JavaScript
 - Markup Languages: HTML, CSS
@@ -14,7 +14,7 @@ Learn2Resum is a comprehensive platform that serves as both a CV generator and a
 
 <h2>User Features</h2>
 
-<h3>Learn2Resum offers the following features to users:</h3>
+<h3>Learn2Resume offers the following features to users:</h3>
 
 1. CV Creation: Users can generate their CVs.
 2. Course Purchase: Users can buy courses online.
@@ -39,7 +39,7 @@ Learn2Resum is a comprehensive platform that serves as both a CV generator and a
 
 <h2>Security Features</h2>
 
-<h3>Learn2Resum prioritizes security through the following measures:</h3>
+<h3>Learn2Resume prioritizes security through the following measures:</h3>
 
 1. Password and Email Encryption: User passwords and email addresses are securely encrypted.
 2. Two-Step Verification: Users are offered an additional layer of security with two-step verification.
