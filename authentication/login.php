@@ -11,11 +11,8 @@
 
     <nav>
         <ul>
-        <li><a href="index.php#Home">Home</a></li>
-          <li><a href="index.html#Service">service</a></li>
-          <li><a href="index.html#About">Contact Us</a></li>
-  
-          <li><a href="signup.html">SignUp/Login</a></li>
+        <li><a href="\Cvit-CVgenerator\index.php">Home</a></li>
+          <li><a href="\Cvit-CVgenerator\course\index.php">Course</a></li>
         </ul>
       </nav>
     

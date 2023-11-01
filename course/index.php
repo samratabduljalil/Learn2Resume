@@ -18,7 +18,7 @@
            <form  >
             <input type="search" name="" id="Live_search" placeholder="Search Course">
           </form>
-          <li><a href="\index.php">Home</a></li>
+          <li><a href="\Cvit-CVgenerator\index.php">Home</a></li>
           <li><a href="index.php">course</a></li>
           
           <?php if(isset($_SESSION['name'] )) { ?>

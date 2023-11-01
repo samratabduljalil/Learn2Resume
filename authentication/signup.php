@@ -17,11 +17,8 @@
     }}?>
     <nav>
         <ul>
-          <li><a href="index.php#Home">Home</a></li>
-          <li><a href="index.php#Service">service</a></li>
-          <li><a href="index.php#About">Contact Us</a></li>
-  
-          <li><a href="signup.html">SignUp/Login</a></li>
+          <li><a href="\Cvit-CVgenerator\index.php">Home</a></li>
+          <li><a href="\Cvit-CVgenerator\course\index.php">Course</a></li>
         </ul>
       </nav>
     
@@ -42,13 +39,13 @@
  
 </select><br>
 <button type="submit" class="btn_signup" >SignUp</button>
-<h1>already have account?<a href="login.php" class="log_link">Log in</a></h1>
+<h1>already have account?<a href="login.php" ><span class="log_link">Log in</span></a></h1>
 </form>
 </div>
 </div>
 </div>
 <?php
- session_start();
+
 
  $_SESSION['check']="sign";
  ?>
