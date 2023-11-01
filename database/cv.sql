@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Oct 31, 2023 at 09:57 PM
+-- Generation Time: Nov 01, 2023 at 12:18 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -252,7 +252,10 @@ INSERT INTO `payment_course` (`id`, `course_id`, `user_id`, `payment_money`, `Cu
 (7, 12, 12, 1270, '2023-10-31'),
 (8, 12, 12, 1270, '2023-10-31'),
 (9, 12, 12, 1270, '2023-10-31'),
-(10, 12, 12, 1270, '2023-10-31');
+(10, 12, 12, 1270, '2023-10-31'),
+(11, 12, 12, 1270, '2023-10-31'),
+(12, 12, 12, 1270, '2023-10-31'),
+(13, 12, 15, 1270, '2023-10-31');
 
 -- --------------------------------------------------------
 
@@ -307,6 +310,24 @@ INSERT INTO `question` (`id`, `question`, `answer`, `question_id`, `course_code`
 (13, 'Which of the following HTTP status codes indicates that a resource was not found on the server?', 2, NULL, 'web001', '200 OK', '404 Not Found', '500 Internal Server Error', ' 302 Found'),
 (14, 'What is the purpose of a responsive web design?', 4, NULL, 'web001', 'To create websites that only work on mobile devices', 'To make websites load faster', 'To design websites that look exactly the same on all devices', 'To create websites that adapt and display well on various screen sizes and devices'),
 (15, 'What does HTML stand for?', 1, NULL, 'web001', 'Hyper Text Markup Language', 'High Technical Modern Language', 'Hyperlink and Text Markup Language', 'Home Tool Markup Language');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `total`
+--
+
+CREATE TABLE `total` (
+  `id` int DEFAULT NULL,
+  `total` float DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `total`
+--
+
+INSERT INTO `total` (`id`, `total`) VALUES
+(221, 1238.15);
 
 --
 -- Indexes for dumped tables
@@ -434,7 +455,7 @@ ALTER TABLE `option_`
 -- AUTO_INCREMENT for table `payment_course`
 --
 ALTER TABLE `payment_course`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `qr`
