@@ -1,7 +1,6 @@
 body {
   margin: 0;
-  background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(16,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  background-color:  chocolate;
 }
 nav {
   margin-left: 0px;
@@ -22,7 +21,7 @@ nav ul li a {
   font-size: 25px;
   padding: 10px;
   text-decoration: none;
-  color: black;
+  color: rgb(250, 245, 245);
 }
 nav ul li a:hover {
   text-decoration: none;
@@ -218,9 +217,10 @@ footer {
   border: 2px solid black;
 }
 .btn_signup:hover {
-  background-color: white;
+  background-color: rgb(58, 128, 70);
 
   border: 2px solid green;
+  cursor: pointer;
 }
 
 .sign_text:hover {
@@ -321,7 +321,7 @@ left: 12%;
     }
 .log_link{
 
-  color: red;
+  color: rgb(63, 47, 182);
   text-decoration: none;
 }
 @keyframes glowing-border {

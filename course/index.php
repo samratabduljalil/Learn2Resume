@@ -122,7 +122,7 @@
           var html = ''; 
   
           for (let index = 0; index < data.length; index++) {
-              html += "<a href='/Cvit-CVgenerator/payment/checkout.php?id="+data[index].ID+"'class='card'><h1 class='cardtext'><span class='t1'>" + data[index].Name + "</span></h1><div class='in_card'><h3>ENROLL </h3></div></a>";
+              html += "<a href='/Cvit-CVgenerator/payment/checkout.php?id="+data[index].ID+"'class='card'><h1 class='cardtext'><span class='t1'>" + data[index].Name + "</span></h1><div class='in_card'><h3>Enroll </h3></div></a>";
           }
   
           dataDisplay.innerHTML = html; 
