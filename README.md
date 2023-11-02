@@ -46,5 +46,22 @@ Learn2Resume is a comprehensive platform that serves as both a CV generator and 
 3. Unauthorized Access Prevention: Unauthenticated individuals cannot access the website via direct URL.
 4. Secure Payment System: The SSL Sandbox ensures the security of online payments.
 
+<h2>An arbitrary glimpse of our website</h2>
+![Screenshot (414)](https://github.com/samratabduljalil/Learn2Resume/assets/95965521/59c2c9cf-8567-4300-8b2b-0a8a858d1905)
+
+
+
+
+![Screenshot (411)](https://github.com/samratabduljalil/Learn2Resume/assets/95965521/9d7af3f9-a86f-47a5-9818-6a17f881eff2)
+
+![Screenshot (399)](https://github.com/samratabduljalil/Learn2Resume/assets/95965521/8ac5a9ab-6a43-4c11-9f96-42c030ee30cd)
+
+
+![Screenshot (389)](https://github.com/samratabduljalil/Learn2Resume/assets/95965521/18fd1640-2ba1-44c1-b51a-9ba9c7bd5c37)
+![Screenshot (415)](https://github.com/samratabduljalil/Learn2Resume/assets/95965521/0bff316c-c581-4e1e-9ace-0d3c7847e87b)
+
+![Screenshot (372)](https://github.com/samratabduljalil/Learn2Resume/assets/95965521/a05cc0d2-a54b-4c18-93a9-da74182f0915)
+
+![Screenshot (416)](https://github.com/samratabduljalil/Learn2Resume/assets/95965521/8e5334fd-4aa9-4e71-aa24-c87144ff532c)
 
 
