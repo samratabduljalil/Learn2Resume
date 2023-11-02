@@ -73,7 +73,7 @@ html {
   padding-top: 20%;
   font-weight: 700;
   opacity: 0.8;
-  color: chocolate;
+  color: black;
 }
 .Contact_container {
   display: flex;
@@ -172,7 +172,7 @@ footer {
 
   font-weight: 700;
   opacity: 0.8;
-  color: chocolate;
+  color: black;
 }
 .sign_text {
   height: 40px;

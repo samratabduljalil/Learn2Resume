@@ -34,7 +34,7 @@
         
       }else{
                   ?>
-         <li><a href="authentication\signup.php">SignUp/Login</a></li>
+         <li><a href="\Cvit-CVgenerator/authentication/signup.php">SignUp/Login</a></li>
          <?php }?>
 
   
