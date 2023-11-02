@@ -54,7 +54,8 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(16,9,121,1) 35%, rgba
   height: 100vh;
   width: 100%;
   background: chocolate;
-  background-image: url('\Cvit-CVgenerator/img/225.png');
+ 
+  
 }
 
 #About {
@@ -72,7 +73,7 @@ html {
   padding-top: 20%;
   font-weight: 700;
   opacity: 0.8;
-  color: rgb(18, 15, 15);
+  color: chocolate;
 }
 .Contact_container {
   display: flex;
@@ -171,7 +172,7 @@ footer {
 
   font-weight: 700;
   opacity: 0.8;
-  color: rgb(0, 0, 0);
+  color: chocolate;
 }
 .sign_text {
   height: 40px;
