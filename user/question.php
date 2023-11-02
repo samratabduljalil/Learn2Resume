@@ -115,7 +115,9 @@ $a=1;
              $a=$a+1;
         }
     } else {
-        echo "Question is not available .";
+        echo "Question is not available ."; ?>
+        
+        <?php
         $f=1;
     }
 
@@ -148,7 +150,14 @@ $a=1;
  <button class="btn" type="submit">submit</button>
  <?php }?>
   </form>
-  <a href="\Cvit-CVgenerator/user2\index.php"><button class="btn1" >Back </button></a>
+
+
+
+ 
+
+
+  <a href="\Cvit-CVgenerator/user2/index.php"><button class="btn1" >Back </button></a>
+
     <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();

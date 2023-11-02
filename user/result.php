@@ -138,7 +138,7 @@ left:35%;
 
 <?php
     include('connection.php');
-    session_start();
+   
     $mark=0;
     $row;
     // Check connection
@@ -195,7 +195,7 @@ if($row['answer']==$_POST[$po]){
 <?php } ?>
     
         
-        <p class="role">Now You Can download your certificate</p>
+        
       </div>
     </div>
   </div>
@@ -204,11 +204,13 @@ if($row['answer']==$_POST[$po]){
   <?php if($mark >=3){ ?>
    <a href="certificate.php?id=<?php echo $_GET['id'] ?>"><button class="cer" >GET Your certificate</button></a> 
 
- <?php   }?>
+ <?php   }else{?>
 
 
 
  <a href="\Cvit-CVgenerator/user/question.php?id=<?php echo $_GET['id'] ?>"><button class="cer1" >Retry</button></a> 
+ <?php
+} ?>
   <!--Start of Tawk.to Script-->
   <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();

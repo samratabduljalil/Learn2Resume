@@ -10,7 +10,7 @@ if(isset($_SESSION['user'])){
 $qr=$_GET['temp']."?id=".$_GET['id']."&&temp=".$_GET['temp']."&&temp2=".$_GET['temp2']."&&css=".$_GET['css'];
 $r=$_GET['temp2']."".$_GET['id'].rand();
 // Create a new instance of QrCode
-$qrCode = new QrCode('http://cvit-cvgenerator.test'.$qr);
+$qrCode = new QrCode('http://www.samratabduljalil.com'.$qr);
 $uploadDirectory= "qr_code/" ;
 // Save the QR code to a file
 

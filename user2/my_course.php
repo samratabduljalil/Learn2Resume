@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style22.css">
-    <title>User Dashboard</title>
+    <title>my courses</title>
 </head>
 <body>
 <?php session_start();
@@ -24,14 +24,14 @@ if(isset($_SESSION['user'])){
     <li><a href="my_cer.php">My Certificate</a></li>
     <li><a href="my_course.php">My course</a></li>
     <li><a href="\Cvit-CVgenerator\course\index.php">All Courses</a></li>
+    <li><a href="index.php">Profile</a></li>
     <li><a href="\Cvit-CVgenerator\index.php">Home</a></li>
     <li><a href="\Cvit-CVgenerator\logout.php">Logout</a></li>
-
 </ul>
 </div>
 <div class="user_card2">
 
-<h1>MY Certificate</h1>
+<h1>MY Courses</h1>
 <section class="container">
     <div class="course">
 
@@ -74,7 +74,7 @@ if(isset($_SESSION['user'])){
             }
         }}
     } else {
-        echo "You donot hav eany certification.";
+        echo "You donot have enroll any course.";
     }
 
     // Close the database connection

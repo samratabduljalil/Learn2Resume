@@ -128,7 +128,7 @@ left:35%;
 
 <?php
 include('connection.php');
-session_start();
+
 
 $row;
 // Check connection

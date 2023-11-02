@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="pro.css">
-    <title>Profile</title>
+    <title>Personal Details</title>
 </head>
 <?php session_start();
 if(isset($_SESSION['user'])){

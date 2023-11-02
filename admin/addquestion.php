@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="pro.css">
     <link rel="stylesheet" href="style.css">
-    <title>edit Profile</title>
+    <title>Add Question</title>
 </head>
 <?php session_start();
 if(isset($_SESSION['admin'])){
@@ -44,7 +44,7 @@ if(isset($_SESSION['admin'])){
         </select>
 
 
-        <textarea name="q2" id="" cols="30" rows="10" class="text_area" required placeholder="Question 1"></textarea>
+        <textarea name="q2" id="" cols="30" rows="10" class="text_area" required placeholder="Question 2"></textarea>
         <input type="text" name="op21" id="" class="text_box1" placeholder="option 1" >
         <input type="text" name="op22" id="" class="text_box1" placeholder="option 2" >
         <input type="text" name="op23" id="" class="text_box1" placeholder="option 3" >
@@ -58,7 +58,7 @@ if(isset($_SESSION['admin'])){
         </select>
 
 
-        <textarea name="q3" id="" cols="30" rows="10" class="text_area" required placeholder="Question 1"></textarea>
+        <textarea name="q3" id="" cols="30" rows="10" class="text_area" required placeholder="Question 3"></textarea>
         <input type="text" name="op31" id="" class="text_box1" placeholder="option 1" >
         <input type="text" name="op32" id="" class="text_box1" placeholder="option 2" >
         <input type="text" name="op33" id="" class="text_box1" placeholder="option 3" >
@@ -71,7 +71,7 @@ if(isset($_SESSION['admin'])){
             <option value="4">option 4</option>
         </select>
 
-        <textarea name="q4" id="" cols="30" rows="10" class="text_area" required placeholder="Question 1"></textarea>
+        <textarea name="q4" id="" cols="30" rows="10" class="text_area" required placeholder="Question 4"></textarea>
         <input type="text" name="op41" id="" class="text_box1" placeholder="option 1" >
         <input type="text" name="op42" id="" class="text_box1" placeholder="option 2" >
         <input type="text" name="op43" id="" class="text_box1" placeholder="option 3" >
@@ -85,7 +85,7 @@ if(isset($_SESSION['admin'])){
         </select>
         
 
-        <textarea name="q5" id="" cols="30" rows="10" class="text_area" required placeholder="Question 1"></textarea>
+        <textarea name="q5" id="" cols="30" rows="10" class="text_area" required placeholder="Question 5"></textarea>
         <input type="text" name="op51" id="" class="text_box1" placeholder="option 1" >
         <input type="text" name="op52" id="" class="text_box1" placeholder="option 2" >
         <input type="text" name="op53" id="" class="text_box1" placeholder="option 3" >

@@ -208,7 +208,7 @@ $code=$_GET['id'] ;
 
 
 
-        <a href="question.php?id=<?php echo $_GET['id'] ?>"><button class="dam_button">Take a Exam and Get certified</button></a>
+        <a href="\Cvit-CVgenerator/user2/index.php"><button class="back_b">Back</button></a>  <a href="question.php?id=<?php echo $_GET['id'] ?>"><button class="dam_button">Take a Exam and Get certified</button></a>
   <!--Start of Tawk.to Script-->
   <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();

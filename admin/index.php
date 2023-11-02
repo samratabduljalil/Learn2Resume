@@ -27,8 +27,10 @@ if(isset($_SESSION['admin'])){
     <li><a href="addvideo.php">Add video</a></li>
     <li><a href="coursetable.php">All Courses</a></li>
     <li><a href="addtemplate.php">Add Template</a></li>
-    <li><a href="delete_course.php">delete Course</a></li>
-    <li><a href="./index.php">Home</a></li>
+    <li><a href="\Cvit-CVgenerator/authentication/add_admin.php">Add Admin</a></li>
+    <li><a href="coursetable.php">All Courses</a></li>
+    <li><a href="delete_course.php">Delete Course</a></li>
+    <li><a href="\Cvit-CVgenerator\index.php">Home</a></li>
     <li><a href="logout.php">Log Out</a></li>
 
 </ul>
@@ -62,7 +64,7 @@ if(isset($_SESSION['admin'])){
             $user=$user+1;
         }
     } else {
-        echo "No products found.";
+    
     }
 
     // Close the database connection
@@ -95,7 +97,7 @@ if(isset($_SESSION['admin'])){
             $active=$active+1;
         }
     } else {
-        echo "No products found.";
+        
     }
 
     // Close the database connection
@@ -131,7 +133,7 @@ if(isset($_SESSION['admin'])){
             $a=$a+1;
         }
     } else {
-        echo "No products found.";
+        
     }
 
     // Close the database connection

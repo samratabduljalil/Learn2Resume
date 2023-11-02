@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>User Dashboard 2</title>
+    <title>User Dashboard</title>
 </head>
 <body>
 <?php session_start();
@@ -46,6 +46,7 @@ if ($result && mysqli_num_rows($result) > 0) {
     <li><a href="my_cer.php">My Certificate</a></li>
     <li><a href="my_course.php">My course</a></li>
     <li><a href="\Cvit-CVgenerator\course\index.php">All Courses</a></li>
+    <li><a href="index.php">Profile</a></li>
     <li><a href="\Cvit-CVgenerator\index.php">Home</a></li>
     <li><a href="\Cvit-CVgenerator\logout.php">Logout</a></li>
 

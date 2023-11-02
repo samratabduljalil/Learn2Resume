@@ -9,6 +9,6 @@ if(isset($_SESSION['admin'])){
 session_destroy();
 
 
-header("Location: \index.php");
+header("Location: \Cvit-CVgenerator/index.php");
 }else{header("location: \Cvit-CVgenerator/authentication/login.php");}
 ?>

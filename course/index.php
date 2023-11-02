@@ -21,12 +21,22 @@
           <li><a href="\Cvit-CVgenerator\index.php">Home</a></li>
           <li><a href="index.php">course</a></li>
           
-          <?php if(isset($_SESSION['name'] )) { ?>
-          <li><a href="\Cvit-CVgenerator/user2/index.php"><?php echo $_SESSION['name'] ?></a></li>
-          <?php }else{
-                    ?>
-           <li><a href="\Cvit-CVgenerator/authentication\signup.php">SignUp/Login</a></li>
-           <?php }?>
+          <?php session_start(); if(isset($_SESSION['name'] )) { 
+          if(isset($_SESSION['user'] )) {
+          ?>
+
+        <li><a href="\Cvit-CVgenerator/user2/index.php"><?php echo $_SESSION['name'] ?></a></li>
+        <?php }else{
+          ?>
+
+          <li><a href="\Cvit-CVgenerator/admin/index.php"><?php echo $_SESSION['name'] ?></a></li>
+          <?php }
+        
+      }else{
+                  ?>
+         <li><a href="authentication\signup.php">SignUp/Login</a></li>
+         <?php }?>
+
   
   
   
@@ -43,13 +53,13 @@
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="d-block  imgcar" src="\Cvit-CVgenerator/img/analysis-1841158_1920.jpg" alt="First slide">
+                <img class="d-block  imgcar" src="\Cvit-CVgenerator/img/225.png" alt="First slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block  imgcar" src="\Cvit-CVgenerator/img/code-1076536_1920.jpg" alt="Second slide">
+                <img class="d-block  imgcar" src="\Cvit-CVgenerator/img/226.jpg" alt="Second slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block  imgcar" src="\Cvit-CVgenerator/img/stock-market-6531146_1920.jpg" alt="Third slide">
+                <img class="d-block  imgcar" src="\Cvit-CVgenerator/img/223.jpg" alt="Third slide">
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

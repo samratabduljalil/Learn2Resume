@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="pro.css">
-    <title>edit Profile</title>
+    <title>add photo</title>
 </head>
 <?php session_start();
 if(isset($_SESSION['user'])){
@@ -14,7 +14,7 @@ if(isset($_SESSION['user'])){
 
 ?>
 <body>
-<?php session_start();
+<?php 
 $_SESSION['s1']=$_POST['s1'];
 $_SESSION['s2']=$_POST['s2'];
 $_SESSION['s3']=$_POST['s3'];

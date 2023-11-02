@@ -17,7 +17,7 @@ if(isset($_SESSION['user'])){
   <div class="flex">
 <h1 class="sucess">Your payment is successful</h1>
 <h3 class="redirect">You will be automatic redirected to your cours in a moment</h3>
-<a href="\Cvit-CVgenerator/user2/index.php"></a><button class="dash_btn">Go to Dashboard</button>
+<a href="\Cvit-CVgenerator/user2/index.php"><button class="dash_btn">Go to Dashboard</button></a>
 </div>  
 
 

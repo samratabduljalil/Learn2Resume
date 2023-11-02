@@ -78,7 +78,7 @@ transition: .45s;
 
 <?php
 
-session_start();
+
 
 include('connection.php');
 

@@ -7,7 +7,14 @@
    font-size: 30px;
    background-color: rgb(251, 251, 251);
    }
-   
+   .back_b{
+    margin-left: 25px;
+font-size: 35px;
+padding: 10px;
+background-color: transparent;
+color: rgb(232, 192, 12);
+animation: glowing-border 2s infinite;
+ }
    
    .playlist{  
        color: black;

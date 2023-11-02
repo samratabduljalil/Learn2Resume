@@ -22,10 +22,11 @@ nav ul li a {
   padding: 10px;
   text-decoration: none;
   color: rgb(250, 245, 245);
+  transition: .45s;
 }
 nav ul li a:hover {
   text-decoration: none;
-  color: #243b55;
+  color: #cfd1d2;
   font-size: 26px;
 }
 #car {
