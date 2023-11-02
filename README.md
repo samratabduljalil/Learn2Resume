@@ -47,7 +47,8 @@ Learn2Resume is a comprehensive platform that serves as both a CV generator and 
 4. Secure Payment System: The SSL Sandbox ensures the security of online payments.
 
 <h2>An arbitrary glimpse of our website</h2>
-![Screenshot (414)](https://github.com/samratabduljalil/Learn2Resume/assets/95965521/59c2c9cf-8567-4300-8b2b-0a8a858d1905)
+
+![Screenshot (414)](https://github.com/samratabduljalil/Learn2Resume/assets/95965521/c16adc2b-2579-45ac-a249-251a613ed788)
 
 
 
@@ -64,4 +65,5 @@ Learn2Resume is a comprehensive platform that serves as both a CV generator and 
 
 ![Screenshot (416)](https://github.com/samratabduljalil/Learn2Resume/assets/95965521/8e5334fd-4aa9-4e71-aa24-c87144ff532c)
 
+![Screenshot (370)](https://github.com/samratabduljalil/Learn2Resume/assets/95965521/152dc68f-3e8b-4b4b-bad6-ba4724d07e15)
 
