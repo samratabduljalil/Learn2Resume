@@ -18,14 +18,13 @@
    
     
     <input type="number" name="OTP2" id="OTP2" class="otp sign_text" maxlength="6" placeholder="Enter 6-digit OTP">
-    <?php
-
     
-    ?>
    
    <br>
     <button type="submit" class="btn_signup verify" id="submitBtn" disabled>verify</button>
-  
+    <p class="resend2">You can resend after </p>
+    <button type="submit" class="btn_signup resend" id="submitBtn" disabled>Resend</button>
+
    
     </form>
 
