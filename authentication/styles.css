@@ -229,8 +229,9 @@ footer {
 }
 #countdown{
 margin-left: .01%;
-color: rgb(215, 15, 15);
-background-color: aliceblue;
+color:black;
+font-size: large;
+font-family: sans-serif;
 }
 .addclass{
   cursor: pointer;
@@ -345,7 +346,7 @@ left: 12%;
 }
 
 .resend2{
-color: black;
+color: rgb(20, 20, 20);
 font-size: 20px;
 font-weight: 700;
 position: absolute;

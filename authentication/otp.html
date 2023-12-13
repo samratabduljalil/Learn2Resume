@@ -28,7 +28,7 @@
    
     </form>
 
-    <button  class="btn_signup2 resend" id="resedBtn" disabled>Resend</button>
+    <button  class="btn_signup2 resend" id="resendBtn" disabled>Resend</button>
 
     
     </div>
@@ -37,7 +37,7 @@
     <script>
   const otpInput = document.getElementById('OTP2');
 const submitBtn = document.getElementById('submitBtn');
-const resendBtn = document.getElementById('resendBtn');
+
 otpInput.addEventListener('input', function () {
   const inputValue = otpInput.value;
 
@@ -59,10 +59,11 @@ document.addEventListener("DOMContentLoaded", function () {
         var timeLimit = 5000; // Set the time limit in milliseconds
         var countdownElement = document.getElementById("countdown");
         var countdown = Math.ceil(timeLimit / 1000);
-        var finish=false;
+       
+        const resendBtn = document.getElementById('resendBtn');
         function updateCountdown(seconds) {
             countdownElement.innerText = seconds;
-            if (countdown = 0){
+            if (seconds <= 0){
 
 resendBtn.style.backgroundColor= 'greenyellow';
       resendBtn.classList.add("addclass");
@@ -75,10 +76,10 @@ resendBtn.style.backgroundColor= 'greenyellow';
         var countdownInterval = setInterval(function () {
             updateCountdown(countdown);
             countdown--;
-
+           
             if (countdown < 0) {
                 clearInterval(countdownInterval);
-                finish=false;
+               
             }
             
 
