@@ -217,6 +217,24 @@ footer {
   text-align: center;
   border: 2px solid black;
 }
+.btn_signup2 {
+  height: 35px;
+  width: 95px;
+  background-color: rgb(254, 225, 137);
+  border-radius: 8px;
+  color: black;
+  align-items: center;
+  text-align: center;
+  border: 2px solid black;
+}
+#countdown{
+margin-left: .01%;
+color: rgb(215, 15, 15);
+background-color: aliceblue;
+}
+.addclass{
+  cursor: pointer;
+}
 .btn_signup:hover {
   background-color: rgb(58, 128, 70);
 
@@ -311,8 +329,8 @@ left: 12%;
   }
   .resend{
     position: absolute;
-    top: 65%;
-    left: 35%;
+    top: 63%;
+    left: 65%;
     
     }
     .text_resend{
@@ -332,7 +350,7 @@ font-size: 20px;
 font-weight: 700;
 position: absolute;
 left: 10%;
-top: 50%;
+top: 60%;
 }
 .otpresend{
 

@@ -21,14 +21,14 @@
     
    
    <br>
-    <button type="submit" class="btn_signup verify" id="submitBtn" disabled>verify</button>
-    <p class="resend2">You can resend after </p>
-    <button type="submit" class="btn_signup resend" id="submitBtn" disabled>Resend</button>
+    <button type="submit" class="btn_signup2 verify" id="submitBtn" disabled>verify</button>
+    <p class="resend2">You can resend after <span id="countdown"></span> </p>
+   
 
    
     </form>
 
-
+    <button  class="btn_signup2 resend" id="resedBtn" disabled>Resend</button>
 
     
     </div>
@@ -37,7 +37,7 @@
     <script>
   const otpInput = document.getElementById('OTP2');
 const submitBtn = document.getElementById('submitBtn');
-
+const resendBtn = document.getElementById('resendBtn');
 otpInput.addEventListener('input', function () {
   const inputValue = otpInput.value;
 
@@ -45,12 +45,48 @@ otpInput.addEventListener('input', function () {
   if (/^\d{6}$/.test(inputValue)) {
     submitBtn.removeAttribute('disabled');
    submitBtn.style.backgroundColor= 'greenyellow';
+   submitBtn.classList.add("addclass");
     
   } else {
     submitBtn.setAttribute('disabled', 'disabled');
-    submitBtn.style.backgroundColor= 'greenyellow';
+    
   }
 });
+
+
+//coutdown for resend otp
+document.addEventListener("DOMContentLoaded", function () {
+        var timeLimit = 5000; // Set the time limit in milliseconds
+        var countdownElement = document.getElementById("countdown");
+        var countdown = Math.ceil(timeLimit / 1000);
+        var finish=false;
+        function updateCountdown(seconds) {
+            countdownElement.innerText = seconds;
+            if (countdown = 0){
+
+resendBtn.style.backgroundColor= 'greenyellow';
+      resendBtn.classList.add("addclass");
+
+}
+        }
+      
+        // Set up a countdown and display the message after the time limit
+        
+        var countdownInterval = setInterval(function () {
+            updateCountdown(countdown);
+            countdown--;
+
+            if (countdown < 0) {
+                clearInterval(countdownInterval);
+                finish=false;
+            }
+            
+
+        }, 1000);
+
+       
+
+    });
 
     </script>
   
