@@ -59,7 +59,8 @@ Learn2Resume is a comprehensive platform that serves as both a CV generator and 
 
 
 ![Screenshot (389)](https://github.com/samratabduljalil/Learn2Resume/assets/95965521/18fd1640-2ba1-44c1-b51a-9ba9c7bd5c37)
-![Screenshot (415)](https://github.com/samratabduljalil/Learn2Resume/assets/95965521/0bff316c-c581-4e1e-9ace-0d3c7847e87b)
+
+![Screenshot (127)](https://github.com/samratabduljalil/Learn2Resume/assets/95965521/7fecf31f-afa0-4d60-a7fa-6bed4a7e02e1)
 
 ![Screenshot (372)](https://github.com/samratabduljalil/Learn2Resume/assets/95965521/a05cc0d2-a54b-4c18-93a9-da74182f0915)
 
