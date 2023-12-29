@@ -63,10 +63,9 @@ if(((int)$_POST['OTP2']) === $_SESSION['otp']){
             $result = mysqli_query($connection, $query);
             $_SESSION['non']=true;
             header("location: \Cvit-CVgenerator\user2\index.php");
-        }}else{echo "error;";
-        
-        echo "decript".$decrypted;
-        echo "pass".$password;
+        }}else{$_SESSION['exist']=True;
+            $_SESSION['num']=+1;
+            header("location: login.php");
         
         } } else {
         echo "User not found";

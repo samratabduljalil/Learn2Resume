@@ -23,7 +23,50 @@
 <form action="send_otp.php" method="post">
 
 
-<?php  session_start(); if(isset($_SESSION['non'])){
+<?php  session_start();
+if(!isset($_SESSION['num'])){
+  $_SESSION['num']=0; 
+}
+
+if($_SESSION['num']===1){
+  $_SESSION['num']=0; 
+  if(isset($_SESSION['non'])){
+    if($_SESSION['non']==TRUE) {?>
+        
+        <?php
+        header("location: \user2\index.php");
+        
+        
+}}?>
+    
+    
+         <h1 class="black">You are Block for 3 minutes</h1>
+        
+
+
+<input type="email" name="email" id="email" class="sign_text" placeholder="Enter Your Email">
+
+<input type="password" name="password" id="password" class="sign_text" placeholder="Enter Your Password">
+<select id="sign" name="sign" class="sign_text">
+<option value="cv_admin" class="sign_text" >Admin</option>
+<option value="cv_user" class="sign_text">User</option>
+
+</select><br>
+<button type="submit" class="btn_signup">LogIn</button>
+<h1>Don`t have account?<a href="signup.php" class="log_link"> Signup</a> </h1>
+</form>
+</div>
+</div>
+</div>
+<?php
+
+
+$_SESSION['check']="login";
+?>
+
+<?php
+}
+if(isset($_SESSION['non'])){
         if($_SESSION['non']==TRUE) {?>
             
             <?php
@@ -34,7 +77,7 @@
         
         <?php if(isset($_SESSION['exist'])){
         if($_SESSION['exist']==TRUE) {?>
-             <h1 class="red">Wrong OTP please Login again</h1>
+             <h1 class="red">Wrong OTP or password please Login again</h1>
             <?php
            $_SESSION['exist']=false;
            
