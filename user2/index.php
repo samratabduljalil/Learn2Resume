@@ -29,8 +29,8 @@ if ($result && mysqli_num_rows($result) > 0) {
     $encryption_key_email =12345678912000006958657423654789; 
     $iv_email = 1596324856700000; 
     $decrypted = openssl_decrypt($user['email'], 'aes-256-cbc', $encryption_key_email, 0, $iv_email);
-    
-    
+
+   
     ?>
     <section class="sidebar">
 
